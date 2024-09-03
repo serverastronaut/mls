@@ -253,7 +253,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Home</span>
+          <span className="title">Inicio</span>
           <span className="arrow"></span>
         </a>
         {/* <!-- Level Two--> */}
@@ -457,7 +457,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           href="/contact"
           className={pathname === "/contact" ? "ui-active" : undefined}
         >
-          Contact
+          Contacto
         </Link>
       </li>
       {/* End .dropitem */}
@@ -469,7 +469,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           data-bs-toggle="modal"
           data-bs-target=".bd-example-modal-lg"
         >
-          <span className="dn-lg">Login/Register</span>
+          <span className="dn-lg">Login/Registarse</span>
         </a>
       </li>
       {/* End .dropitem */}
