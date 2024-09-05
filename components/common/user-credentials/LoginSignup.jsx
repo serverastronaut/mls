@@ -82,7 +82,7 @@ const LoginSignup = () => {
                   {/* End heading */}
 
                   <div className="row mt25">
-                    <div className="col-lg-12">
+                    {/*<div className="col-lg-12">
                       <button type="submit" className="btn btn-fb w-100">
                         <i className="fa fa-facebook float-start mt5"></i> Login
                         with Facebook
@@ -93,11 +93,11 @@ const LoginSignup = () => {
                         <i className="fa fa-google float-start mt5"></i> Login
                         with Google
                       </button>
-                    </div>
+                    </div>*/}
                   </div>
                   {/* End .row */}
 
-                  <hr />
+                  {/*<hr />*/}
 
                   <div className="input-group mb-2 mr-sm-2">
                     <input
@@ -194,7 +194,7 @@ const LoginSignup = () => {
                 {/* End .heading */}
 
                 <form action="#">
-                  <div className="row ">
+                  {/*<div className="row ">
                     <div className="col-lg-12">
                       <button type="submit" className="btn btn-fb w-100">
                         <i className="fa fa-facebook float-start mt5"></i> Login
@@ -207,10 +207,8 @@ const LoginSignup = () => {
                         with Google
                       </button>
                     </div>
-                  </div>
+                  </div>*/}
                   {/* End .row */}
-
-                  <hr />
 
                   <div className="form-group input-group mb-3">
                     <input

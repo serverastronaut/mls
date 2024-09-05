@@ -32,7 +32,7 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
-                <h2>Featured Properties</h2>
+                <h2>Propiedades destacadas</h2>
                 <p>Handpicked properties by our team.</p>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Why Choose Us</h2>
+                <h2>Por qué elegirnos</h2>
                 <p>We provide full service at every step.</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Articles & Tips</h2>
+                <h2>Últimas noticias</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -102,7 +102,7 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Our Partners</h2>
+                <h2>Partners</h2>
                 <p>We only work with the best companies around the globe</p>
               </div>
             </div>

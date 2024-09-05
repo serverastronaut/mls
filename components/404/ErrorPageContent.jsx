@@ -13,15 +13,15 @@ const ErrorPageContent = () => {
         alt="error.png"
       />
       <div className="erro_code">
-        <h1>Ohh! Page Not Found</h1>
+        <h1>Oops! Página no encontrada</h1>
       </div>
-      <p>We can’t seem to find the page you’re looking for</p>
+      <p>No podemos encontrar la página que estás buscando</p>
 
-      <Form />
+      {/*<Form />*/}
       {/* End form */}
 
       <Link href="/" className="btn btn_error btn-thm">
-        Back To Home
+        Volver al inicio
       </Link>
     </div>
   );

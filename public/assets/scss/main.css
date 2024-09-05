@@ -7431,6 +7431,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #24324a;
 }
 
 .parner_reg_btn a.btn:hover,

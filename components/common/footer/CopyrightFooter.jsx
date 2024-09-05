@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const CopyrightFooter = () => {
   const menuItems = [
-    { id: 1, name: "Home", routeLink: "/" },
-    { id: 2, name: "Listing", routeLink: "/listing-grid-v3" },
-    { id: 3, name: "Property", routeLink: "/listing-grid-v4" },
-    { id: 4, name: "About Us", routeLink: "/about-us" },
-    { id: 5, name: "Blog", routeLink: "/blog-list-3" },
-    { id: 6, name: "Contact", routeLink: "/contact" },
+    { id: 1, name: "Inicio", routeLink: "/" },
+    { id: 2, name: "Propiedades", routeLink: "/listing-grid-v3" },
+    { id: 4, name: "Institucional", routeLink: "/about-us" },
+    { id: 4, name: "FAQ", routeLink: "/faq" },
+    { id: 5, name: "Novedades", routeLink: "/blog-list-3" },
+    { id: 6, name: "Contacto", routeLink: "/contact" },
   ];
 
   return (
@@ -30,13 +30,13 @@ const CopyrightFooter = () => {
           <p>
             &copy; {new Date().getFullYear()} by{" "}
             <a
-              href="https://themeforest.net/user/ib-themes"
+              href="https://mlspropiedades.com"
               target="_blank"
               rel="noreferrer"
             >
-              ib-themes
+              MLS Propiedades
             </a>
-            . All rights reserved.
+            . Todos los derechos reservados.
           </p>
         </div>
       </div>
