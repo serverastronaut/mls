@@ -14,7 +14,7 @@ const CallToAction = () => {
       <div className="col-lg-4">
         <div className="parner_reg_btn text-right tac-smd">
           <Link href="/register" className="btn btn-thm2">
-            Register Now
+            Regístrese ahora
           </Link>
         </div>
       </div>

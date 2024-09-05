@@ -102,7 +102,7 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Partners</h2>
+                <h2>Nuestra red</h2>
                 <p>We only work with the best companies around the globe</p>
               </div>
             </div>

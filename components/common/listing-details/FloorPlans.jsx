@@ -15,18 +15,18 @@ const FloorPlans = () => {
               aria-controls="collapseOne"
             >
               <ul className="mb0 d-flex align-items-cener flex-wrap">
-                <li className="d-inline-flex list-inline-item">First Floor</li>
+                <li className="d-inline-flex list-inline-item">Primer piso</li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Size:</p> <span>1267 Sqft</span>
+                  <p>Superficie:</p> <span>1267 Sqft</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Rooms:</p> <span>670 Sqft</span>
+                  <p>Dormitorios:</p> <span>4</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Baths:</p> <span>530 Sqft</span>
+                  <p>Baños:</p> <span>2</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Price:</p> <span>$1489</span>
+                  <p>Precio:</p> <span>$148900</span>
                 </li>
               </ul>
             </button>
@@ -68,18 +68,18 @@ const FloorPlans = () => {
               aria-controls="collapseTwo"
             >
               <ul className="mb0 d-flex align-items-cener flex-wrap">
-                <li className="d-inline-flex list-inline-item">First Floor</li>
+                <li className="d-inline-flex list-inline-item">Segundo piso</li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Size:</p> <span>1267 Sqft</span>
+                  <p>Sup:</p> <span>1267 Sqft</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Rooms:</p> <span>670 Sqft</span>
+                  <p>Hab.:</p> <span>4</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Baths:</p> <span>530 Sqft</span>
+                  <p>Baños:</p> <span>2</span>
                 </li>
                 <li className="d-inline-flex list-inline-item">
-                  <p>Price:</p> <span>$1489</span>
+                  <p>Precio:</p> <span>$148900</span>
                 </li>
               </ul>
             </button>

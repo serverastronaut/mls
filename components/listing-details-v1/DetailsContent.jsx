@@ -22,7 +22,7 @@ const DetailsContent = () => {
         </div>
         {/* End .lsd_list */}
 
-        <h4 className="mb30">Description</h4>
+        <h4 className="mb30">Descripción</h4>
         <PropertyDescriptions />
       </div>
       {/* End .listing_single_description */}
@@ -30,7 +30,7 @@ const DetailsContent = () => {
       <div className="additional_details">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb15">Property Details</h4>
+            <h4 className="mb15">Detalles del inmueble</h4>
           </div>
           <PropertyDetails />
         </div>
@@ -40,7 +40,7 @@ const DetailsContent = () => {
       <div className="additional_details">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb15">Additional details</h4>
+            <h4 className="mb15">Datos adicionales</h4>
           </div>
           <AdditionalDetails />
         </div>
@@ -48,7 +48,7 @@ const DetailsContent = () => {
       {/* End .additional_details */}
 
       <div className="property_attachment_area">
-        <h4 className="mb30">Property Attachments</h4>
+        <h4 className="mb30">Descargables</h4>
         <div className="iba_container style2">
           <Attachments />
         </div>
@@ -58,7 +58,7 @@ const DetailsContent = () => {
       <div className="application_statics mt30">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb10">Features</h4>
+            <h4 className="mb10">Amenities</h4>
           </div>
           {/* End .col */}
 
@@ -69,7 +69,7 @@ const DetailsContent = () => {
 
       <div className="application_statics mt30">
         <h4 className="mb30">
-          Location{" "}
+          Ubicación{" "}
           <small className="float-end">
             1421 San Pedro St, Los Angeles, CA 90015
           </small>
@@ -81,7 +81,7 @@ const DetailsContent = () => {
       {/* End .location_area */}
 
       <div className="application_statics mt30">
-        <h4 className="mb30">Floor plans</h4>
+        <h4 className="mb30">Planos</h4>
         <div className="faq_according style2">
           <FloorPlans />
         </div>
@@ -93,37 +93,38 @@ const DetailsContent = () => {
       </div>
       {/* End property-video  */}
 
-      <div className="walkscore_area mt30">
+      {/*<div className="walkscore_area mt30">
         <WalkScore />
-      </div>
+      </div>*/}
       {/* End walkscore_area */}
 
       <div className="whats_nearby mt30">
-        <h4 className="mb10">What&apos;s Nearby</h4>
+        <h4 className="mb10">Está cerca de</h4>
         <WhatsNearby />
       </div>
       {/* End what's nearby area */}
 
       <div className="product_single_content">
         <div className="mbp_pagination_comments mt30">
-          <div className="total_review">
-            <h4>896 Reviews</h4>
+
+          {/*<div className="total_review">
+            <h4>896 visualizaciones</h4>
             <ul className="review_star_list mb0 pl10">
               <Ratings />
             </ul>
             <a className="tr_outoff pl10" href="#">
-              ( 4.5 out of 5 )
+              ( 4.5 de 5 )
             </a>
             <a className="write_review float-end fn-xsd" href="#">
-              Write a Review
+              Envíenos un mensaje
             </a>
-          </div>
+          </div>*/}
           {/* End .total_review */}
-          <Comments />
+          {/*<Comments />*/}
           <div className="custom_hr"></div>
 
           <div className="mbp_comment_form style2">
-            <h4>Write a Review</h4>
+            <h4>Escríbanos un mensaje</h4>
             <ul className="review_star">
               <li className="list-inline-item">
                 <span className="sspd_review">
@@ -133,7 +134,7 @@ const DetailsContent = () => {
                 </span>
               </li>
               <li className="list-inline-item pr15">
-                <p>Your Rating & Review</p>
+                <p>Su mensaje</p>
               </li>
             </ul>
             <ReviewBox />

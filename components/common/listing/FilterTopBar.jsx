@@ -41,9 +41,9 @@ const FilterTopBar = () => {
               {length}{" "}
             </span>
             {length !== 0 ? (
-              "Search results"
+              "Resultados"
             ) : (
-              <span className="text-danger">Not found results</span>
+              <span className="text-danger">No se encontraron resultados</span>
             )}
           </p>
         </div>
@@ -60,21 +60,21 @@ const FilterTopBar = () => {
                 onChange={(e) => setStatus(e.target.value)}
                 value={getStatus}
               >
-                <option value="">All Status</option>
-                <option value="old">Old</option>
-                <option value="recent">Recent</option>
+                <option value="">Todos</option>
+                <option value="old">Anteriores</option>
+                <option value="recent">Recientes</option>
               </select>
             </li>
             <li className="list-inline-item">
-              <span className="shrtby">Sort by:</span>
+              <span className="shrtby">Ordenar por:</span>
               <select
                 className="selectpicker show-tick"
                 onChange={(e) => setFeatured(e.target.value)}
                 value={getFeatured}
               >
-                <option value="">Featured All</option>
-                <option value="sale">Sale</option>
-                <option value="rent">Rent</option>
+                <option value="">Destacados primero</option>
+                <option value="sale">Venta</option>
+                <option value="rent">Alquiler</option>
               </select>
             </li>
           </ul>
