@@ -4,9 +4,9 @@ const Form = () => {
   return (
     <form action="#">
       <div className="heading text-center">
-        <h3>Register to your account</h3>
+        <h3>Registro</h3>
         <p className="text-center">
-          Already have an account?{" "}
+          ¿Ya tiene una cuenta?{" "}
           <Link href="/login" className="text-thm">
             Login
           </Link>
@@ -19,7 +19,7 @@ const Form = () => {
           type="text"
           className="form-control"
           required
-          placeholder="User Name"
+          placeholder="Nombre de usuario"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -49,7 +49,7 @@ const Form = () => {
           type="password"
           className="form-control"
           required
-          placeholder="Password"
+          placeholder="Contraseña"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -64,7 +64,7 @@ const Form = () => {
           type="password"
           className="form-control"
           required
-          placeholder="Re-enter password"
+          placeholder="Reingrese contraseña"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -83,13 +83,13 @@ const Form = () => {
           id="terms"
         />
         <label className="form-check-label form-check-label" htmlFor="terms">
-          I have read and accept the Terms and Privacy Policy?
+          Acepto los términos y condiciones y la política de privacidad
         </label>
       </div>
       {/* End .form-group */}
 
       <button type="submit" className="btn btn-log w-100 btn-thm">
-        Register
+        Registrarse
       </button>
       {/* login button */}
 

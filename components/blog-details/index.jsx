@@ -36,7 +36,7 @@ const index = () => {
           {/* End .row */}
 
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="main_blog_post_content">
                 <div className="mbp_thumb_post">
                   <div className="blog_sp_tag">
@@ -219,9 +219,9 @@ const index = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-lg-4">
+            {/*<div className="col-lg-4">
               <BlogSidebar />
-            </div>
+            </div>*/}
             {/* End Sidebar column */}
           </div>
           {/* End .row */}

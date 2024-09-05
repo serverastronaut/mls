@@ -4,11 +4,11 @@ const Form = () => {
   return (
     <form action="#">
       <div className="heading text-center">
-        <h3>Login to your account</h3>
+        <h3>Ingreso</h3>
         <p className="text-center">
-          Dont have an account?{" "}
+          ¿No tiene una cuenta?{" "}
           <Link href="/register" className="text-thm">
-            Sign Up!
+            Registrarse ahora
           </Link>
         </p>
       </div>
@@ -19,7 +19,7 @@ const Form = () => {
           type="text"
           className="form-control"
           required
-          placeholder="User Name Or Email"
+          placeholder="Usuario o Email"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -34,7 +34,7 @@ const Form = () => {
           type="password"
           className="form-control"
           required
-          placeholder="Password"
+          placeholder="Contraseña"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -55,17 +55,17 @@ const Form = () => {
           className="form-check-label form-check-label"
           htmlFor="remeberMe"
         >
-          Remember me
+          Recordarme
         </label>
 
         <a className="btn-fpswd float-end" href="#">
-          Forgot password?
+          Olvidé mi contraseña
         </a>
       </div>
       {/* End .form-group */}
 
       <button type="submit" className="btn btn-log w-100 btn-thm">
-        Log In
+        Ingresar
       </button>
       {/* login button */}
 
