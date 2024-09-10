@@ -10,7 +10,7 @@ const Sidebar = () => {
       <div className="sidebar_listing_list">
         <div className="sidebar_advanced_search_widget">
           <div className="sl_creator">
-            <h4 className="mb25">Agente de ventas</h4>
+            <h4 className="mb25">Información de contacto</h4>
             <ListingCreator />
           </div>
           {/* End .sl_creator */}

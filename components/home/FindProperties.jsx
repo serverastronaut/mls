@@ -20,7 +20,7 @@ const FindProperties = () => {
             <div className="overlay">
               <div className="details">
                 <h4>{item.name}</h4>
-                <p>{item.number} Propiedades</p>
+                <p>{item.number} inmuebles</p>
               </div>
             </div>
           </Link>

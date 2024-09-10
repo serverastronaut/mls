@@ -11,9 +11,9 @@ const Creaator = () => {
         alt="lc1.png"
       />
       <div className="media-body">
-        <h5 className="mt-0 mb0">Samul Williams</h5>
+        <h5 className="mt-0 mb0">Inmobiliaria San Pedro</h5>
         <p className="mb0">(123)456-7890</p>
-        <p className="mb0">info@mlspropiedades.com.ar</p>
+        <p className="mb0">info@inmobiliariasanpedro.com.ar</p>
         <a className="text-thm" href="#">
           Ver inmuebles
         </a>

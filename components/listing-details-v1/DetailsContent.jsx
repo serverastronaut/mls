@@ -98,10 +98,10 @@ const DetailsContent = () => {
       </div>*/}
       {/* End walkscore_area */}
 
-      <div className="whats_nearby mt30">
+      {/*<div className="whats_nearby mt30">
         <h4 className="mb10">Está cerca de</h4>
         <WhatsNearby />
-      </div>
+      </div>*/}
       {/* End what's nearby area */}
 
       <div className="product_single_content">
@@ -123,7 +123,7 @@ const DetailsContent = () => {
           {/*<Comments />*/}
           <div className="custom_hr"></div>
 
-          <div className="mbp_comment_form style2">
+          {/*<div className="mbp_comment_form style2">
             <h4>Escríbanos un mensaje</h4>
             <ul className="review_star">
               <li className="list-inline-item">
@@ -138,7 +138,8 @@ const DetailsContent = () => {
               </li>
             </ul>
             <ReviewBox />
-          </div>
+          </div>*/}
+
         </div>
       </div>
       {/* End review and comment area area */}
