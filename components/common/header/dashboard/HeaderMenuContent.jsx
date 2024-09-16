@@ -489,7 +489,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       <li className={`list-inline-item add_listing ${float}`}>
         <Link href="/create-listing">
           <span className="flaticon-plus"></span>
-          <span className="dn-lg"> Create Listing</span>
+          <span className="dn-lg"> Nueva propiedad</span>
         </Link>
       </li>
       {/* End .dropitem */}

@@ -13,28 +13,34 @@ const SidebarMenu = () => {
   const pathname = usePathname()
 
   const myProperties = [
-    { id: 1, name: "General Elements", route: "/my-properties" },
-    { id: 2, name: "Advanced Elements", route: "/my-properties" },
-    { id: 3, name: "Editors", route: "/my-properties" },
+    { id: 1, name: "Mis propiedades", route: "/my-properties" },
+    { id: 2, name: "Propiedades de la red", route: "/my-properties" },
+    { id: 3, name: "Compartidas conmigo", route: "/my-properties" },
   ];
   const reviews = [
-    { id: 1, name: "My Reviews", route: "/my-review" },
-    { id: 2, name: "Visitor Reviews", route: "/my-review" },
+    { id: 1, name: "Mis grupos", route: "/my-review" },
+    { id: 2, name: "Crear nuevo grupo", route: "/my-review" },
   ];
   const manageAccount = [
     {
       id: 1,
-      name: "My Package",
+      name: "Mi inmobiliaria",
       route: "/my-package",
-      icon: "flaticon-box",
+      icon: "flaticon-house",
     },
     {
       id: 2,
-      name: "My Profile",
+      name: "Mi cuenta",
       route: "/my-profile",
       icon: "flaticon-user",
     },
-    { id: 3, name: "Logout", route: "/login", icon: "flaticon-logout" },
+    {
+      id: 4,
+      name: "Agregar usuario (sólo owner)",
+      route: "/my-profile",
+      icon: "flaticon-plus",
+    },
+    { id: 4, name: "Cerrar sesión", route: "/login", icon: "flaticon-logout" },
   ];
 
   return (
@@ -54,7 +60,7 @@ const SidebarMenu = () => {
         {/* End header */}
 
         <li className="title">
-          <span>Main</span>
+          <span>Inicio</span>
           <ul>
             <li
               className={`treeview ${
@@ -65,7 +71,7 @@ const SidebarMenu = () => {
             >
               <Link href="/my-dashboard">
                 <i className="flaticon-layers"></i>
-                <span> Dashboard</span>
+                <span> Bienvenido</span>
               </Link>
             </li>
             <li
@@ -77,7 +83,7 @@ const SidebarMenu = () => {
             >
               <Link href="/create-listing">
                 <i className="flaticon-plus"></i>
-                <span> Create Listing</span>
+                <span> Agregar propiedad</span>
               </Link>
             </li>
             <li
@@ -89,7 +95,7 @@ const SidebarMenu = () => {
             >
               <Link href="/my-message">
                 <i className="flaticon-envelope"></i>
-                <span> Message</span>
+                <span> Mensajes clientes</span>
               </Link>
             </li>
           </ul>
@@ -97,7 +103,7 @@ const SidebarMenu = () => {
         {/* End Main */}
 
         <li className="title">
-          <span>Manage Listings</span>
+          <span>Gestión propiedades</span>
           <ul>
             <li
               className={`treeview ${
@@ -105,7 +111,7 @@ const SidebarMenu = () => {
               }`}
             >
               <a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>My Properties</span>
+                <i className="flaticon-home"></i> <span>Propiedades</span>
                 <i className="fa fa-angle-down pull-right"></i>
               </a>
               <ul className="treeview-menu collapse" id="my-property">
@@ -127,7 +133,7 @@ const SidebarMenu = () => {
             >
               <a data-bs-toggle="collapse" href="#review">
                 <i className="flaticon-chat"></i>
-                <span>Reviews</span>
+                <span>Grupos</span>
                 <i className="fa fa-angle-down pull-right"></i>
               </a>
               <ul className="treeview-menu collapse" id="review">
@@ -142,7 +148,7 @@ const SidebarMenu = () => {
             </li>
             {/* End Review */}
 
-            <li
+            {/*<li
               className={`treeview ${
                 isSinglePageActive("/my-favourites", pathname)
                   ? "active"
@@ -165,13 +171,13 @@ const SidebarMenu = () => {
                 <i className="flaticon-magnifying-glass"></i>
                 <span> Saved Search</span>
               </Link>
-            </li>
+            </li>*/}
           </ul>
         </li>
         {/* End manage listing */}
 
         <li className="title">
-          <span>Manage Account</span>
+          <span>Gestión de cuenta</span>
           <ul>
             {manageAccount.map((item) => (
               <li

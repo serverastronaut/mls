@@ -547,7 +547,7 @@ const MobileMenuContent = () => {
           className="btn btn-block btn-lg btn-thm circle"
           style={{width:'90%',margin:'0px auto'}}
         >
-          <span className="flaticon-plus"></span> Create Listing
+          <span className="flaticon-plus"></span> Agregar propiedad
         </Link></>
      
    

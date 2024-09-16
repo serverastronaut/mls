@@ -5,28 +5,28 @@ const AllStatistics = () => {
       blockStyle: "",
       icon: "flaticon-home",
       timer: "37",
-      name: "All Properties",
+      name: "Propiedades",
     },
     {
       id: 2,
       blockStyle: "style2",
-      icon: "flaticon-view",
+      icon: "flaticon-user",
       timer: "24",
-      name: "Total Views",
+      name: "Usuarios",
     },
     {
       id: 3,
       blockStyle: "style3",
       icon: "flaticon-chat",
       timer: "12",
-      name: "Total Visitor Reviews",
+      name: "Grupos",
     },
     {
       id: 4,
       blockStyle: "style4",
       icon: "flaticon-heart",
       timer: "18",
-      name: "Total Favorites",
+      name: "Favoritos",
     },
   ];
 
