@@ -30,20 +30,20 @@ const Header = () => {
         {/* <!-- Menu Toggle btn--> */}
         <Link href="/" className="navbar_brand float-start dn-smd">
           <Image
-            width={40}
+            width={200}
             height={45}
             className="logo1 img-fluid"
-            src="/assets/images/header-logo2.png"
-            alt="header-logo2.png"
+            src="/assets/images/mlslogo-white.svg"
+            alt="mlslogo-white.svg"
           />
           <Image
-            width={40}
+            width={200}
             height={45}
             className="logo2 img-fluid"
-            src="/assets/images/header-logo2.png"
-            alt="header-logo2.png"
+            src="/assets/images/mlslogo-white.svg"
+            alt="mlslogo-white.svg"
           />
-          <span>FindHouse</span>
+          {/*<span>FindHouse</span>*/}
         </Link>
         {/* site logo brand */}
 

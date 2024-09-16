@@ -11,7 +11,7 @@ const CheckBoxFilter = () => {
                 id="customCheck1"
               />
               <label className="form-check-label" htmlFor="customCheck1">
-                Air Conditioning
+                Aire acondicionado
               </label>
             </div>
           </li>
@@ -25,7 +25,7 @@ const CheckBoxFilter = () => {
                 id="customCheck2"
               />
               <label className="form-check-label" htmlFor="customCheck2">
-                Lawn
+                Lavadero
               </label>
             </div>
           </li>
@@ -39,7 +39,7 @@ const CheckBoxFilter = () => {
                 id="customCheck3"
               />
               <label className="form-check-label" htmlFor="customCheck3">
-                Swimming Pool
+                Piscina
               </label>
             </div>
           </li>
@@ -58,7 +58,7 @@ const CheckBoxFilter = () => {
                 id="customCheck4"
               />
               <label className="form-check-label" htmlFor="customCheck4">
-                Barbeque
+                Parrilla
               </label>
             </div>
           </li>
@@ -97,7 +97,7 @@ const CheckBoxFilter = () => {
 
       <div className="col-xs-6 col-sm col-lg col-xl">
         <ul className="ui_kit_checkbox selectable-list">
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -108,10 +108,10 @@ const CheckBoxFilter = () => {
                 Dryer
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
 
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -122,10 +122,10 @@ const CheckBoxFilter = () => {
                 Outdoor Shower
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
 
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -136,7 +136,7 @@ const CheckBoxFilter = () => {
                 Washer
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
         </ul>
       </div>
@@ -152,13 +152,13 @@ const CheckBoxFilter = () => {
                 id="customCheck10"
               />
               <label className="form-check-label" htmlFor="customCheck10">
-                Gym
+                Gimnasio
               </label>
             </div>
           </li>
           {/* End li */}
 
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -169,7 +169,7 @@ const CheckBoxFilter = () => {
                 Refrigerator
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
 
           <li>
@@ -199,13 +199,13 @@ const CheckBoxFilter = () => {
                 id="customCheck13"
               />
               <label className="form-check-label" htmlFor="customCheck13">
-                Laundry
+                Lavadero
               </label>
             </div>
           </li>
           {/* End li */}
 
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -216,10 +216,10 @@ const CheckBoxFilter = () => {
                 Sauna
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
 
-          <li>
+          {/*<li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -230,7 +230,7 @@ const CheckBoxFilter = () => {
                 Window Coverings
               </label>
             </div>
-          </li>
+          </li>*/}
           {/* End li */}
         </ul>
       </div>

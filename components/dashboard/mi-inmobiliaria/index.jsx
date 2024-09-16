@@ -1,11 +1,9 @@
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import CreateList from "./CreateList";
-import DetailedInfo from "./DetailedInfo";
-import FloorPlans from "./FloorPlans";
-import LocationField from "./LocationField";
-import PropertyMediaUploader from "./PropertyMediaUploader";
+//import ChangePassword from "./ChangePassword";
+import InmobiliariaProfileInfo from "./InmobiliariaProfileInfo";
+import InmobiliariaSocialMedia from "./InmobiliariaSocialMedia";
 
 const index = () => {
   return (
@@ -53,8 +51,8 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Agregar propiedad</h2>
-                    <p>Ingrese los datos de la nueva propiedad</p>
+                    <h2 className="breadcrumb_title">Mi inmobiliaria</h2>
+                    <p>Desde aquí puedes gestionar la información de tu inmobiliaria</p>
                   </div>
                 </div>
                 {/* End .col */}
@@ -62,50 +60,46 @@ const index = () => {
                 <div className="col-lg-12">
                   <div className="my_dashboard_review">
                     <div className="row">
-                      <div className="col-lg-12">
-                        <h3 className="mb30">Nueva propiedad</h3>
+                      <div className="col-xl-2">
+                        <h4>Principal</h4>
                       </div>
-
-                      <CreateList />
+                      <div className="col-xl-10">
+                        <InmobiliariaProfileInfo />
+                      </div>
                     </div>
                   </div>
+                  {/* End prifle info wrapper end */}
+
                   <div className="my_dashboard_review mt30">
                     <div className="row">
-                      <div className="col-lg-12">
-                        <h3 className="mb30">Ubicación</h3>
+                      <div className="col-xl-2">
+                        <h4>Redes sociales</h4>
                       </div>
+                      <div className="col-xl-10">
+                        <InmobiliariaSocialMedia />
+                      </div>
+                    </div>
+                  </div>
+                  {/* End .SocialMedia */}
 
-                      <LocationField />
+                  {/*<div className="my_dashboard_review mt30">
+                    <div className="row">
+                      <div className="col-xl-2">
+                        <h4>Cambiar contraseña</h4>
+                      </div>
+                      <div className="col-xl-10">
+                        <ChangePassword />
+                      </div>
                     </div>
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Datos de la propiedad</h3>
-                    </div>
-                    <DetailedInfo />
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Media</h3>
-                    </div>
-                    <PropertyMediaUploader />
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Planos</h3>
-                      <button className="btn admore_btn mb30">Más</button>
-                    </div>
-                    <FloorPlans />
-                  </div>
+                  </div>*/}
                 </div>
-                {/* End .col */}
               </div>
               {/* End .row */}
 
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2024 MLS Propiedades</p>
+                    <p>© 2024 MLS Propiedades.</p>
                   </div>
                 </div>
               </div>

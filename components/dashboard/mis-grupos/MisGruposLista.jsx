@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const AuthorReview = () => {
+const MisGruposLista = () => {
   const reviewContent = [
     {
       id: 1,
@@ -146,4 +146,4 @@ const AuthorReview = () => {
   );
 };
 
-export default AuthorReview;
+export default MisGruposLista;

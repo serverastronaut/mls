@@ -1,11 +1,9 @@
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import CreateList from "./CreateList";
-import DetailedInfo from "./DetailedInfo";
-import FloorPlans from "./FloorPlans";
-import LocationField from "./LocationField";
-import PropertyMediaUploader from "./PropertyMediaUploader";
+import MisGruposLista from "./MisGruposLista";
+//import ClientReview from "./ClientReview";
+import SearchBox from "./SearchBox";
 
 const index = () => {
   return (
@@ -50,55 +48,51 @@ const index = () => {
                   </div>
                 </div>
                 {/* End Dashboard Navigation */}
+              </div>
+              {/* End .row */}
 
-                <div className="col-lg-12 mb10">
-                  <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Agregar propiedad</h2>
-                    <p>Ingrese los datos de la nueva propiedad</p>
+              <div className="row align-items-center">
+                <div className="col-lg-8 col-xl-9 mb20">
+                  <div className="breadcrumb_content style2 mb30-991">
+                    <h2 className="breadcrumb_title">Mis Grupos</h2>
+                    <p>Puede utilizar los filtros de búsqueda para gestionar sus grupos</p>
                   </div>
                 </div>
                 {/* End .col */}
 
+                <div className="col-lg-4 col-xl-3 mb20">
+                  <ul className="sasw_list mb0">
+                    <li className="search_area">
+                      <SearchBox />
+                    </li>
+                  </ul>
+                </div>
+                {/* End .col */}
+              </div>
+              {/* End .row */}
+
+              <div className="row">
                 <div className="col-lg-12">
-                  <div className="my_dashboard_review">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <h3 className="mb30">Nueva propiedad</h3>
-                      </div>
-
-                      <CreateList />
+                  <div id="myreview" className="my_dashboard_review">
+                    <div className="review_content">
+                      <h4>Mis Grupos</h4>
+                      <MisGruposLista />
                     </div>
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <h3 className="mb30">Ubicación</h3>
-                      </div>
-
-                      <LocationField />
-                    </div>
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Datos de la propiedad</h3>
-                    </div>
-                    <DetailedInfo />
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Media</h3>
-                    </div>
-                    <PropertyMediaUploader />
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Planos</h3>
-                      <button className="btn admore_btn mb30">Más</button>
-                    </div>
-                    <FloorPlans />
                   </div>
                 </div>
-                {/* End .col */}
+                {/* End col */}
+
+                {/*<div className="col-lg-12">
+                  <div
+                    id="client_myreview"
+                    className="my_dashboard_review mt30"
+                  >
+                    <div className="review_content client-review">
+                      <h4>Visitor Reviews</h4>
+                      <ClientReview />
+                    </div>
+                  </div>
+                </div>*/}
               </div>
               {/* End .row */}
 

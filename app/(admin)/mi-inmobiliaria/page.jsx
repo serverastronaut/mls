@@ -1,16 +1,16 @@
 import dynamic from "next/dynamic";
-import MyProfile from "@/components/dashboard/my-profile";
+import MiInmobiliaria from "@/components/dashboard/mi-inmobiliaria";
 
 export const metadata = {
-  title: 'Mi cuenta || MLS Propiedades',
+  title: 'Mi inmobiliaria || MLS Propiedades',
   description:
-    'Mi cuenta - MLS Propiedades',
+    'Mi inmobiliaria - MLS Propiedades',
 }
 
 const index = () => {
   return (
     <>
-      <MyProfile />
+      <MiInmobiliaria />
     </>
   );
 };

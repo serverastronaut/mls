@@ -15,7 +15,7 @@ const CreateList = () => {
           <textarea
             className="form-control"
             id="propertyDescription"
-            rows="4"
+            rows="7"
           ></textarea>
         </div>
       </div>

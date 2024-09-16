@@ -205,13 +205,13 @@ ul {
         min-width: 300px;
     }
     &.offcanvas-dashboard {
-        max-width: 295px;
+        max-width: 240px;
         transform: translateX(0);
         visibility: visible;
         border-right: none;
         background: transparent;
         @media (max-width: 1024px) {
-            max-width: 250px;
+            max-width: 230px;
             transform: translateX(-100%);
             visibility: hidden;
         }

@@ -84,8 +84,8 @@ const FloorPlans = () => {
 
       <div className="col-xl-12">
         <div className="my_profile_setting_input">
-          <button className="btn btn1 float-start">Volver</button>
-          <button className="btn btn2 float-end">Guardar</button>
+          <button className="btn btn1 float-start">Anterior</button>
+          <button className="btn btn2 float-end">Siguiente</button>
         </div>
       </div>
       {/* End .col */}

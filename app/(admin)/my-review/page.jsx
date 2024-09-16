@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import MyReview from "@/components/dashboard/my-review";
 
 export const metadata = {
-  title: 'My Review || FindHouse - Real Estate React Template',
+  title: 'Mensajes clientes || MLS Propiedades',
   description:
-    'FindHouse - Real Estate React Template',
+    'Mensajes clientes - MLS Propiedades',
 }
 
 const index = () => {

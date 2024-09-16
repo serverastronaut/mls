@@ -18,14 +18,14 @@ const SidebarMenu = () => {
     { id: 3, name: "Compartidas conmigo", route: "/my-properties" },
   ];
   const reviews = [
-    { id: 1, name: "Mis grupos", route: "/my-review" },
-    { id: 2, name: "Crear nuevo grupo", route: "/my-review" },
+    { id: 1, name: "Mis grupos", route: "/mis-grupos" },
+    { id: 2, name: "Crear grupo", route: "/crear-grupo" },
   ];
   const manageAccount = [
     {
       id: 1,
       name: "Mi inmobiliaria",
-      route: "/my-package",
+      route: "/mi-inmobiliaria",
       icon: "flaticon-house",
     },
     {
@@ -36,7 +36,7 @@ const SidebarMenu = () => {
     },
     {
       id: 4,
-      name: "Agregar usuario (sólo owner)",
+      name: "Agregar usuario (owner)",
       route: "/my-profile",
       icon: "flaticon-plus",
     },
@@ -49,12 +49,12 @@ const SidebarMenu = () => {
         <li className="sidebar_header header">
           <Link href="/">
             <Image
-              width={40}
+              width={200}
               height={45}
-              src="/assets/images/header-logo2.png"
-              alt="header-logo2.png"
+              src="/assets/images/mlslogo-white.svg"
+              alt="mlslogo-white.svg"
             />
-            <span>FindHouse</span>
+            {/*<span>FindHouse</span>*/}
           </Link>
         </li>
         {/* End header */}
@@ -93,8 +93,8 @@ const SidebarMenu = () => {
                   : ""
               }`}
             >
-              <Link href="/my-message">
-                <i className="flaticon-envelope"></i>
+              <Link href="/my-review">
+                <i className="flaticon-chat"></i>
                 <span> Mensajes clientes</span>
               </Link>
             </li>
@@ -118,7 +118,7 @@ const SidebarMenu = () => {
                 {myProperties.map((item) => (
                   <li key={item.id}>
                     <Link href={item.route}>
-                      <i className="fa fa-circle"></i> {item.name}
+                      {/*<i className="fa fa-circle"></i>*/} {item.name}
                     </Link>
                   </li>
                 ))}
@@ -132,7 +132,7 @@ const SidebarMenu = () => {
               }`}
             >
               <a data-bs-toggle="collapse" href="#review">
-                <i className="flaticon-chat"></i>
+                <i className="flaticon-high-five"></i>
                 <span>Grupos</span>
                 <i className="fa fa-angle-down pull-right"></i>
               </a>
@@ -140,7 +140,7 @@ const SidebarMenu = () => {
                 {reviews.map((item) => (
                   <li key={item.id}>
                     <Link href={item.route}>
-                      <i className="fa fa-circle"></i> {item.name}
+                      {/*<i className="fa fa-circle"></i>*/} {item.name}
                     </Link>
                   </li>
                 ))}

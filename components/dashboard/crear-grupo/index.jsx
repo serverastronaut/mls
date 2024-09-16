@@ -2,9 +2,9 @@ import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import CreateList from "./CreateList";
-import DetailedInfo from "./DetailedInfo";
-import FloorPlans from "./FloorPlans";
-import LocationField from "./LocationField";
+//import DetailedInfo from "./DetailedInfo";
+//import FloorPlans from "./FloorPlans";
+//import LocationField from "./LocationField";
 import PropertyMediaUploader from "./PropertyMediaUploader";
 
 const index = () => {
@@ -53,8 +53,8 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Agregar propiedad</h2>
-                    <p>Ingrese los datos de la nueva propiedad</p>
+                    <h2 className="breadcrumb_title">Crear grupo</h2>
+                    <p>Ingrese los datos del nuevo grupo</p>
                   </div>
                 </div>
                 {/* End .col */}
@@ -63,39 +63,17 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-lg-12">
-                        <h3 className="mb30">Nueva propiedad</h3>
+                        <h3 className="mb30">Nuevo grupo</h3>
                       </div>
 
                       <CreateList />
                     </div>
                   </div>
                   <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <h3 className="mb30">Ubicación</h3>
-                      </div>
-
-                      <LocationField />
-                    </div>
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Datos de la propiedad</h3>
-                    </div>
-                    <DetailedInfo />
-                  </div>
-                  <div className="my_dashboard_review mt30">
                     <div className="col-lg-12">
                       <h3 className="mb30">Media</h3>
                     </div>
                     <PropertyMediaUploader />
-                  </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Planos</h3>
-                      <button className="btn admore_btn mb30">Más</button>
-                    </div>
-                    <FloorPlans />
                   </div>
                 </div>
                 {/* End .col */}

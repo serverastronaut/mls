@@ -1,16 +1,16 @@
 import dynamic from "next/dynamic";
-import MyProfile from "@/components/dashboard/my-profile";
+import CrearGrupo from "@/components/dashboard/crear-grupo";
 
 export const metadata = {
-  title: 'Mi cuenta || MLS Propiedades',
+  title: 'Crear grupo || MLS Propiedades',
   description:
-    'Mi cuenta - MLS Propiedades',
+    'Crear grupo - MLS Propiedades',
 }
 
 const index = () => {
   return (
     <>
-      <MyProfile />
+      <CrearGrupo />
     </>
   );
 };

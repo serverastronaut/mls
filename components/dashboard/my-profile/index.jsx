@@ -51,8 +51,8 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">My Profile</h2>
-                    <p>We are glad to see you again!</p>
+                    <h2 className="breadcrumb_title">Mi cuenta</h2>
+                    <p>Desde aquí puedes gestionar tu perfil</p>
                   </div>
                 </div>
                 {/* End .col */}
@@ -61,7 +61,7 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-xl-2">
-                        <h4>Profile Information</h4>
+                        <h4>Información personal</h4>
                       </div>
                       <div className="col-xl-10">
                         <ProfileInfo />
@@ -73,7 +73,7 @@ const index = () => {
                   <div className="my_dashboard_review mt30">
                     <div className="row">
                       <div className="col-xl-2">
-                        <h4>Social Media</h4>
+                        <h4>Redes sociales</h4>
                       </div>
                       <div className="col-xl-10">
                         <SocialMedia />
@@ -85,7 +85,7 @@ const index = () => {
                   <div className="my_dashboard_review mt30">
                     <div className="row">
                       <div className="col-xl-2">
-                        <h4>Change password</h4>
+                        <h4>Cambiar contraseña</h4>
                       </div>
                       <div className="col-xl-10">
                         <ChangePassword />
@@ -99,7 +99,7 @@ const index = () => {
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2020 Find House. Made with love.</p>
+                    <p>© 2024 MLS Propiedades.</p>
                   </div>
                 </div>
               </div>

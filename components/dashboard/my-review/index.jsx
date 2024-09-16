@@ -54,8 +54,8 @@ const index = () => {
               <div className="row align-items-center">
                 <div className="col-lg-8 col-xl-9 mb20">
                   <div className="breadcrumb_content style2 mb30-991">
-                    <h2 className="breadcrumb_title">My Reviews</h2>
-                    <p>We are glad to see you again!</p>
+                    <h2 className="breadcrumb_title">Mensajes clientes</h2>
+                    <p>Puede utilizar los filtros de búsqueda para gestionar las conversaciones con clientes</p>
                   </div>
                 </div>
                 {/* End .col */}
@@ -75,14 +75,14 @@ const index = () => {
                 <div className="col-lg-12">
                   <div id="myreview" className="my_dashboard_review">
                     <div className="review_content">
-                      <h4>My Reviews</h4>
+                      <h4>Mensajes clientes</h4>
                       <AuthorReview />
                     </div>
                   </div>
                 </div>
                 {/* End col */}
 
-                <div className="col-lg-12">
+                {/*<div className="col-lg-12">
                   <div
                     id="client_myreview"
                     className="my_dashboard_review mt30"
@@ -92,14 +92,14 @@ const index = () => {
                       <ClientReview />
                     </div>
                   </div>
-                </div>
+                </div>*/}
               </div>
               {/* End .row */}
 
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2020 Find House. Made with love.</p>
+                    <p>© 2024 MLS Propiedades</p>
                   </div>
                 </div>
               </div>

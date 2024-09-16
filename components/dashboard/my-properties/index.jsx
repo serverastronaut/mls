@@ -52,7 +52,7 @@ const index = () => {
 
                 <div className="col-lg-4 col-xl-4 mb10">
                   <div className="breadcrumb_content style2 mb30-991">
-                    <h2 className="breadcrumb_title">My Favorites</h2>
+                    <h2 className="breadcrumb_title">Mis propiedades</h2>
                     <p>We are glad to see you again!</p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const index = () => {
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2020 Find House. Made with love.</p>
+                    <p>© 2024 MLS Propiedades</p>
                   </div>
                 </div>
               </div>

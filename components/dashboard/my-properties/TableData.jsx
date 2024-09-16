@@ -3,11 +3,11 @@ import properties from "../../../data/properties";
 
 const TableData = () => {
   let theadConent = [
-    "Listing Title",
-    "Date published",
+    "Título",
+    "Fecha pubicación",
     "Status",
     "View",
-    "Action",
+    "Acción",
   ];
   let tbodyContent = properties?.slice(0, 4)?.map((item) => (
     <tr key={item.id}>
@@ -24,7 +24,7 @@ const TableData = () => {
             <div className="thmb_cntnt">
               <ul className="tag mb0">
                 <li className="list-inline-item">
-                  <a href="#">For Rent</a>
+                  <a href="#">Alquiler</a>
                 </li>
               </ul>
             </div>
@@ -38,7 +38,7 @@ const TableData = () => {
               </p>
               <a className="fp_price text-thm" href="#">
                 ${item.price}
-                <small>/mo</small>
+                <small>/mes</small>
               </a>
             </div>
           </div>
@@ -46,11 +46,11 @@ const TableData = () => {
       </td>
       {/* End td */}
 
-      <td>30 December, 2020</td>
+      <td>30 Diciembre, 2020</td>
       {/* End td */}
 
       <td>
-        <span className="status_tag badge">Pending</span>
+        <span className="status_tag badge">Pendiente</span>
       </td>
       {/* End td */}
 
