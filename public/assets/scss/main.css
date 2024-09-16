@@ -2721,7 +2721,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   height: 40px;
   width: 110px;
   text-align: center;
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .home_adv_srch_opt .nav-pills li.nav-item a.nav-link.active {
@@ -2736,7 +2736,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   height: 20px;
   margin-left: 5px;
   position: absolute;
-  top: 35px;
+  top: 30px;
   width: 20px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2836,7 +2836,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   font-size: 14px;
   color: #484848;
   line-height: 1.2;
-  height: 40px;
+  height: 50px;
   width: 215px;
 }
 
@@ -2925,7 +2925,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   border-radius: 8px;
   background-color: #ffffff;
   font-size: 14px;
-  height: 40px;
+  height: 50px;
   width: 190px;
 }
 
@@ -3336,7 +3336,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   cursor: pointer;
   font-size: 14px;
   color: #484848;
-  height: 40px;
+  height: 50px;
   line-height: 2.5;
   margin: 0;
   outline: none;
