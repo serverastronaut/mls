@@ -13,14 +13,31 @@ const SidebarMenu = () => {
   const pathname = usePathname()
 
   const myProperties = [
-    { id: 1, name: "Mis propiedades", route: "/my-properties" },
-    { id: 2, name: "Propiedades de la red", route: "/my-properties" },
-    { id: 3, name: "Compartidas conmigo", route: "/my-properties" },
+    { id: 1, name: "Agregar propiedad", route: "/create-listing" },    
+    { id: 2, name: "Mis propiedades", route: "/my-properties" },
+    { id: 3, name: "Propiedades de la red", route: "/my-properties" },
+    { id: 4, name: "Compartidas conmigo", route: "/my-properties" },
   ];
   const reviews = [
-    { id: 1, name: "Mis grupos", route: "/mis-grupos" },
-    { id: 2, name: "Crear grupo", route: "/crear-grupo" },
+    { id: 1, name: "Mis grupos", route: "/my-review" },
+    { id: 2, name: "Crear nuevo grupo", route: "/my-review" },
   ];
+
+  const myClients = [
+    {
+      id: 1,
+      name: "Mis clientes",
+      route: "/mis-clientes",
+      icon: "flaticon-user",
+    },
+    {
+      id: 2,
+      name: "Mensajes clientes",
+      route: "/my-review",
+      icon: "flaticon-chat",
+    },
+  ];
+
   const manageAccount = [
     {
       id: 1,
@@ -74,7 +91,7 @@ const SidebarMenu = () => {
                 <span> Bienvenido</span>
               </Link>
             </li>
-            <li
+            {/*<li
               className={`treeview ${
                 isSinglePageActive("/create-listing", pathname)
                   ? "active"
@@ -85,8 +102,8 @@ const SidebarMenu = () => {
                 <i className="flaticon-plus"></i>
                 <span> Agregar propiedad</span>
               </Link>
-            </li>
-            <li
+            </li>*/}
+            {/*<li
               className={`treeview ${
                 isSinglePageActive("/my-message", pathname)
                   ? "active"
@@ -97,7 +114,7 @@ const SidebarMenu = () => {
                 <i className="flaticon-chat"></i>
                 <span> Mensajes clientes</span>
               </Link>
-            </li>
+            </li>*/}
           </ul>
         </li>
         {/* End Main */}
@@ -177,6 +194,24 @@ const SidebarMenu = () => {
         {/* End manage listing */}
 
         <li className="title">
+          <span>Gestión clientes</span>
+          <ul>
+            {myClients.map((item) => (
+              <li
+                className={
+                  isSinglePageActive(item.route, pathname) ? "active" : ""
+                }
+                key={item.id}
+              >
+                <Link href={item.route}>
+                  <i className={item.icon}></i> <span>{item.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        <li className="title">
           <span>Gestión de cuenta</span>
           <ul>
             {manageAccount.map((item) => (
@@ -193,6 +228,7 @@ const SidebarMenu = () => {
             ))}
           </ul>
         </li>
+
       </ul>
     </>
   );
