@@ -124,7 +124,7 @@ body {
   background-color: #ffffff;
   color: #777777;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.642;
   overflow-x: hidden;
   transition: inherit;
@@ -549,7 +549,7 @@ address {
 }
 
 .dropdown_content .list_content a .close_icon {
-  font-size: 16px;
+  font-size: 15px;
   margin: -10px 0;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1014,7 +1014,7 @@ header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.hom
 
 .header_top_lang_widget ul li a {
   color: #a4a4a4;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1545,7 +1545,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu li ul.sub-menu li a
 header.header-nav.menu_style_home_eight .ace-responsive-menu li ul.sub-menu li a {
   border-bottom: 1px solid #dedede;
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1646,7 +1646,7 @@ header.header-nav.menu_style_home_one.style2.home10 .ace-responsive-menu > li > 
 }
 
 header.header-nav.menu_style_home_one.style2 .ace-responsive-menu li a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
@@ -1692,7 +1692,7 @@ header.header-nav.menu_style_home_one.style3 ul.ace-responsive-menu li.add_listi
 }
 
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   line-height: 1;
@@ -1769,7 +1769,7 @@ header.header-nav.home2.style_one .ace-responsive-menu li ul.sub-menu {
 header.header-nav.home2.style_one .ace-responsive-menu li ul.sub-menu li a {
   border-bottom: 1px solid #dedede;
   color: #a4a4a4;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1790,7 +1790,7 @@ header.header-nav.home2.style_one .ace-responsive-menu li ul.sub-menu li ul.sub-
 header.header-nav.home2.style_one .ace-responsive-menu li ul.sub-menu li a {
   border-bottom: 1px solid #555;
   color: #a4a4a4;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2509,7 +2509,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 
 .stylehome1 .mm-panel ul.mm-listview li.mm-listitem.cl_btn a.btn {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .stylehome1 a.mm-listitem__text,
@@ -2652,7 +2652,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 }
 
 .icon_home5 p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
@@ -2717,7 +2717,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   background-color: #ffffff;
   border-radius: 8px;
   color: #1b2032;
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   width: 110px;
   text-align: center;
@@ -2931,7 +2931,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
 
 .home1-advnc-search ul li:nth-child(3) .form-group label {
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   line-height: 40px;
   position: absolute;
@@ -2956,7 +2956,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last {
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -3038,7 +3038,7 @@ input.amount4 {
   border: none;
   box-shadow: none;
   color: #006c70;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
@@ -4381,7 +4381,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home4_iconbox .icon p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   line-height: 3;
@@ -4470,7 +4470,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .app_grid .apple_btn .title,
 .play_store_btn .title {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .app_grid .apple_btn .subtitle,
@@ -5222,7 +5222,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .feat_property .thumb {
   background: #1d293e;
-  border-radius: 8px;
+  border-radius: 3px;
   overflow: hidden;
   margin: 10px 9px 0 10px;
   position: relative;
@@ -5272,8 +5272,8 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .thumb .thmb_cntnt ul.tag,
 .properti_city.home6 .thumb .thmb_cntnt ul.tag {
   position: absolute;
-  left: 12px;
-  top: 10px;
+  left: 5px;
+  top: 0px;
 }
 
 .feat_property .thumb .thmb_cntnt ul.tag li,
@@ -5771,7 +5771,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .fp_single_item_slider.owl-carousel.owl-theme.owl-loaded .owl-prev {
   background-color: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   left: -30px;
   position: absolute;
   top: 40%;
@@ -5784,7 +5784,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .fp_single_item_slider.owl-carousel.owl-theme.owl-loaded .owl-next {
   background-color: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   right: -30px;
   position: absolute;
   top: 40%;
@@ -5833,7 +5833,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .properti_city.home6 .overlay .details h4 a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
@@ -6050,7 +6050,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .properti_city.home5 .overlay .details .left h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -6184,7 +6184,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
@@ -6219,7 +6219,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .search_smart_property p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   line-height: 1.875;
@@ -6234,7 +6234,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   border-radius: 8px;
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   height: 60px;
@@ -6729,7 +6729,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .icon_box_area .details h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -6766,7 +6766,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .education_distance h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -6912,7 +6912,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .sticky-nav-tabs-container li a {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -7253,7 +7253,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .our_hotoffer p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   line-height: 1.2;
@@ -7268,7 +7268,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-image: linear-gradient(148deg, rgb(253, 85, 89) 0%, rgb(255, 51, 125) 100%);
   box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   height: 40px;
@@ -7698,7 +7698,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .my_profile_setting_input label,
 .my_profile_setting_textarea label {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -7737,7 +7737,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #7FC7D9;
   font-weight: bold;
@@ -7760,7 +7760,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -7783,7 +7783,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -7812,7 +7812,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .admore_btn {
   border-radius: 8px;
   background-color: rgb(236, 236, 236);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -8188,7 +8188,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .footer_social_widget li a {
   color: #8a99b3;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "FontAwesome";
   line-height: 1.2;
   -webkit-transition: all 0.3s ease 0s;
@@ -8853,7 +8853,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 /*== About Page About Content ==*/
 .about_content p.large {
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 45px;
@@ -8955,7 +8955,7 @@ ul.ab_counting li:last-child {
 }
 
 .about_home3 h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -9427,7 +9427,7 @@ ul.ab_counting li:last-child {
 }
 
 .testimonial_item .details .small {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   line-height: 1.5;
 }
@@ -9684,7 +9684,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 
 .becomea_instructor_home3 p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .becomea_instructor_home3.style1 {
@@ -9834,7 +9834,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 }
 
 .blog_post.one .details .post_meta ul li a i {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 10px;
 }
 
@@ -10062,7 +10062,7 @@ li.slick-slide.slick-active:nth-child(8) img {
 }
 
 .blog_post_home6_date .post_grid .post_meta ul li a span {
-  font-size: 16px;
+  font-size: 15px;
   padding-right: 5px;
 }
 
@@ -10250,7 +10250,7 @@ ul.mc_parent_list ul.mc_child_list.three li,
 ul.mc_parent_list ul.mc_child_list.four li {
   border-bottom: 1px solid #ebebeb;
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   line-height: 3.333;
 }
@@ -10407,7 +10407,7 @@ a.btn.btn_error {
   border-radius: 8px;
   color: #ffffff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   height: 40px;
   line-height: 35px;
@@ -10505,7 +10505,7 @@ a.btn.btn_error {
   border: 2px solid var(--color-primary);
   border-radius: 8px;
   color: var(--color-primary);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 30px;
@@ -10657,7 +10657,7 @@ a.btn.btn_error {
 
 .login_form button i,
 .sign_up_form button i {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .login_form .form-control:focus,
@@ -10731,7 +10731,7 @@ a.btn.btn_error {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
   font-family: "Nunito";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   height: 40px;
   line-height: 1.2;
@@ -10790,7 +10790,7 @@ a.btn.btn_error {
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   height: 40px;
 }
@@ -10869,7 +10869,7 @@ a.btn.btn_error {
 
 .faq_according .panel-heading .panel-title {
   font-family: "Nunito";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 3;
 }
@@ -10906,7 +10906,7 @@ a.btn.btn_error {
 }
 
 .faq_according .accordion .card .btn-link {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -11249,7 +11249,7 @@ a.btn.btn_error {
 .ui_kit_radiobox label,
 legend {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 
@@ -12050,7 +12050,7 @@ legend span {
 
 .sidebar_recent_product .media .media-body .post_title,
 .sidebar_feature_listing .media .media-body .post_title {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -12069,7 +12069,7 @@ legend span {
 
 .sidebar_recent_product .media .media-body a,
 .sidebar_feature_listing .media .media-body a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #7FC7D9;
   font-weight: bold;
@@ -12391,7 +12391,7 @@ legend span {
 }
 
 .blog_recent_post_widget .media-body .post_title {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #212121;
   line-height: 1.5;
@@ -12462,7 +12462,7 @@ legend span {
 }
 
 .mbp_blockquote .blockquote span {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(187, 187, 187);
   font-style: italic;
@@ -12494,7 +12494,7 @@ legend span {
 }
 
 .blog_post_share li:first-child a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -12585,7 +12585,7 @@ legend span {
 .mbp_pagination_tab .pag_prev .detls,
 .mbp_pagination_tab .pag_next .detls {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   line-height: 1.75;
@@ -12594,7 +12594,7 @@ legend span {
 
 .mbp_pagination_tab .pag_prev .detls h5,
 .mbp_pagination_tab .pag_next .detls h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.5;
@@ -12676,7 +12676,7 @@ legend span {
 
 .mbp_pagination_comments .mbp_first .media-body .sub_title {
   display: flex;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -12740,7 +12740,7 @@ legend span {
 
 .mbp_comment_form .comments_form button.btn {
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 15px;
   height: 55px;
   margin-top: 10px;
 }
@@ -12756,7 +12756,7 @@ legend span {
 
 .our-dashbord.dashbord {
   padding-top: 145px;
-  padding-left: 295px;
+  padding-left: 235px;
 }
 
 .our-dashbord.dashbord .container-fluid {
@@ -12843,7 +12843,7 @@ legend span {
 
 .dashbord_nav_list li a {
   color: #7f7f7f;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .dashbord_nav_list li:hover a,
@@ -12881,6 +12881,10 @@ legend span {
   border: 1px solid rgb(235, 235, 235);
   border-radius: 8px;
   padding: 30px;
+}
+
+.my_dashboard_review.table-container {
+  padding: 0px;
 }
 
 .my_dashboard_review .review_content .review_title {
@@ -12927,7 +12931,7 @@ legend span {
 .property_table .table .thead-light th {
   background-color: rgb(36, 50, 74);
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
@@ -12940,7 +12944,7 @@ legend span {
 .savesearched_table .table th,
 .property_table .table td,
 .property_table .table th {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: 600;
@@ -12967,7 +12971,7 @@ legend span {
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
@@ -13250,7 +13254,7 @@ legend span {
 }
 
 .user_setting .dropdown-menu .user_set_header p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   line-height: 1.2;
@@ -13268,7 +13272,7 @@ legend span {
 
 .user_setting .dropdown-menu .user_setting_content a {
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   line-height: 2.125 !important;
   padding-left: 0;
@@ -13696,7 +13700,7 @@ legend span {
 }
 
 .sl_creator .media-body h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(72, 72, 72);
   font-weight: bold;
@@ -13990,7 +13994,7 @@ legend span {
 }
 
 .inbox_user_list .wrap .meta h5.name {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -14116,7 +14120,7 @@ legend span {
 }
 
 .message_container .user_heading .wrap h5.name {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(10, 10, 10);
   line-height: 1.2;
@@ -14242,7 +14246,7 @@ legend span {
   border: 1px solid #ffffff;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   flex: 1;
   height: 40px;
   position: absolute;
@@ -14345,7 +14349,7 @@ legend span {
 }
 
 .ff_one .detais p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(119, 119, 119);
   margin-bottom: 0;
@@ -14595,7 +14599,7 @@ legend span {
 }
 
 .sidebar-menu .title {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(96, 112, 140);
   line-height: 1.5;
@@ -14624,7 +14628,7 @@ legend span {
 }
 
 .siderbar_contact_widget .scw_social_icon li a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "FontAwesome";
   color: rgb(126, 126, 126);
   line-height: 1.2;
@@ -14813,7 +14817,7 @@ legend span {
   border-radius: 8px;
   background-color: rgb(29, 41, 62);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -14915,7 +14919,7 @@ legend span {
   color: #ffffff;
   cursor: pointer;
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   height: 40px;
   line-height: 40px;
@@ -15237,7 +15241,7 @@ legend span {
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #ffffff;
   font-weight: bold;
@@ -15273,7 +15277,7 @@ legend span {
 }
 
 .contact_localtion .content_list h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -16080,7 +16084,7 @@ legend span {
 }
 
 .fz16 {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .fz17 {
@@ -17456,7 +17460,7 @@ section {
 }
 
 .main-title p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: rgb(119, 119, 119);
   line-height: 1.2;
@@ -18100,7 +18104,7 @@ canvas {
 }
 
 .tags-bar .action-tags a i {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #accordion .panel {
@@ -18260,7 +18264,7 @@ canvas {
   border-radius: 8px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   height: 40px;
@@ -18454,7 +18458,7 @@ canvas {
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
@@ -18591,7 +18595,7 @@ canvas {
 }
 
 .checkout_form .checkout_coupon form label {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -18629,7 +18633,7 @@ canvas {
   -moz-box-shadow: 0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   -o-box-shadow: 0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(62, 76, 102, 0.3);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   height: 40px;
@@ -18656,7 +18660,7 @@ canvas {
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
@@ -18704,7 +18708,7 @@ canvas {
 }
 
 .checkout_form .checkout_coupon .form2 p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -18738,7 +18742,7 @@ canvas {
 
 .order_sidebar_widget .subtitle p {
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
 }
@@ -18746,7 +18750,7 @@ canvas {
 .order_sidebar_widget .subtitle span,
 .order_sidebar_widget .subtitle .totals {
   color: var(--color-primary);
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
 }
 
@@ -18829,7 +18833,7 @@ canvas {
   background-color: #f7f7f7;
   border: none;
   color: #484848;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 2.2;
@@ -18922,7 +18926,7 @@ canvas {
   border: none;
   border-radius: 8px;
   background-color: #efefef;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -19057,7 +19061,7 @@ canvas {
   background-color: #efefef;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -19086,7 +19090,7 @@ canvas {
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;
@@ -19121,7 +19125,7 @@ canvas {
 }
 
 .shop_single_product_details .sspd_social_icon li a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "FontAwesome";
   color: #b6b9c7;
   line-height: 1.2;
@@ -19223,7 +19227,7 @@ canvas {
 }
 
 .shop_single_tab_content.style3 .nav-tabs .nav-link {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -19409,7 +19413,7 @@ ul.total_reivew_view .star_list li:last-child a {
   -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   height: 40px;
@@ -19531,7 +19535,7 @@ button.gm-ui-hover-effect:focus {
 }
 
 .gm-style-iw-d h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   color: #484848;
   font-weight: bold;
@@ -19553,7 +19557,7 @@ button.gm-ui-hover-effect:focus {
 #slider-range-value1,
 #slider-range-value2 {
   color: #006c70;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: bold;
   line-height: 1.2;

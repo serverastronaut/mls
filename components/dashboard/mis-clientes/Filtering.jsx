@@ -1,9 +1,9 @@
 const Filtering = () => {
   return (
     <select className="selectpicker show-tick form-select c_select">
-      <option>Mis propiedades</option>
-      <option>De la red</option>
-      <option>Compartidas conmigo</option>
+      <option>Desacados</option>
+      <option>Recientes</option>
+      <option>Anteriores</option>
     </select>
   );
 };

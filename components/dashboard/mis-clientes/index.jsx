@@ -52,8 +52,8 @@ const index = () => {
 
                 <div className="col-lg-4 col-xl-4 mb10">
                   <div className="breadcrumb_content style2 mb30-991">
-                    <h2 className="breadcrumb_title">Mis propiedades</h2>
-                    <p>Utiliza los filtros para encontrar la propiedad que buscas.</p>
+                    <h2 className="breadcrumb_title">Mis clientes</h2>
+                    <p>We are glad to see you again!</p>
                   </div>
                 </div>
                 {/* End .col */}

@@ -13,7 +13,7 @@ const SidebarMenu = () => {
   const pathname = usePathname()
 
   const myProperties = [
-    { id: 1, name: "Agregar propiedad", route: "/create-listing" },    
+    { id: 1, name: "Agregar propiedad", route: "/create-listing", icon: "flaticon-user" },    
     { id: 2, name: "Mis propiedades", route: "/my-properties" },
     { id: 3, name: "Propiedades de la red", route: "/my-properties" },
     { id: 4, name: "Compartidas conmigo", route: "/my-properties" },
@@ -91,7 +91,14 @@ const SidebarMenu = () => {
                 <span> Bienvenido</span>
               </Link>
             </li>
-            {/*<li
+          </ul>
+        </li>
+        {/* End Main */}
+
+        <li className="title">
+          <span>Gestión propiedades</span>
+          <ul>
+            <li
               className={`treeview ${
                 isSinglePageActive("/create-listing", pathname)
                   ? "active"
@@ -102,46 +109,63 @@ const SidebarMenu = () => {
                 <i className="flaticon-plus"></i>
                 <span> Agregar propiedad</span>
               </Link>
-            </li>*/}
-            {/*<li
-              className={`treeview ${
-                isSinglePageActive("/my-message", pathname)
-                  ? "active"
-                  : ""
-              }`}
-            >
-              <Link href="/my-review">
-                <i className="flaticon-chat"></i>
-                <span> Mensajes clientes</span>
-              </Link>
-            </li>*/}
-          </ul>
-        </li>
-        {/* End Main */}
 
-        <li className="title">
-          <span>Gestión propiedades</span>
-          <ul>
-            <li
-              className={`treeview ${
-                isParentPageActive(myProperties, pathname) ? "active" : ""
-              }`}
-            >
-              <a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>Propiedades</span>
+              {/*<a data-bs-toggle="collapse" href="#my-property">
+                <i className="flaticon-home"></i> <span>Mis propiedades</span>
                 <i className="fa fa-angle-down pull-right"></i>
               </a>
               <ul className="treeview-menu collapse" id="my-property">
                 {myProperties.map((item) => (
                   <li key={item.id}>
                     <Link href={item.route}>
-                      {/*<i className="fa fa-circle"></i>*/} {item.name}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul>*/}
             </li>
+
+            <li
+              className={`treeview ${
+                isSinglePageActive("/my-properties", pathname)
+                  ? "active"
+                  : ""
+              }`}
+            >
+              <Link href="/my-properties">
+                <i className="flaticon-home"></i>
+                <span> Mis propiedades</span>
+              </Link>
+            </li>
+
+            <li
+              className={`treeview ${
+                isSinglePageActive("/my-properties", pathname)
+                  ? "active"
+                  : ""
+              }`}
+            >
+              <Link href="/my-properties2">
+                <i className="flaticon-house"></i>
+                <span> De la red</span>
+              </Link>
+            </li>
+
+            <li
+              className={`treeview ${
+                isSinglePageActive("/my-properties", pathname)
+                  ? "active"
+                  : ""
+              }`}
+            >
+              <Link href="/my-properties3">
+                <i className="flaticon-share"></i>
+                <span> Compartidas conmigo</span>
+              </Link>
+            </li>
+
             {/* end properties */}
+
 
             <li
               className={`treeview ${
@@ -157,7 +181,7 @@ const SidebarMenu = () => {
                 {reviews.map((item) => (
                   <li key={item.id}>
                     <Link href={item.route}>
-                      {/*<i className="fa fa-circle"></i>*/} {item.name}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -165,30 +189,6 @@ const SidebarMenu = () => {
             </li>
             {/* End Review */}
 
-            {/*<li
-              className={`treeview ${
-                isSinglePageActive("/my-favourites", pathname)
-                  ? "active"
-                  : ""
-              }`}
-            >
-              <Link href="/my-favourites">
-                <i className="flaticon-magnifying-glass"></i>
-                <span> My Favorites</span>
-              </Link>
-            </li>
-            <li
-              className={`treeview ${
-                isSinglePageActive("/my-saved-search", pathname)
-                  ? "active"
-                  : ""
-              }`}
-            >
-              <Link href="/my-saved-search">
-                <i className="flaticon-magnifying-glass"></i>
-                <span> Saved Search</span>
-              </Link>
-            </li>*/}
           </ul>
         </li>
         {/* End manage listing */}

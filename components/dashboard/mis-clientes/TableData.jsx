@@ -5,7 +5,8 @@ const TableData = () => {
   let theadConent = [
     "Título",
     "Fecha pubicación",
-    "Estado",
+    "Status",
+    "View",
     "Acción",
   ];
   let tbodyContent = properties?.slice(0, 4)?.map((item) => (
@@ -53,25 +54,16 @@ const TableData = () => {
       </td>
       {/* End td */}
 
+      <td>2,345</td>
+      {/* End td */}
+
       <td>
         <ul className="view_edit_delete_list mb0">
           <li
             className="list-inline-item"
             data-toggle="tooltip"
             data-placement="top"
-            title="Editar"
-          >
-            <a href="#">
-              <span className="flaticon-view"></span>
-            </a>
-          </li>
-          {/* End li */}
-
-          <li
-            className="list-inline-item"
-            data-toggle="tooltip"
-            data-placement="top"
-            title="Editar"
+            title="Edit"
           >
             <a href="#">
               <span className="flaticon-edit"></span>
