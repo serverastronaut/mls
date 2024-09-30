@@ -1,5 +1,6 @@
 import Image from "next/image";
 import properties from "../../../data/properties";
+import Link from "next/link";
 
 const TableData = () => {
   let theadConent = [
@@ -59,11 +60,11 @@ const TableData = () => {
             className="list-inline-item"
             data-toggle="tooltip"
             data-placement="top"
-            title="Editar"
+            title="Ver"
           >
-            <a href="#">
+            <Link href="/my-properties/propiedad-detalles">
               <span className="flaticon-view"></span>
-            </a>
+            </Link>
           </li>
           {/* End li */}
 
@@ -73,9 +74,9 @@ const TableData = () => {
             data-placement="top"
             title="Editar"
           >
-            <a href="#">
+            <Link href="/update-listing">
               <span className="flaticon-edit"></span>
-            </a>
+            </Link>
           </li>
           {/* End li */}
 

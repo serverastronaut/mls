@@ -6,38 +6,6 @@ const MisGruposLista = () => {
     {
       id: 1,
       img: "/assets/images/resource/review.png",
-      ratings: (
-        <>
-          {" "}
-          <ul>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-          </ul>
-        </>
-      ),
       reviewOn: "Villa called Archangel",
       text: `Beautiful home, very picturesque and close to everything in jtree! A
       little warm for a hot weekend, but would love to come back during
@@ -49,38 +17,6 @@ const MisGruposLista = () => {
     {
       id: 2,
       img: "/assets/images/resource/review4.png",
-      ratings: (
-        <>
-          {" "}
-          <ul>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a href="#">
-                <i className="fa fa-star"></i>
-              </a>
-            </li>
-          </ul>
-        </>
-      ),
       reviewOn: "Sunset Studio",
       text: `Beautiful home, very picturesque and close to everything in jtree! A
       little warm for a hot weekend, but would love to come back during
@@ -104,7 +40,7 @@ const MisGruposLista = () => {
           <div className="media-body">
             <h5 className="review_title mt-0">
               {/*Your review on*/}{" "}
-              <Link href="/agency-details/1">
+              <Link href="/mis-grupos/grupo-detalles/">
                 <span className="text-thm">{item.reviewOn}</span>
               </Link>
               <span className="sspd_review float-end">{item.ratings}</span>
@@ -119,11 +55,11 @@ const MisGruposLista = () => {
                 className="list-inline-item"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Edit"
+                title="Editar"
               >
-                <a href="#">
+                <Link href="/editar-grupo">
                   <span className="flaticon-edit"></span>
-                </a>
+                </Link>
               </li>
               {/* End edit */}
 

@@ -7,7 +7,7 @@ import SidebarMenu from "../../components/common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../components/common/header/MobileMenu";
 //import PopupSignInUp from "../../components/common/PopupSignInUp";
 import BreadCrumb2 from "./BreadCrumb2";
-import SidebarListings from "./SidebarListings";
+import SidebarGrupo from "./SidebarGrupo";
 import TabDetailsContent from "./TabDetailsContent";
 
 const index = () => {
@@ -131,7 +131,7 @@ const index = () => {
             {/* End .col-md-12 col-lg-8 content left side */}
 
             <div className="col-lg-4 col-xl-4">
-              <SidebarListings />
+              <SidebarGrupo />
             </div>
             {/* End .col-lg-4 col-xl-4 content left side */}
 

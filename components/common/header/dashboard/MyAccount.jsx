@@ -8,11 +8,11 @@ import { usePathname } from "next/navigation";
 const MyAccount = () => {
   const pathname = usePathname()
   const profileMenuItems = [
-    { id: 1, name: "My Profile", ruterPath: "/my-profile" },
-    { id: 2, name: " My Message", ruterPath: "/my-message" },
-    { id: 3, name: " My Favourite", ruterPath: "/my-favourites" },
-    { id: 4, name: " My Package", ruterPath: "/my-package" },
-    { id: 5, name: " Log out", ruterPath: "/login" },
+    { id: 1, name: "Mis propiedades", ruterPath: "/my-properties" },
+    { id: 2, name: " Mis grupos", ruterPath: "/mis-grupos" },
+    { id: 3, name: " Mis clientes", ruterPath: "/mis-clentes" },
+    { id: 4, name: " Mensajes", ruterPath: "/my-review" },
+    { id: 5, name: " Cerrar sesión", ruterPath: "/login" },
   ];
 
   return (
@@ -26,7 +26,7 @@ const MyAccount = () => {
           alt="e1.png"
         />
         <p>
-          Ali Tufan <br />
+          Martin Perez <br />
           <span className="address">alitufan@gmail.com</span>
         </p>
       </div>

@@ -260,7 +260,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               src="/assets/images/team/e1.png"
               alt="e1.png"
             />
-            <span className="dn-1199 ms-1">Ali Tufan</span>
+            <span className="dn-1199 ms-1">Martin Perez</span>
           </a>
           <div className="dropdown-menu">
             <MyAccount />
@@ -268,12 +268,12 @@ const HeaderMenuContent = ({ float = "" }) => {
         </div>
       </li>
 
-      <li className={`list-inline-item add_listing ${float}`}>
+      {/*<li className={`list-inline-item add_listing ${float}`}>
         <Link href="/create-listing">
           <span className="flaticon-plus"></span>
           <span className="dn-lg"> Nueva propiedad</span>
         </Link>
-      </li>
+      </li>*/}
     </ul>
   );
 };

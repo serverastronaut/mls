@@ -19,8 +19,8 @@ const SidebarMenu = () => {
     { id: 4, name: "Compartidas conmigo", route: "/my-properties" },
   ];
   const reviews = [
-    { id: 1, name: "Mis grupos", route: "/my-review" },
-    { id: 2, name: "Crear nuevo grupo", route: "/my-review" },
+    { id: 1, name: "Mis grupos", route: "/mis-grupos" },
+    { id: 2, name: "Crear nuevo grupo", route: "/crear-grupo" },
   ];
 
   const myClients = [
@@ -145,7 +145,7 @@ const SidebarMenu = () => {
                   : ""
               }`}
             >
-              <Link href="/my-properties2">
+              <Link href="/my-properties">
                 <i className="flaticon-house"></i>
                 <span> De la red</span>
               </Link>
@@ -158,7 +158,7 @@ const SidebarMenu = () => {
                   : ""
               }`}
             >
-              <Link href="/my-properties3">
+              <Link href="/my-properties">
                 <i className="flaticon-share"></i>
                 <span> Compartidas conmigo</span>
               </Link>
