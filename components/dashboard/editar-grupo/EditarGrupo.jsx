@@ -23,7 +23,7 @@ const CreateList = () => {
 
       <div className="col-lg-6 col-xl-6">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Tipo</label>
+          <label>Lorem ipsum</label>
           <select
             className="selectpicker form-select"
             data-live-search="true"
@@ -41,7 +41,7 @@ const CreateList = () => {
 
       <div className="col-lg-6 col-xl-6">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Estado</label>
+          <label>Lorem ipsum</label>
           <select
             className="selectpicker form-select"
             data-live-search="true"
@@ -59,7 +59,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Precio</label>
+          <label htmlFor="formGroupExamplePrice">Lorem ipsum</label>
           <input
             type="number"
             className="form-control"
@@ -71,7 +71,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExampleArea">Superficie</label>
+          <label htmlFor="formGroupExampleArea">Lorem ipsum</label>
           <input
             type="text"
             className="form-control"
@@ -83,7 +83,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Dormitorios</label>
+          <label>Lorem ipsum</label>
           <select
             className="selectpicker form-select"
             data-live-search="true"

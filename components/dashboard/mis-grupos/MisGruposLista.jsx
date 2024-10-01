@@ -6,24 +6,18 @@ const MisGruposLista = () => {
     {
       id: 1,
       img: "/assets/images/resource/review.png",
-      reviewOn: "Villa called Archangel",
+      reviewOn: "Grupo Lorem Ipsum",
       text: `Beautiful home, very picturesque and close to everything in jtree! A
       little warm for a hot weekend, but would love to come back during
-      the cooler seasons! Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Accusantium voluptates eum, velit recusandae,
-      ducimus earum aperiam commodi error officia optio aut et quae nam
-      nostrum!`,
+      the cooler seasons!`,
     },
     {
       id: 2,
       img: "/assets/images/resource/review4.png",
-      reviewOn: "Sunset Studio",
+      reviewOn: "Grupo de pruebas",
       text: `Beautiful home, very picturesque and close to everything in jtree! A
       little warm for a hot weekend, but would love to come back during
-      the cooler seasons! Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Accusantium voluptates eum, velit recusandae,
-      ducimus earum aperiam commodi error officia optio aut et quae nam
-      nostrum!`,
+      the cooler seasons!`,
     },
   ];
   return (
@@ -51,6 +45,18 @@ const MisGruposLista = () => {
             <p className="para">{item.text}</p>
 
             <ul className="view_edit_delete_list mb0 mt35">
+              <li
+                className="list-inline-item"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Ver"
+              >
+                <Link href="/grupo-detalles">
+                  <span className="flaticon-view"></span>
+                </Link>
+              </li>
+              {/* End edit */}
+
               <li
                 className="list-inline-item"
                 data-toggle="tooltip"

@@ -46,7 +46,8 @@ const index = () => {
                 {/* End .col-12 */}
 
                 <div className="col-lg-12">
-                  <div className="feat_property list agency">
+
+                  {/*<div className="feat_property list agency">
                     <div className="thumb">
                       <Image
                         width={265}
@@ -118,7 +119,7 @@ const index = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>*/}
                   {/* End .feat_property */}
 
                   <div className="shop_single_tab_content style2 mt30">
