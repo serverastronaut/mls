@@ -54,7 +54,7 @@ const SidebarMenu = () => {
     {
       id: 4,
       name: "Agregar usuario (owner)",
-      route: "/my-profile",
+      route: "/crear-usuario",
       icon: "flaticon-plus",
     },
     { id: 4, name: "Cerrar sesión", route: "/login", icon: "flaticon-logout" },

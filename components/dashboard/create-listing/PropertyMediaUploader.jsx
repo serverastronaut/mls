@@ -29,6 +29,20 @@ const PropertyMediaUploader = () => {
 
   return (
     <div className="row">
+      <div className="col-lg-6 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="videoUrl">URL Video</label>
+          <input type="text" className="form-control" id="videoUrl" />
+        </div>
+      </div>
+
+      <div className="col-lg-6 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="virtualTour">Tour Virtual 360° </label>
+          <input type="text" className="form-control" id="virtualTour" />
+        </div>
+      </div>
+
       <div className="col-lg-12">
         <ul className="mb-0">
           {propertySelectedImgs.length > 0

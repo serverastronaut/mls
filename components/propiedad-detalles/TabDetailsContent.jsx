@@ -69,6 +69,20 @@ const TabDetailsContent = () => {
           <a
             className="nav-link"
             data-bs-toggle="tab"
+            href="#"
+            role="tab"
+            aria-controls="review"
+            aria-selected="false"
+          >
+            Archivos
+          </a>
+        </li>
+        {/* End Reviews tab */}
+
+        <li className="nav-item">
+          <a
+            className="nav-link"
+            data-bs-toggle="tab"
             href="#review"
             role="tab"
             aria-controls="review"

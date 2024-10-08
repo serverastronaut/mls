@@ -40,7 +40,7 @@ const MisGruposLista = () => {
               <span className="sspd_review float-end">{item.ratings}</span>
             </h5>
             <a className="review_date" href="#">
-              Diciembre 28, 2020
+              Creado 28/01/2020 (act. 10/09/2024)
             </a>
             <p className="para">{item.text}</p>
 

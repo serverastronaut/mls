@@ -1,9 +1,11 @@
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import ChangePassword from "./ChangePassword";
-import ProfileInfo from "./ProfileInfo";
-import SocialMedia from "./SocialMedia";
+import CreateList from "./CreateList";
+//import DetailedInfo from "./DetailedInfo";
+//import FloorPlans from "./FloorPlans";
+//import LocationField from "./LocationField";
+//import PropertyMediaUploader from "./PropertyMediaUploader";
 
 const index = () => {
   return (
@@ -51,8 +53,8 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Mi cuenta</h2>
-                    <p>Desde aquí puedes gestionar tu perfil</p>
+                    <h2 className="breadcrumb_title">Crear usuario</h2>
+                    <p>Ingrese los datos del nuevo usuario</p>
                   </div>
                 </div>
                 {/* End .col */}
@@ -60,46 +62,22 @@ const index = () => {
                 <div className="col-lg-12">
                   <div className="my_dashboard_review">
                     <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Información personal</h4>
+                      <div className="col-lg-12">
+                        <h3 className="mb30">Nuevo usuario</h3>
                       </div>
-                      <div className="col-xl-10">
-                        <ProfileInfo />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End prifle info wrapper end */}
 
-                  {/*<div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Redes sociales</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <SocialMedia />
-                      </div>
-                    </div>
-                  </div>*/}
-                  {/* End .SocialMedia */}
-
-                  <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Cambiar contraseña</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <ChangePassword />
-                      </div>
+                      <CreateList />
                     </div>
                   </div>
                 </div>
+                {/* End .col */}
               </div>
               {/* End .row */}
 
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">
-                    <p>© 2024 MLS Propiedades.</p>
+                    <p>© 2024 MLS Propiedades</p>
                   </div>
                 </div>
               </div>

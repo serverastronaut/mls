@@ -12,7 +12,7 @@ const ProfileInfo = () => {
 
     return (
         <div className="row">
-            <div className="col-lg-12">
+            {/*<div className="col-lg-12">
                 <div className="wrap-custom-file">
                     <input
                         type="file"
@@ -38,33 +38,7 @@ const ProfileInfo = () => {
                     </label>
                 </div>
                 <p>*mínimo 260px x 260px</p>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput1">Nombre de usuario</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput1"
-                        placeholder="alitfn"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleEmail">Email</label>
-                    <input
-                        type="email"
-                        className="form-control"
-                        id="formGroupExampleEmail"
-                        placeholder="creativelayers@gmail.com"
-                    />
-                </div>
-            </div>
+            </div>*/}
             {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
@@ -93,43 +67,19 @@ const ProfileInfo = () => {
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput5">Posición</label>
+                    <label htmlFor="formGroupExampleEmail">Email</label>
                     <input
-                        type="text"
+                        type="email"
                         className="form-control"
-                        id="formGroupExampleInput5"
+                        id="formGroupExampleEmail"
+                        placeholder="creativelayers@gmail.com"
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput6">Licencia</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput6"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput7">CUIT</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput7"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput8">Teléfono fijo</label>
+                    <label htmlFor="formGroupExampleInput8">Teléfono</label>
                     <input
                         type="text"
                         className="form-control"
@@ -137,19 +87,17 @@ const ProfileInfo = () => {
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput9">Celular</label>
+                    <label htmlFor="formGroupExampleInput6">Fecha de nacimiento</label>
                     <input
-                        type="text"
+                        type="date"
                         className="form-control"
-                        id="formGroupExampleInput9"
+                        id="formGroupExampleInput6"
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             {/*<div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">

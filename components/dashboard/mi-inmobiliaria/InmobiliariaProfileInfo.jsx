@@ -33,7 +33,7 @@ const ProfileInfo = () => {
                         htmlFor="image1"
                     >
                         <span>
-                            <i className="flaticon-download"></i> Subir foto{" "}
+                            <i className="flaticon-download"></i> Subir logo{" "}
                         </span>
                     </label>
                 </div>
@@ -43,7 +43,7 @@ const ProfileInfo = () => {
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput1">Nombre de usuario</label>
+                    <label htmlFor="formGroupExampleInput1">Nombre</label>
                     <input
                         type="text"
                         className="form-control"
@@ -52,7 +52,74 @@ const ProfileInfo = () => {
                     />
                 </div>
             </div>
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput1">Titular</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput1"
+                        placeholder="alitfn"
+                    />
+                </div>
+            </div>
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput3">Tomo</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput3"
+                    />
+                </div>
+            </div>
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput4">Folio</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput4"
+                    />
+                </div>
+            </div>
             {/* End .col */}
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput5">Matrícula</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput5"
+                    />
+                </div>
+            </div>
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput6">Colegio</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput6"
+                    />
+                </div>
+            </div>
+
+            <div className="col-lg-6 col-xl-6">
+                <div className="my_profile_setting_input form-group">
+                    <label htmlFor="formGroupExampleInput6">Zona influencia</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="formGroupExampleInput6"
+                    />
+                </div>
+            </div>
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
@@ -65,71 +132,10 @@ const ProfileInfo = () => {
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput3">Nombre</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput3"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput4">Apellido</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput4"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput5">Posición</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput5"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput6">Licencia</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput6"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput7">CUIT</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput7"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput8">Teléfono fijo</label>
+                    <label htmlFor="formGroupExampleInput8">Teléfono</label>
                     <input
                         type="text"
                         className="form-control"
@@ -137,19 +143,6 @@ const ProfileInfo = () => {
                     />
                 </div>
             </div>
-            {/* End .col */}
-
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput9">Celular</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput9"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
 
             {/*<div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
@@ -175,20 +168,6 @@ const ProfileInfo = () => {
             </div>*/}
             {/* End .col */}
 
-            <div className="col-lg-6 col-xl-6">
-                <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput12">
-                        Inmobiliaria
-                    </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="formGroupExampleInput12"
-                    />
-                </div>
-            </div>
-            {/* End .col */}
-
             {/*<div className="col-xl-12">
                 <div className="my_profile_setting_input form-group">
                     <label htmlFor="formGroupExampleInput13">Dirección</label>
@@ -201,7 +180,7 @@ const ProfileInfo = () => {
             </div>*/}
             {/* End .col */}
 
-            <div className="col-xl-12">
+            {/*<div className="col-xl-12">
                 <div className="my_profile_setting_textarea">
                     <label htmlFor="exampleFormControlTextarea1">
                         Sobre mí
@@ -212,7 +191,7 @@ const ProfileInfo = () => {
                         rows="7"
                     ></textarea>
                 </div>
-            </div>
+            </div>*/}
             {/* End .col */}
 
             <div className="col-xl-12 text-right">

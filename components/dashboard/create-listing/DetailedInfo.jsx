@@ -3,77 +3,59 @@ import CheckBoxFilter from "../../common/CheckBoxFilter";
 const DetailedInfo = () => {
   return (
     <div className="row">
-      <div className="col-lg-6 col-xl-4">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyId">ID</label>
+          <label htmlFor="propertyId">Tokko Id</label>
           <input type="text" className="form-control" id="propertyId" />
         </div>
       </div>
       {/* End .col */}
 
-      <div className="col-lg-6 col-xl-4">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyASize">Superficie</label>
+          <label htmlFor="propertyASize">Dormitorios</label>
           <input type="text" className="form-control" id="propertyASize" />
         </div>
       </div>
       {/* End .col */}
 
-      {/*<div className="col-lg-6 col-xl-4">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="sizePrefix">Size Prefix</label>
-          <input type="text" className="form-control" id="sizePrefix" />
-        </div>
-      </div>*/}
-      {/* End .col */}
-
-      <div className="col-lg-6 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="landArea">Sup. cubierta</label>
+          <label htmlFor="landArea">Ambientes</label>
           <input type="text" className="form-control" id="landArea" />
         </div>
       </div>
       {/* End .col */}
 
-      {/*<div className="col-lg-6 col-xl-4">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="LASPostfix">Land Area Size Postfix</label>
-          <input type="text" className="form-control" id="LASPostfix" />
-        </div>
-      </div>*/}
-      {/* End .col */}
-
-      <div className="col-lg-6 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="bedRooms">Dormitorios</label>
+          <label htmlFor="bedRooms">Cocheras</label>
           <input type="text" className="form-control" id="bedRooms" />
         </div>
       </div>
       {/* End .col */}
 
-      <div className="col-lg-6 col-xl-4">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
           <label htmlFor="bathRooms">Baños</label>
           <input type="text" className="form-control" id="bathRooms" />
         </div>
       </div>
-      {/* End .col */}
 
-      <div className="col-lg-6 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="garages">Cocheras</label>
-          <input type="text" className="form-control" id="garages" />
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input ui_kit_select_search form-group">
+          <label>Antiguedad</label>
+          <select
+            className="selectpicker form-select"
+            data-live-search="true"
+            data-width="100%"
+          >
+            <option data-tokens="type1">A estrenar</option>
+            <option data-tokens="Type2">E construcción</option>            
+            <option data-tokens="Type3">Años antiguedad</option>
+          </select>
         </div>
       </div>
-      {/* End .col */}
-
-      {/*<div className="col-lg-6 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="garagesSize">Tamaño cochera</label>
-          <input type="text" className="form-control" id="garagesSize" />
-        </div>
-      </div>*/}
-      {/* End .col */}
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -85,21 +67,110 @@ const DetailedInfo = () => {
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="videoUrl">URL Video</label>
-          <input type="text" className="form-control" id="videoUrl" />
+          <label htmlFor="yearBuild">Mejoras</label>
+          <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
       {/* End .col */}
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="virtualTour">Tour Virtual 360° </label>
-          <input type="text" className="form-control" id="virtualTour" />
+          <label htmlFor="yearBuild">Transporte</label>
+          <input type="text" className="form-control" id="yearBuild" />
+        </div>
+      </div>
+      {/* End .col */}
+
+      <div className="col-lg-6 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="yearBuild">Pisos</label>
+          <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
 
-      <div className="col-xl-12">
-        <h4 className="mb10">Amenities</h4>
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input ui_kit_select_search form-group">
+          <label>Techo</label>
+          <select
+            className="selectpicker form-select"
+            data-live-search="true"
+            data-width="100%"
+          >
+            <option data-tokens="type1">Teja</option>
+            <option data-tokens="Type2">Loza</option>            
+            <option data-tokens="Type3">Chapa</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input ui_kit_select_search form-group">
+          <label>Estado emprendimiento</label>
+          <select
+            className="selectpicker form-select"
+            data-live-search="true"
+            data-width="100%"
+          >
+            <option data-tokens="type1">En construcción</option>
+            <option data-tokens="Type2">En pozo</option>            
+            <option data-tokens="Type3">Terminado</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="col-lg-6 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="yearBuild">Fecha entrega</label>
+          <input type="text" className="form-control" id="yearBuild" />
+        </div>
+      </div>
+      {/* End .col */}
+
+
+      <div className="col-xl-12 mt-1">
+        <h4 className="mb10">Ambientes</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Seguridad</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Comodidades y equipamiento</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Condiciones especiales</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Condiciones esp. lotes y campos</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Aptitudes</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Servicios</h4>
+      </div>
+
+      <CheckBoxFilter />
+
+      <div className="col-xl-12 mt-3">
+        <h4 className="mb10">Servicios en desarrollo</h4>
       </div>
 
       <CheckBoxFilter />

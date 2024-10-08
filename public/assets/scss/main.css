@@ -945,6 +945,23 @@ ul.sign_up_btn.home7 a {
   outline: none;
 }
 
+.breadcrumb_content .buttons_bar .btn_group button {
+  background-color: #ffffff;
+  margin: 3px;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.breadcrumb_content .buttons_bar .btn_group button:hover {
+  border: 1px solid rgb(185, 185, 185);
+  color: var(--bs-btn-color);
+}
+
+.breadcrumb_content .buttons_bar .btn_group button.active {
+  border: 1px solid rgb(185, 185, 185);
+  font-weight : 600;
+  color: var(--bs-btn-color);
+}
+
 .ht_left_widget,
 .ht_right_widget {
   margin-top: 19px;
@@ -5263,10 +5280,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .thumb .thmb_cntnt,
 .properti_city.home6 .thumb .thmb_cntnt {
   bottom: 0;
-  left: 10px;
+  left: 2px;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 0px;
 }
 
 .feat_property .thumb .thmb_cntnt ul.tag,
@@ -12755,7 +12772,7 @@ legend span {
 }
 
 .our-dashbord.dashbord {
-  padding-top: 145px;
+  padding-top: 100px;
   padding-left: 235px;
 }
 

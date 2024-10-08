@@ -97,7 +97,7 @@ const CheckBoxFilter = () => {
 
       <div className="col-xs-6 col-sm col-lg col-xl">
         <ul className="ui_kit_checkbox selectable-list">
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -108,10 +108,10 @@ const CheckBoxFilter = () => {
                 Dryer
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
 
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -122,10 +122,10 @@ const CheckBoxFilter = () => {
                 Outdoor Shower
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
 
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -136,7 +136,7 @@ const CheckBoxFilter = () => {
                 Washer
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
         </ul>
       </div>
@@ -158,7 +158,7 @@ const CheckBoxFilter = () => {
           </li>
           {/* End li */}
 
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -169,7 +169,7 @@ const CheckBoxFilter = () => {
                 Refrigerator
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
 
           <li>
@@ -205,7 +205,7 @@ const CheckBoxFilter = () => {
           </li>
           {/* End li */}
 
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -216,10 +216,10 @@ const CheckBoxFilter = () => {
                 Sauna
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
 
-          {/*<li>
+          <li>
             <div className="form-check custom-checkbox">
               <input
                 type="checkbox"
@@ -230,7 +230,7 @@ const CheckBoxFilter = () => {
                 Window Coverings
               </label>
             </div>
-          </li>*/}
+          </li>
           {/* End li */}
         </ul>
       </div>

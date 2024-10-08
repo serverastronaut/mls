@@ -1,29 +1,37 @@
 const LocationField = () => {
   return (
     <>
-      <div className="col-lg-12">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyAddress">Dirección</label>
-          <input type="text" className="form-control" id="propertyAddress" />
+          <label htmlFor="calle">Calle</label>
+          <input type="text" className="form-control" id="calle" />
         </div>
       </div>
-      {/* End .col */}
-
-      <div className="col-lg-6 col-xl-6">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyState">Estado</label>
-          <input type="text" className="form-control" id="propertyState" />
+          <label htmlFor="altura">Altura</label>
+          <input type="text" className="form-control" id="altura" />
         </div>
       </div>
-      {/* End .col */}
-
-      <div className="col-lg-6 col-xl-6">
+      <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="propertyCity">Ciudad</label>
+          <label htmlFor="piso">Piso</label>
+          <input type="text" className="form-control" id="piso" />
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="departamento">Departamento</label>
+          <input type="text" className="form-control" id="departamento" />
+        </div>
+      </div>
+
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="propertyCity">Localidad</label>
           <input type="text" className="form-control" id="propertyCity" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -31,7 +39,6 @@ const LocationField = () => {
           <input type="text" className="form-control" id="neighborHood" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -39,7 +46,20 @@ const LocationField = () => {
           <input type="text" className="form-control" id="zipCode" />
         </div>
       </div>
-      {/* End .col */}
+
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input ui_kit_select_search form-group">
+          <label>Provincia</label>
+          <select
+            className="selectpicker form-select"
+            data-live-search="true"
+            data-width="100%"
+          >
+            <option data-tokens="Santa Fe">Santa Fe</option>            
+            <option data-tokens="Buenos Aires">Buenos Aires</option>
+          </select>
+        </div>
+      </div>
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
@@ -50,18 +70,64 @@ const LocationField = () => {
             data-width="100%"
           >
             <option data-tokens="Argentina">Argentina</option>            
-            <option data-tokens="Turkey">Turkey</option>
-            <option data-tokens="Iran">Iran</option>
-            <option data-tokens="Iraq">Iraq</option>
-            <option data-tokens="Spain">Spain</option>
-            <option data-tokens="Greece">Greece</option>
-            <option data-tokens="Portugal">Portugal</option>
+            <option data-tokens="Brasil">Brasil</option>
+            <option data-tokens="Uruguay">Uruguay</option>
+            <option data-tokens="Paraguay">Paraguay</option>
+            <option data-tokens="Chile">Chile</option>
+            <option data-tokens="Bolivia">Bolivia</option>
+            <option data-tokens="Peru">Peru</option>
           </select>
         </div>
       </div>
+
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="disposicion">Disposición</label>
+          <input type="text" className="form-control" id="disposicion" />
+        </div>
+      </div>
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="orientacion">Orientación</label>
+          <input type="text" className="form-control" id="orientacion" />
+        </div>
+      </div>
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="latitud">Latitud</label>
+          <input type="text" className="form-control" id="latitud" />
+        </div>
+      </div>
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="longitud">Longitud</label>
+          <input type="text" className="form-control" id="longitud" />
+        </div>
+      </div>
+
+      <div className="col-lg-4">
+        <div className="my_profile_setting_input ui_kit_select_search form-group">
+          <label>Acceso</label>
+          <select
+            className="selectpicker form-select"
+            data-live-search="true"
+            data-width="100%"
+          >
+            <option data-tokens="Asfalto">Asfalto</option>            
+            <option data-tokens="Tierra">Tierra</option>
+            <option data-tokens="Rio">Rio</option>
+            <option data-tokens="Aire">Aire</option>
+            <option data-tokens="Ripio">Ripio</option>
+            <option data-tokens="Tosca">Tosca</option>
+          </select>
+        </div>
+      </div>
+
       {/* End .col */}
 
-      <div className="col-lg-12">
+      {/* End .col */}
+
+      {/*<div className="col-lg-12">
         <div className="my_profile_setting_input form-group">
           <div className="h400 bdrs8" id="map-canvas">
             <div className="gmap_canvas pe-none">
@@ -73,42 +139,7 @@ const LocationField = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* End .col */}
-
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="googleMapLat">Latitud (Google Maps)</label>
-          <input type="text" className="form-control" id="googleMapLat" />
-        </div>
-      </div>
-      {/* End .col */}
-
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="googleMapLong">Longitud (Google Maps)</label>
-          <input type="text" className="form-control" id="googleMapLong" />
-        </div>
-      </div>
-      {/* End .col */}
-
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Google Map Street View</label>
-          <select
-            className="selectpicker form-select"
-            data-live-search="true"
-            data-width="100%"
-          >
-            <option data-tokens="Turkey">Street View v1</option>
-            <option data-tokens="Iran">Street View v2</option>
-            <option data-tokens="Iraq">Street View v3</option>
-            <option data-tokens="Spain">Street View v4</option>
-            <option data-tokens="Greece">Street View v5</option>
-            <option data-tokens="Portugal">Street View v6</option>
-          </select>
-        </div>
-      </div>
+      </div>*/}
       {/* End .col */}
 
       <div className="col-xl-12">
