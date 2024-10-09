@@ -6,11 +6,15 @@ import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import CreateList from "./CreateList";
 import DetailedInfo from "./DetailedInfo";
-import FloorPlans from "./FloorPlans";
+//import FloorPlans from "./FloorPlans";
 import LocationField from "./LocationField";
-import PropertyMediaUploader from "./PropertyMediaUploader";
+//import PropertyMediaUploader from "./PropertyMediaUploader";
 import DatosSuperficie from "./DatosSuperficie";
 import DatosMonetarios from "./DatosMonetarios";
+import TableData from "./TableData";
+import TableArchivos from "./TableArchivos";
+import InfoRed from "./InfoRed";
+import InfoPrivada from "./InfoPrivada";
 
 const index = () => {
 
@@ -225,13 +229,39 @@ const index = () => {
                       role="tabpanel"
                     >
                       <div className="p-4 bg-white">
-                        <div className="col-lg-12">
-                          <h3 className="mb30">Fotos</h3>
+
+                        <div className="row">
+                          <div className="col-lg-4 col-xl-4">
+                            <div className="breadcrumb_content style2">
+                              <h3 className="breadcrumb_title">Fotos</h3>
+                            </div>
+                          </div>
+                          {/* End .col */}
+
+                          <div className="col-lg-8 col-xl-8 my_profile_setting_input overflow-hidden">
+                            <button className="btn btn2 float-end m-1"><i class="flaticon-plus m-1"></i>Agregar foto</button>
+                          </div>
+                          {/* End .col */}
                         </div>
-                        <PropertyMediaUploader />
+
+                        <div className="col-lg-12">
+                          <div className="mb40 table-container">
+                            <div className="property_table">
+                              <div className="table-responsive mt0">
+                                <TableData />
+                              </div>
+                              {/* End .table-responsive */}
+                            </div>
+                            {/* End .property_table */}
+                          </div>
+                        </div>
+                        {/* End .col */}
                       </div>
+                      {/* End row */}
+
                     </div>
                     {/* End fotos details content*/}
+
 
                     <div
                       className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
@@ -239,28 +269,77 @@ const index = () => {
                       role="tabpanel"
                     >
                       <div className="p-4 bg-white">
-                        <div className="col-lg-12">
-                          <h3 className="mb30">Videos</h3>
+
+                        <div className="row">
+                          <div className="col-lg-4 col-xl-4">
+                            <div className="breadcrumb_content style2">
+                              <h3 className="breadcrumb_title">Videos</h3>
+                            </div>
+                          </div>
+                          {/* End .col */}
+
+                          <div className="col-lg-8 col-xl-8 my_profile_setting_input overflow-hidden">
+                            <button className="btn btn2 float-end m-1"><i class="flaticon-plus m-1"></i>Agregar video</button>
+                          </div>
+                          {/* End .col */}
                         </div>
-                        <PropertyMediaUploader />
+
+                        <div className="col-lg-12">
+                          <div className="mb40 table-container">
+                            <div className="property_table">
+                              <div className="table-responsive mt0">
+                                <TableData />
+                              </div>
+                              {/* End .table-responsive */}
+                            </div>
+                            {/* End .property_table */}
+                          </div>
+                        </div>
+                        {/* End .col */}
                       </div>
+                      {/* End row */}
+
                     </div>
-                    {/* End Listing details content*/}
+                    {/* End videos content*/}
+
 
                     <div
                       className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
                       id="planos"
                       role="tabpanel"
                     >
-                      <div className="p-4 bg-white">                      
-                        <div className="col-lg-12">
-                          <h3 className="mb30">Planos</h3>
-                          <button className="btn admore_btn mb30">Más</button>
+                      <div className="p-4 bg-white">      
+                        <div className="row">
+                          <div className="col-lg-4 col-xl-4">
+                            <div className="breadcrumb_content style2">
+                              <h3 className="breadcrumb_title">Planos</h3>
+                            </div>
+                          </div>
+                          {/* End .col */}
+
+                          <div className="col-lg-8 col-xl-8 my_profile_setting_input overflow-hidden">
+                            <button className="btn btn2 float-end m-1"><i class="flaticon-plus m-1"></i>Agregar plano</button>
+                          </div>
+                          {/* End .col */}
                         </div>
-                        <FloorPlans />
+
+                        <div className="col-lg-12">
+                          <div className="mb40 table-container">
+                            <div className="property_table">
+                              <div className="table-responsive mt0">
+                                <TableData />
+                              </div>
+                              {/* End .table-responsive */}
+                            </div>
+                            {/* End .property_table */}
+                          </div>
+                        </div>
+                        {/* End .col */}
+
                       </div>                        
                     </div>
                     {/* End planos content*/}
+
 
                     <div
                       className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
@@ -268,10 +347,33 @@ const index = () => {
                       role="tabpanel"
                     >
                       <div className="p-4 bg-white">
-                        <div className="col-lg-12">
-                          <h3 className="mb30">Recorrido 360</h3>
+                        <div className="row">
+                          <div className="col-lg-4 col-xl-4">
+                            <div className="breadcrumb_content style2">
+                              <h3 className="breadcrumb_title">Recorridos 360</h3>
+                            </div>
+                          </div>
+                          {/* End .col */}
+
+                          <div className="col-lg-8 col-xl-8 my_profile_setting_input overflow-hidden">
+                            <button className="btn btn2 float-end m-1"><i class="flaticon-plus m-1"></i>Agregar recorrido</button>
+                          </div>
+                          {/* End .col */}
                         </div>
-                        <PropertyMediaUploader />
+
+                        <div className="col-lg-12">
+                          <div className="mb40 table-container">
+                            <div className="property_table">
+                              <div className="table-responsive mt0">
+                                <TableData />
+                              </div>
+                              {/* End .table-responsive */}
+                            </div>
+                            {/* End .property_table */}
+                          </div>
+                        </div>
+                        {/* End .col */}
+
                       </div>
                     </div>
                     {/* End recorrido360 details content*/}
@@ -304,7 +406,7 @@ const index = () => {
                       <div className="col-lg-12">
                         <h3 className="mb30">Info red</h3>
                       </div>
-
+                      <InfoRed />
                     </div>
                   </div>
                 </div>
@@ -318,7 +420,7 @@ const index = () => {
                       <div className="col-lg-12">
                         <h3 className="mb30">Info privada</h3>
                       </div>
-
+                      <InfoPrivada />
                     </div>
                   </div>
                 </div>
@@ -329,9 +431,37 @@ const index = () => {
                 <div className="info_grupo_container">
                   <div className="my_dashboard_review">
                     <div className="row">
-                      <div className="col-lg-12">
+
+                      {/*<div className="col-lg-12">
                         <h3 className="mb30">Archivos</h3>
+                      </div>*/}
+
+                      <div className="row">
+                        <div className="col-lg-4 col-xl-4">
+                          <div className="breadcrumb_content style2">
+                            <h3 className="breadcrumb_title">Archivos</h3>
+                          </div>
+                        </div>
+                        {/* End .col */}
+
+                        <div className="col-lg-8 col-xl-8 my_profile_setting_input overflow-hidden">
+                          <button className="btn btn2 float-end m-1"><i class="flaticon-plus m-1"></i>Agregar archivo</button>
+                        </div>
+                        {/* End .col */}
                       </div>
+
+                      <div className="col-lg-12">
+                        <div className="mb40 table-container">
+                          <div className="property_table">
+                            <div className="table-responsive mt0">
+                              <TableArchivos />
+                            </div>
+                            {/* End .table-responsive */}
+                          </div>
+                          {/* End .property_table */}
+                        </div>
+                      </div>
+                      {/* End .col */}
 
                     </div>
                   </div>
