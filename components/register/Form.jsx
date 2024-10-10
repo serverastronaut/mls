@@ -48,7 +48,7 @@ const Form = () => {
           type="email"
           className="form-control"
           required
-          placeholder="Email personal"
+          placeholder="Email usuario"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
