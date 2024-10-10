@@ -33,7 +33,7 @@ const Blog = () => {
 
             <div className="fp_footer">
               <ul className="fp_meta float-start mb0">
-                <li className="list-inline-item">
+                {/*<li className="list-inline-item">
                   <a href="#">
                     <Image
                       width={40}
@@ -42,7 +42,7 @@ const Blog = () => {
                       alt={item.posterAvatar}
                     />
                   </a>
-                </li>
+                </li>*/}
                 <li className="list-inline-item">
                   <a href="#">{item.posterName}</a>
                 </li>
@@ -54,7 +54,7 @@ const Blog = () => {
                 </li>
               </ul>
               <a className="fp_pdate float-end text-thm" href="#">
-                Read More <span className="flaticon-next"></span>
+                Leer más <span className="flaticon-next"></span>
               </a>
             </div>
             {/* End fb_footer */}

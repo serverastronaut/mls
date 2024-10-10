@@ -19,7 +19,7 @@ const Form = () => {
           type="text"
           className="form-control"
           required
-          placeholder="Nombre de usuario"
+          placeholder="Nombre"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -27,14 +27,28 @@ const Form = () => {
           </div>
         </div>
       </div>
-      {/* End .form-group */}
+
+      <div className="form-group input-group ">
+        <input
+          type="text"
+          className="form-control"
+          required
+          placeholder="Apellido"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-user"></i>
+          </div>
+        </div>
+      </div>
+
 
       <div className="form-group input-group  ">
         <input
           type="email"
           className="form-control"
           required
-          placeholder="Email"
+          placeholder="Email personal"
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -42,7 +56,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-      {/* End .form-group */}
+
 
       <div className="form-group input-group  ">
         <input
@@ -57,7 +71,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-      {/* End .form-group */}
+
 
       <div className="form-group input-group  ">
         <input
@@ -72,7 +86,63 @@ const Form = () => {
           </div>
         </div>
       </div>
-      {/* End .form-group */}
+
+
+      <div className="form-group input-group ">
+        <input
+          type="text"
+          className="form-control"
+          required
+          placeholder="Nombre inmobiliaria"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-house"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="form-group input-group ">
+        <input
+          type="text"
+          className="form-control"
+          required
+          placeholder="Titular"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-user"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="form-group input-group ">
+        <input
+          type="email"
+          className="form-control"
+          required
+          placeholder="Email inmobiliaria"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="fa fa-envelope-o"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="form-group input-group ">
+        <input
+          type="text"
+          className="form-control"
+          required
+          placeholder="Teléfono inmobiliaria"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="fa fa-phone"></i>
+          </div>
+        </div>
+      </div>
 
       <div className="form-group form-check custom-checkbox mb-3">
         <input
