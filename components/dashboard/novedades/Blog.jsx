@@ -93,7 +93,7 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
                   </a>
                 </li>
               </ul>
-              <span className="fp_pdate float-end text-thm" onClick={() => handleClick(item.id)} style={{ cursor: 'pointer' }}>
+              <span className="fp_pdate float-end text-thm" onClick={() => handleClick(item.Id)} style={{ cursor: 'pointer' }}>
                 Leer más <span className="flaticon-next"></span>
               </span>
             </div>
