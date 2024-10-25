@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import CopyrightFooter from "../../common/footer/CopyrightFooter";
+//import CopyrightFooter from "../../common/footer/CopyrightFooter";
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
@@ -195,11 +195,11 @@ const index = ({id}) => {
       </section>*/}
 
       {/* <!-- Our Footer Bottom Area --> */}
-      <section className="footer_middle_area pt40 pb40">
+      {/*<section className="footer_middle_area pt40 pb40">
         <div className="container">
           <CopyrightFooter />
         </div>
-      </section>
+      </section>*/}
     </>
   );
 };

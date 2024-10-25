@@ -1,6 +1,6 @@
 //import BlogSidebar from "../common/blog/BlogSidebar";
 import Pagination from "../../common/blog/Pagination";
-import CopyrightFooter from "../../common/footer/CopyrightFooter";
+//import CopyrightFooter from "../../common/footer/CopyrightFooter";
 //import Footer from "../../common/footer/Footer";
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
@@ -74,11 +74,11 @@ const index = ({ data }) => {
       </section>*/}
 
       {/* <!-- Our Footer Bottom Area --> */}
-      <section className="footer_middle_area pt40 pb40">
+      {/*<section className="footer_middle_area pt40 pb40">
         <div className="container">
           <CopyrightFooter />
         </div>
-      </section>
+      </section>*/}
     </>
   );
 };
