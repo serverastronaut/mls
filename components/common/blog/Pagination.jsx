@@ -1,41 +1,34 @@
-const Pagination = () => {
+"use client";
+
+import React from 'react';
+
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const handleClick = (page) => {
+    if (page > 0 && page <= totalPages) {
+      onPageChange(page);
+    }
+  };
+
   return (
     <ul className="page_navigation">
-      <li className="page-item disabled">
-        <a className="page-link" href="#" tabIndex="-1" aria-disabled="true">
-          {" "}
+      <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
+        <button className="page-link" onClick={() => handleClick(currentPage - 1)} aria-disabled={currentPage === 1}>
           <span className="flaticon-left-arrow"></span>
-        </a>
+        </button>
       </li>
-      <li className="page-item">
-        <a className="page-link" href="#">
-          1
-        </a>
-      </li>
-      <li className="page-item active" aria-current="page">
-        <a className="page-link" href="#">
-          2 <span className="sr-only">(current)</span>
-        </a>
-      </li>
-      <li className="page-item">
-        <a className="page-link" href="#">
-          3
-        </a>
-      </li>
-      <li className="page-item">
-        <a className="page-link" href="#">
-          ...
-        </a>
-      </li>
-      <li className="page-item">
-        <a className="page-link" href="#">
-          29
-        </a>
-      </li>
-      <li className="page-item">
-        <a className="page-link" href="#">
+
+      {[...Array(totalPages)].map((_, i) => (
+        <li key={i} className={`page-item ${currentPage === i + 1 ? "active" : ""}`}>
+          <button className="page-link" onClick={() => handleClick(i + 1)}>
+            {i + 1}
+          </button>
+        </li>
+      ))}
+
+      <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
+        <button className="page-link" onClick={() => handleClick(currentPage + 1)} aria-disabled={currentPage === totalPages}>
           <span className="flaticon-right-arrow"></span>
-        </a>
+        </button>
       </li>
     </ul>
   );

@@ -1,21 +1,26 @@
-//import BlogSidebar from "../common/blog/BlogSidebar";
-import Pagination from "../../common/blog/Pagination";
-//import CopyrightFooter from "../../common/footer/CopyrightFooter";
-//import Footer from "../../common/footer/Footer";
+"use client";
+
+import { useState } from 'react';
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-//import PopupSignInUp from "../../common/PopupSignInUp";
 import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
+import Pagination from "../../common/blog/Pagination";
 
-const index = ({ data }) => {
+const ITEMS_PER_PAGE = 2;
+
+const Index = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalItems, setTotalItems] = useState(0);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
-
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
       <div className="dashboard_sidebar_menu">
@@ -28,9 +33,7 @@ const index = ({ data }) => {
           <SidebarMenu />
         </div>
       </div>
-      {/* End sidebar_menu */}
 
-      {/* <!-- Main Blog Post Content --> */}
       <section className="our-dashbord dashbord bgc-f7 pb50">
         <div className="container-fluid ovh">
           <div className="row">
@@ -38,49 +41,27 @@ const index = ({ data }) => {
               <BreadCrumbBlog />
             </div>
           </div>
-          {/* End .row */}
 
           <div className="row">
             <div className="col-lg-12">
               <div className="main_blog_post_content">
-                <Blog />
-                {/* End blog item */}
+
+                <Blog currentPage={currentPage} itemsPerPage={ITEMS_PER_PAGE} setTotalItems={setTotalItems}/>
 
                 <div className="mbp_pagination mt20">
-                  <Pagination />
+                  <Pagination
+                    currentPage={currentPage}
+                    totalPages={Math.ceil(totalItems / ITEMS_PER_PAGE)}
+                    onPageChange={handlePageChange}
+                  />
                 </div>
-                {/* End .mbp_pagination */}
               </div>
             </div>
-            {/* End .col */}
-
-            {/*<div className="col-lg-4 col-xl-4">
-              <BlogSidebar />
-            </div>*/}
-            {/* End Sidebar column */}
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
       </section>
-
-      {/* <!-- Our Footer --> */}
-      {/*<section className="footer_one">
-        <div className="container">
-          <div className="row">
-            <Footer />
-          </div>
-        </div>
-      </section>*/}
-
-      {/* <!-- Our Footer Bottom Area --> */}
-      {/*<section className="footer_middle_area pt40 pb40">
-        <div className="container">
-          <CopyrightFooter />
-        </div>
-      </section>*/}
     </>
   );
 };
 
-export default index;
+export default Index;

@@ -3,12 +3,12 @@
 import { useEffect, useState } from 'react';
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-//import blogContent from "../../../data/blogs";
-import Image from "next/image";
+import SearchBox from "./SearchBox";
 
-const Blog = () => {
-
+const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');  
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -17,19 +17,34 @@ const Blog = () => {
       try {
         const response = await fetch(`/api/novedades`, {
           cache: 'no-store',
-        });         
+        });
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
+        setFilteredData(result);
+        setTotalItems(result.length);
       } catch (error) {
         setError(error.message);
       } finally {
-        setLoading(false);        
+        setLoading(false);
       }
     }
 
-    fetchData();
-  }, []);
+    if (data.length === 0) {
+      fetchData();
+    }
+  }, [setTotalItems]);
+  
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+    const filtered = data.filter(item => 
+      item.TituloNovedad.toLowerCase().includes(term.toLowerCase()) || 
+      item.SubtituloNovedad.toLowerCase().includes(term.toLowerCase()) ||
+      item.TextoNovedad.toLowerCase().includes(term.toLowerCase())
+    );
+    setFilteredData(filtered);
+    setTotalItems(filtered.length); 
+  };
 
   const router = useRouter();
 
@@ -37,12 +52,28 @@ const Blog = () => {
     router.push(`/novedad-detalle/${id}`);
   };
 
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedData = filteredData.slice(startIndex, endIndex);
+
   return (
     <>
+    <div className="row">
+        <div className="col-lg-12 col-xl-12">
+          <div className="candidate_revew_select style2 text-end mb30-991">
+            <ul className="mb0">
+              <li className="list-inline-item">
+                <SearchBox onSearchChange={handleSearchChange} />
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {loading && <div>Cargando ...</div>}
       {error && <div>Error: {error}</div>}
-      {//blogContent.slice(6, 9).map((item) => (
-      data.map((item) => (
+      {!loading && !error && paginatedData.map((item) => (
         <div className="for_blog feat_property" key={item.id}>
           <div className="details">
             <div className="tc_content">
@@ -52,13 +83,9 @@ const Blog = () => {
               <p><strong>{item.SubtituloNovedad}</strong></p>
               <p>{item.TextoNovedad.slice(0, 285)}</p>
             </div>
-            {/* End .tc_content */}
 
             <div className="fp_footer">
               <ul className="fp_meta float-start mb0">
-                {/*<li className="list-inline-item">
-                  <a href="#">{item.posterName}</a>
-                </li>*/}
                 <li className="list-inline-item">
                   <a href="#">
                     <span className="flaticon-calendar pr10"></span>{" "}
@@ -66,15 +93,11 @@ const Blog = () => {
                   </a>
                 </li>
               </ul>
-              {/*<a className="fp_pdate float-end text-thm" href="#">
+              <span className="fp_pdate float-end text-thm" onClick={() => handleClick(item.id)} style={{ cursor: 'pointer' }}>
                 Leer más <span className="flaticon-next"></span>
-              </a>*/}
-              <span className="fp_pdate float-end text-thm" onClick={() => handleClick(item.Id)} style={{ cursor: 'pointer' }}>
-                Leer más <span className="flaticon-next"></span>
-              </span>               
+              </span>
             </div>
           </div>
-
         </div>
       ))}
     </>
