@@ -1,8 +1,7 @@
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import EditarGrupo from "./EditarGrupo";
-import PropertyMediaUploader from "./PropertyMediaUploader";
+import CreateList from "./CreateList";
 
 const index = () => {
   return (
@@ -41,11 +40,12 @@ const index = () => {
                     </div>
                   </div>
                 </div>
+                {/* End Dashboard Navigation */}
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Modificar grupo</h2>
-                    <p>Ingrese los datos del grupo</p>
+                    <h2 className="breadcrumb_title">Crear novedad</h2>
+                    <p>Ingrese los datos de la novedad que desea agregar</p>
                   </div>
                 </div>
 
@@ -53,22 +53,15 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-lg-12">
-                        <h3 className="mb30">Datos generales</h3>
+                        <h3 className="mb30">Nueva novedad</h3>
                       </div>
 
-                      <EditarGrupo />
+                      <CreateList />
                     </div>
                   </div>
-                  <div className="my_dashboard_review mt30">
-                    <div className="col-lg-12">
-                      <h3 className="mb30">Gestionar integrantes</h3>
-                    </div>
-                    <PropertyMediaUploader />
-                  </div>
+
                 </div>
-                {/* End .col */}
               </div>
-              {/* End .row */}
 
               <div className="row mt50">
                 <div className="col-lg-12">
@@ -77,9 +70,9 @@ const index = () => {
                   </div>
                 </div>
               </div>
-              {/* End .row */}
+              
             </div>
-            {/* End .col */}
+
           </div>
         </div>
       </section>
