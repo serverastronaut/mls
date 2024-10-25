@@ -1,26 +1,43 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
-//import BlogSidebar from "../../components/common/blog/BlogSidebar";
 import CopyrightFooter from "../../common/footer/CopyrightFooter";
-//import Footer from "../../components/common/footer/Footer";
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-//import PopupSignInUp from "../../components/common/PopupSignInUp";
 import Social from "../../common/footer/Social";
 import BreadCrumb2 from "./BreadCrumb2";
-//import Comments from "./Comments";
-//import Pagination from "./Pagination";
-//import Ratings from "./Ratings";
-//import RelatedPost from "./RelatedPost";
-//import ReviewBox from "./ReviewBox";
 
-const index = () => {
+const index = ({id}) => {
+  const [novedad, setNovedad] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchNovedad = async () => {
+      try {
+        const res = await fetch(`/api/novedades/${id}`);
+        if (!res.ok) throw new Error("No se encontró la novedad");
+        const data = await res.json();
+        setNovedad(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNovedad();
+  }, [id]);
+
+  if (loading) return <div>Cargando novedad...</div>;
+  if (error) return <div>Error: {error}</div>;
+
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
       <div className="dashboard_sidebar_menu">
@@ -53,7 +70,7 @@ const index = () => {
                     <a href="#">Construction</a>
                   </div>
                   <h3 className="blog_sp_title">
-                    Redfin Ranks the Most Competitive Neighborhoods of 2020
+                    {novedad.TituloNovedad}
                   </h3>
                   <ul className="blog_sp_post_meta">
                     <li className="list-inline-item">
@@ -78,88 +95,18 @@ const index = () => {
                     <li className="list-inline-item">
                       <span className="flaticon-view"></span>
                     </li>
-                    {/*<li className="list-inline-item">
-                      <a href="#"> 341 views</a>
-                    </li>*/}
                     <li className="list-inline-item">
                       <span className="flaticon-chat"></span>
                     </li>
-                    {/*<li className="list-inline-item">
-                      <a href="#">15</a>
-                    </li>*/}
                   </ul>
-                  {/*<div className="thumb">
-                    <Image
-                      width={692}
-                      height={414}
-                      className="w-100 h-100 cover"
-                      src="/assets/images/blog/bs1.jpg"
-                      alt="bs1.jpg"
-                    />
-                  </div>*/}
 
                   <div className="details">
-                    <p className="mb30">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis mollis et sem sed sollicitudin. Donec non odio neque.
-                      Aliquam hendrerit sollicitudin purus, quis rutrum mi
-                      accumsan nec. Quisque bibendum orci ac nibh facilisis, at
-                      malesuada orci congue. Nullam tempus sollicitudin cursus.
-                      Ut et adipiscing erat. Curabitur this is a text link
-                      libero tempus congue.
-                    </p>
-                    <p className="mb30">
-                      Duis mattis laoreet neque, et ornare neque sollicitudin
-                      at. Proin sagittis dolor sed mi elementum pretium. Donec
-                      et justo ante. Vivamus egestas sodales est, eu rhoncus
-                      urna semper eu. Cum sociis natoque penatibus et magnis dis
-                      parturient montes, nascetur ridiculus mus. Integer
-                      tristique elit lobortis purus bibendum, quis dictum metus
-                      mattis. Phasellus posuere felis sed eros porttitor mattis.
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et.
-                    </p>
-                    <h4 className="mb15">
-                      Housing Markets That Changed the Most This Decade
-                    </h4>
                     <p>
-                      Nullam tempus sollicitudin cursus. Nulla elit mauris,
-                      volutpat eu varius malesuada, pulvinar eu ligula. Ut et
-                      adipiscing erat. Curabitur adipiscing erat vel libero
-                      tempus congue. Nam pharetra interdum vestibulum. Aenean
-                      gravida mi non aliquet porttitor. Praesent dapibus, nisi a
-                      faucibus tincidunt, quam dolor condimentum metus, in
-                      convallis libero ligula ut eros.
+                      <strong>{novedad.SubtituloNovedad}</strong>
                     </p>
-                    <div className="mbp_blockquote">
-                      <div className="blockquote">
-                        <span className="font-italic">
-                          <i className="fa fa-quote-left"></i>
-                        </span>
-                        <br />
-                        <em className="mb-0">
-                          Duis mollis et sem sed sollicitudin. Donec non odio
-                          neque. Aliquam hendrerit sollicitudin purus, quis
-                          rutrum mi accumsan nec.
-                        </em>
-                      </div>
-                    </div>
-                    <p className="mb25">
-                      Curabitur massa magna, tempor in blandit id, porta in
-                      ligula. Aliquam laoreet nisl massa, at interdum mauris
-                      sollicitudin et. Mauris risus lectus, tristique at nisl
-                      at, pharetra tristique enim.
-                    </p>
-                    <p className="mb25">
-                      Nullam this is a link nibh facilisis, at malesuada orci
-                      congue. Nullam tempus sollicitudin cursus. Nulla elit
-                      mauris, volutpat eu varius malesuada, pulvinar eu ligula.
-                      Ut et adipiscing erat. Curabitur adipiscing erat vel
-                      libero tempus congue. Nam pharetra interdum vestibulum.
-                      Aenean gravida mi non aliquet porttitor. Praesent dapibus,
-                      nisi a faucibus tincidunt, quam dolor condimentum metus,
-                      in convallis libero ligula ut eros.
+
+                    <p className="mb30">
+                      {novedad.TextoNovedad}
                     </p>
                   </div>
                   <ul className="blog_post_share">

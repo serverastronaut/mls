@@ -31,7 +31,7 @@ const BlogDetailsDynamic = ({params}) => {
 
   return (
     <>
-      <NovedadDetalle />
+      <NovedadDetalle id={id} />
     </>
   );
 };

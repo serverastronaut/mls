@@ -63,13 +63,17 @@ const SidebarMenu = () => {
   return (
     <>
       <ul className="sidebar-menu">
-        <li className="sidebar_header header">
+        <li className="sidebar_header header" style={{height: '140px'}}>
           <Link href="/">
             <Image
-              width={200}
-              height={45}
-              src="/assets/images/mlslogo-white.svg"
+              //width={200}
+              //height={45}
+              width={120}
+              height={120}
+              //src="/assets/images/mlslogo-white.svg"
+              src="/assets/images/logocuadrado.svg"
               alt="mlslogo-white.svg"
+              style={{marginTop: '30px', marginBottom: '30px'}}
             />
             {/*<span>FindHouse</span>*/}
           </Link>

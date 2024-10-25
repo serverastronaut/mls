@@ -9,7 +9,7 @@ import MobileMenu from "../../common/header/MobileMenu";
 import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
 
-const index = () => {
+const index = ({ data }) => {
   return (
     <>
       {/* <!-- Main Header Nav --> */}

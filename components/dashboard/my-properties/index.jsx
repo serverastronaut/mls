@@ -9,10 +9,8 @@ import SearchBox from "./SearchBox";
 const index = () => {
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
       <div className="dashboard_sidebar_menu">
