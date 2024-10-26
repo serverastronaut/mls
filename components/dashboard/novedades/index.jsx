@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import BreadCrumbBlog from "./BreadCrumbBlog";
+//import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
 import Pagination from "../../common/blog/Pagination";
 
@@ -36,11 +36,11 @@ const Index = () => {
 
       <section className="our-dashbord dashbord bgc-f7 pb50">
         <div className="container-fluid ovh">
-          <div className="row">
+          {/*<div className="row">
             <div className="col-xl-6">
               <BreadCrumbBlog />
             </div>
-          </div>
+          </div>*/}
 
           <div className="row">
             <div className="col-lg-12">

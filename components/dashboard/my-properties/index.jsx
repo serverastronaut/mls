@@ -41,7 +41,7 @@ const index = () => {
         <div className="container-fluid ovh">
           <div className="row">
             <div className="col-lg-12 maxw100flex-992">
-
+ 
               <div className="row">
 
                 <div className="col-lg-12">
@@ -53,15 +53,9 @@ const index = () => {
                         data-bs-target="#DashboardOffcanvasMenu"
                         aria-controls="DashboardOffcanvasMenu"
                       >
-                        <i className="fa fa-bars pr10"></i> Menú lateral
+                        <i className="fa fa-bars pr10"></i> Menú
                       </button>
                     </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-xl-4 mb0">
-                  <div className="breadcrumb_content style2 mb0">
-                    <h2 className="breadcrumb_title">Mis propiedades</h2>
                   </div>
                 </div>
 

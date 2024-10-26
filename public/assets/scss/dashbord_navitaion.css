@@ -1,13 +1,14 @@
 .dashboard_navigationbar {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .dashboard_navigationbar .dropbtn {
   background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   display: block;
-  height: 70px;
-  margin-bottom: 30px;
+  /*height: 70px;*/
+  /*margin-bottom: 30px;*/
+  margin-bottom: 0px;
   outline: none;
   padding: 20px 30px;
   position: relative;

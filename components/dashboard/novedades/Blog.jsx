@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SearchBox from "./SearchBox";
+import BreadCrumbBlog from "./BreadCrumbBlog";
 
 const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
   const [data, setData] = useState([]);
@@ -59,7 +60,13 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
   return (
     <>
       <div className="row">
-        <div className="col-lg-12 col-xl-12">
+
+
+            <div className="col-xl-4">
+              <BreadCrumbBlog />
+            </div>
+
+        <div className="col-lg-8 col-xl-8 mt30">
           <div className="candidate_revew_select style2 text-end mb10">
             <ul className="mb0">
 

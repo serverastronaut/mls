@@ -1,15 +1,19 @@
-const SearchBox = () => {
+import React from 'react';
+
+const SearchBox = ({ onSearchChange }) => {
+  const handleChange = (event) => {
+    onSearchChange(event.target.value); // Llama a la función pasada desde el componente padre
+  };
+
   return (
-    <form className="form-group">
+    <form className="d-flex flex-wrap align-items-center my-2">
       <input
-        type="text"
-        className="form-control"
-        id="exampleInputName1"
+        className="form-control mr-sm-2"
+        type="search"
         placeholder="Buscar"
+        aria-label="Search"
+        onChange={handleChange} 
       />
-      <label htmlFor="exampleInputEmail">
-        <span className="flaticon-magnifying-glass"></span>
-      </label>
     </form>
   );
 };

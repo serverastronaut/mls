@@ -13341,8 +13341,9 @@ legend span {
 .candidate_revew_search_box input.form-control {
   background-color: #ffffff;
   border: 1px solid rgb(235, 235, 235);
-  border-right: none;
-  border-radius: 8px 0px 0px 8px;
+  /*border-right: none;*/
+  /*border-radius: 8px 0px 0px 8px;*/
+  border-radius: 8px;
   height: 42px;
   margin-right: 0 !important;
   padding-left: 20px;

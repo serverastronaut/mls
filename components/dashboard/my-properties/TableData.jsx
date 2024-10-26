@@ -23,14 +23,12 @@ const TableData = ({ currentPage, itemsPerPage, setTotalItems }) => {
         setData(result);
         setFilteredData(result);
         setTotalItems(result.length);
-        console.log('Resultado:'+JSON.stringify(result))        
       } catch (error) {
         setError(error.message);
       } finally {
         setLoading(false);
       }
     }
-
     if (data.length === 0) {
       fetchData();
     }
@@ -38,7 +36,6 @@ const TableData = ({ currentPage, itemsPerPage, setTotalItems }) => {
 
   const handleSearchChange = (term) => {
     setSearchTerm(term);
-    console.log('Buscando datos')    
     const filtered = data.filter(item => 
       item.Titulo.toLowerCase().includes(term.toLowerCase()) || 
       item.Calle.toLowerCase().includes(term.toLowerCase()) ||
@@ -47,8 +44,6 @@ const TableData = ({ currentPage, itemsPerPage, setTotalItems }) => {
     setFilteredData(filtered);
     setTotalItems(filtered.length); 
   };
-
-  //console.log('Propiedades: '+JSON.stringify(data));
 
   let theadConent = [
     "Título",
@@ -154,8 +149,15 @@ const TableData = ({ currentPage, itemsPerPage, setTotalItems }) => {
 
   return (
     <>
-      <div className="row">
-        <div className="col-lg-12 col-xl-12">
+      <div className="row mt30 mb10">
+
+        <div className="col-lg-4 col-xl-4 mb0">
+          <div className="breadcrumb_content style2 mb0">
+            <h2 className="breadcrumb_title">Mis propiedades</h2>
+          </div>
+        </div>
+
+        <div className="col-lg-8 col-xl-8">
           <div className="candidate_revew_select style2 text-end mb10">
             <ul className="mb0">
               <li className="list-inline-item">
