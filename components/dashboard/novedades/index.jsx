@@ -8,7 +8,7 @@ import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
 import Pagination from "../../common/blog/Pagination";
 
-const ITEMS_PER_PAGE = 2;
+const ITEMS_PER_PAGE = 3;
 
 const Index = () => {
   const [currentPage, setCurrentPage] = useState(1);

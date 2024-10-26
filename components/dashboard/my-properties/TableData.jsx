@@ -1,24 +1,84 @@
-import Image from "next/image";
-import properties from "../../../data/properties";
+'use client';
+
+import { useEffect, useState } from 'react';
+import SearchBox from "./SearchBox";
+import Filtering from "./Filtering";
 import Link from "next/link";
 
-const TableData = () => {
+const TableData = ({ currentPage, itemsPerPage, setTotalItems }) => {
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);  
+  const [searchTerm, setSearchTerm] = useState('');    
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`/api/propiedades`, {
+          cache: 'no-store',
+        });
+        if (!response.ok) throw new Error('Network response was not ok');
+        const result = await response.json();
+        setData(result);
+        setFilteredData(result);
+        setTotalItems(result.length);
+        console.log('Resultado:'+JSON.stringify(result))        
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    if (data.length === 0) {
+      fetchData();
+    }
+  }, [data.length, setTotalItems]); 
+
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+    console.log('Buscando datos')    
+    const filtered = data.filter(item => 
+      item.Titulo.toLowerCase().includes(term.toLowerCase()) || 
+      item.Calle.toLowerCase().includes(term.toLowerCase()) ||
+      (item.Altura !== undefined && String(item.Altura).toLowerCase().includes(term.toLowerCase()))
+    );
+    setFilteredData(filtered);
+    setTotalItems(filtered.length); 
+  };
+
+  //console.log('Propiedades: '+JSON.stringify(data));
+
   let theadConent = [
     "Título",
     "Fecha pubicación",
     "Estado",
     "Acción",
   ];
-  let tbodyContent = properties?.slice(0, 4)?.map((item) => (
-    <tr key={item.id}>
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedData = filteredData.slice(startIndex, endIndex);
+
+  let tbodyContent;
+
+  if (loading) {
+    tbodyContent = <tr><td colSpan="4"><div>Cargando ...</div></td></tr>;
+  } else if (error) {
+    tbodyContent = <tr><td colSpan="4"><div>Error: {error}</div></td></tr>;
+  } else {
+
+    tbodyContent = paginatedData?.map((item) => (    
+    <tr key={item.Id}>
       <td scope="row">
         <div className="feat_property list favorite_page style2">
           <div className="thumb">
-            <Image
+            <img
               width={150}
               height={220}
               className="img-whp cover"
-              src={item.img}
+              src={item.FotoPortada}
               alt="fp1.jpg"
             />
             <div className="thmb_cntnt">
@@ -31,28 +91,25 @@ const TableData = () => {
           </div>
           <div className="details">
             <div className="tc_content">
-              <h4>{item.title}</h4>
+              <h4>{item.Titulo}</h4>
               <p>
                 <span className="flaticon-placeholder"></span>
-                {item.location}
+                {item.Calle} {item.Altura}
               </p>
               <a className="fp_price text-thm" href="#">
-                ${item.price}
+                ${item.Precio}
                 <small>/mes</small>
               </a>
             </div>
           </div>
         </div>
       </td>
-      {/* End td */}
 
       <td>30 Diciembre, 2020</td>
-      {/* End td */}
 
       <td>
         <span className="status_tag badge">Pendiente</span>
       </td>
-      {/* End td */}
 
       <td>
         <ul className="view_edit_delete_list mb0">
@@ -66,7 +123,6 @@ const TableData = () => {
               <span className="flaticon-view"></span>
             </Link>
           </li>
-          {/* End li */}
 
           <li
             className="list-inline-item"
@@ -78,7 +134,6 @@ const TableData = () => {
               <span className="flaticon-edit"></span>
             </Link>
           </li>
-          {/* End li */}
 
           <li
             className="list-inline-item"
@@ -92,12 +147,31 @@ const TableData = () => {
           </li>
         </ul>
       </td>
-      {/* End td */}
+
     </tr>
   ));
+  }
 
   return (
     <>
+      <div className="row">
+        <div className="col-lg-12 col-xl-12">
+          <div className="candidate_revew_select style2 text-end mb10">
+            <ul className="mb0">
+              <li className="list-inline-item">
+                <div className="candidate_revew_search_box course fn-520">
+                  <SearchBox  onSearchChange={handleSearchChange} />
+                </div>
+              </li>
+
+              <li className="list-inline-item">
+                <Filtering />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <table className="table">
         <thead className="thead-light">
           <tr>
@@ -108,7 +182,6 @@ const TableData = () => {
             ))}
           </tr>
         </thead>
-        {/* End theaad */}
 
         <tbody>{tbodyContent}</tbody>
       </table>

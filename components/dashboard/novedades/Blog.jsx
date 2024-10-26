@@ -58,10 +58,15 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
 
   return (
     <>
-    <div className="row">
+      <div className="row">
         <div className="col-lg-12 col-xl-12">
-          <div className="candidate_revew_select style2 text-end mb30-991">
+          <div className="candidate_revew_select style2 text-end mb10">
             <ul className="mb0">
+
+              <li className="list-inline-item">
+                <Link href={`/crear-novedad`}><button className="btn btn1" type="button">Agregar novedad</button></Link>                
+              </li>
+
               <li className="list-inline-item">
                 <SearchBox onSearchChange={handleSearchChange} />
               </li>
@@ -78,7 +83,7 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
           <div className="details">
             <div className="tc_content">
               <h4 className="mb15">
-                <Link href={`/novedad-detalle/${item.id}`}>{item.TituloNovedad}</Link>
+                <Link href={`/novedad-detalle/${item.Id}`}>{item.TituloNovedad}</Link>
               </h4>
               <p><strong>{item.SubtituloNovedad}</strong></p>
               <p>{item.TextoNovedad.slice(0, 285)}</p>

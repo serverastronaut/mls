@@ -7713,6 +7713,29 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   margin-bottom: 30px;
 }
 
+.list-inline-item .btn1, form .btn1 {
+  background-color: rgba(255, 90, 95, 0);
+  border: 2px solid #7FC7D9;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  font-family: "Nunito";
+  color: #7FC7D9;
+  font-weight: bold;
+  line-height: 1.2;
+  height: 40px;
+  margin-right: 30px;
+  width: 180px;
+}
+
+.list-inline-item .btn1:hover, form .btn1:hover {
+  background-color: #7FC7D9;
+  color: #ffffff;
+}
+
 .my_profile_setting_input label,
 .my_profile_setting_textarea label {
   font-size: 15px;
@@ -12772,7 +12795,7 @@ legend span {
 }
 
 .our-dashbord.dashbord {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 235px;
 }
 

@@ -1,12 +1,25 @@
+
+"use client";
+
+import { useState } from 'react';
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import TableData from "./TableData";
-import Filtering from "./Filtering";
+//import Filtering from "./Filtering";
 import Pagination from "./Pagination";
-import SearchBox from "./SearchBox";
+//import SearchBox from "./SearchBox";
+
+const ITEMS_PER_PAGE = 3;
 
 const index = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalItems, setTotalItems] = useState(0);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
       <Header />
@@ -23,15 +36,14 @@ const index = () => {
           <SidebarMenu />
         </div>
       </div>
-      {/* End sidebar_menu */}
 
-      {/* <!-- Our Dashbord --> */}
       <section className="our-dashbord dashbord bgc-f7 pb50">
         <div className="container-fluid ovh">
           <div className="row">
             <div className="col-lg-12 maxw100flex-992">
+
               <div className="row">
-                {/* Start Dashboard Navigation */}
+
                 <div className="col-lg-12">
                   <div className="dashboard_navigationbar dn db-1024">
                     <div className="dropdown">
@@ -41,59 +53,41 @@ const index = () => {
                         data-bs-target="#DashboardOffcanvasMenu"
                         aria-controls="DashboardOffcanvasMenu"
                       >
-                        <i className="fa fa-bars pr10"></i> Dashboard Navigation
+                        <i className="fa fa-bars pr10"></i> Menú lateral
                       </button>
                     </div>
                   </div>
                 </div>
-                {/* End Dashboard Navigation */}
 
-                <div className="col-lg-4 col-xl-4 mb10">
-                  <div className="breadcrumb_content style2 mb30-991">
+                <div className="col-lg-4 col-xl-4 mb0">
+                  <div className="breadcrumb_content style2 mb0">
                     <h2 className="breadcrumb_title">Mis propiedades</h2>
-                    <p>Utiliza los filtros para encontrar la propiedad que buscas.</p>
                   </div>
                 </div>
-                {/* End .col */}
-
-                <div className="col-lg-8 col-xl-8">
-                  <div className="candidate_revew_select style2 text-end mb30-991">
-                    <ul className="mb0">
-                      <li className="list-inline-item">
-                        <div className="candidate_revew_search_box course fn-520">
-                          <SearchBox />
-                        </div>
-                      </li>
-                      {/* End li */}
-
-                      <li className="list-inline-item">
-                        <Filtering />
-                      </li>
-                      {/* End li */}
-                    </ul>
-                  </div>
-                </div>
-                {/* End .col */}
 
                 <div className="col-lg-12">
-                  <div className="my_dashboard_review mb40 table-container">
+                  <div className="my_dashboard_review mb40 table-container" style={{ backgroundColor: 'transparent' ,border: 'none'}}>
                     <div className="property_table">
-                      <div className="table-responsive mt0">
-                        <TableData />
+
+                      <div className="table-responsive mt0" style={{overflowX : 'hidden'}}>
+                        <TableData  currentPage={currentPage} itemsPerPage={ITEMS_PER_PAGE} setTotalItems={setTotalItems}/>
                       </div>
-                      {/* End .table-responsive */}
 
                       <div className="mbp_pagination">
-                        <Pagination />
+                        <Pagination
+                          currentPage={currentPage}
+                          totalPages={Math.ceil(totalItems / ITEMS_PER_PAGE)}
+                          onPageChange={handlePageChange}
+                        />
                       </div>
-                      {/* End .mbp_pagination */}
+
                     </div>
-                    {/* End .property_table */}
+
                   </div>
                 </div>
-                {/* End .col */}
+
               </div>
-              {/* End .row */}
+
 
               <div className="row mt50">
                 <div className="col-lg-12">
