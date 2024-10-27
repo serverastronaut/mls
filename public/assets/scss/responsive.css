@@ -2943,6 +2943,13 @@
 		padding: 30px 15px;
 	}
 }
+
+@media only screen and (max-width: 568px) {
+	.my_dashboard_review .review_content .media {
+		display: block;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	/* ExTra Class Start*/
 	.fn-400 {

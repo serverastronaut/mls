@@ -5,7 +5,7 @@ const ShowFilter = () => {
         id="open2"
         className="flaticon-filter-results-button filter_open_btn style2"
       >
-        Ver filtro
+        Ver filtros
       </span>
     </div>
   );

@@ -88,14 +88,15 @@ const MisGruposLista = () => {
 
           {filteredData?.map((item) => (
             <div className="media mt30" key={item.Id}>
-              <img
-                width={120}
-                height={120}
-                className="mr-3"
-                src="/assets/images/resource/review4.png"
-                alt="Grupo image"
-              />
-              <div className="media-body">
+              <div className="media-body d-flex align-items-center">
+                <img
+                  width={120}
+                  height={120}
+                  className="mr-3"
+                  src="/assets/images/resource/review4.png"
+                  alt="Grupo image"
+                />
+                <div>
                 <h5 className="review_title mt-0">
                   <Link href="/mis-grupos/grupo-detalles/">
                     <span className="text-thm">{item.NombreGrupo}</span>
@@ -106,8 +107,9 @@ const MisGruposLista = () => {
                   Creado {item.Creado} (act. {item.Actualizado})
                 </a>
                 <p className="para">{item.DescripcionGrupo}</p>
-
-                <ul className="view_edit_delete_list mb0 mt35">
+                </div>
+              </div>
+                <ul className="view_edit_delete_list mb-0 mt-8 flex flex-col sm:flex-row justify-end">
                   <li
                     className="list-inline-item"
                     data-toggle="tooltip"
@@ -142,7 +144,8 @@ const MisGruposLista = () => {
                   </li>
 
                 </ul>
-              </div>
+
+              
             </div>
           ))}
 

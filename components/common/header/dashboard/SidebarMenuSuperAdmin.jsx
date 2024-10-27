@@ -102,7 +102,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/inmobiliarias">
                 <i className="flaticon-house"></i>
                 <span> Inmobiliarias</span>
               </Link>
@@ -111,7 +111,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/usuarios">
                 <i className="flaticon-user"></i>
                 <span> Usuarios</span>
               </Link>
