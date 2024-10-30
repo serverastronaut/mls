@@ -4,14 +4,13 @@ import { useState } from 'react';
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import TableData from "./TableData";
-//import Filtering from "./Filtering";
+import UsuariosLista from "./UsuariosLista";
 import Pagination from "./Pagination";
-//import SearchBox from "./SearchBox";
 
 const ITEMS_PER_PAGE = 3;
 
 const index = () => {
+
   const [currentPage, setCurrentPage] = useState(1);
   const [totalItems, setTotalItems] = useState(0);
 
@@ -40,9 +39,8 @@ const index = () => {
         <div className="container-fluid ovh">
           <div className="row">
             <div className="col-lg-12 maxw100flex-992">
- 
-              <div className="row">
 
+              <div className="row">
                 <div className="col-lg-12">
                   <div className="dashboard_navigationbar dn db-1024">
                     <div className="dropdown">
@@ -57,30 +55,26 @@ const index = () => {
                     </div>
                   </div>
                 </div>
+              </div>
 
+              <div className="row">
                 <div className="col-lg-12">
-                  <div className="my_dashboard_review mb40 table-container" style={{ backgroundColor: 'transparent' ,border: 'none'}}>
-                    <div className="property_table">
-
-                      <div className="table-responsive mt0" style={{overflowX : 'hidden'}}>
-                        <TableData currentPage={currentPage} itemsPerPage={ITEMS_PER_PAGE} setTotalItems={setTotalItems}/>
-                      </div>
-
-                      <div className="mbp_pagination">
-                        <Pagination
-                          currentPage={currentPage}
-                          totalPages={Math.ceil(totalItems / ITEMS_PER_PAGE)}
-                          onPageChange={handlePageChange}
-                        />
-                      </div>
-
+                  <div id="" className="">
+                    <div className="">
+                      <UsuariosLista currentPage={currentPage} itemsPerPage={ITEMS_PER_PAGE} setTotalItems={setTotalItems}/>
                     </div>
-
                   </div>
                 </div>
 
-              </div>
+                <div className="mbp_pagination">
+                  <Pagination
+                    currentPage={currentPage}
+                    totalPages={Math.ceil(totalItems / ITEMS_PER_PAGE)}
+                    onPageChange={handlePageChange}
+                  />
+                </div>
 
+              </div>
 
               <div className="row mt50">
                 <div className="col-lg-12">

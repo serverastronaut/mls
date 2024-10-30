@@ -5,7 +5,7 @@ import SearchBox from "./SearchBox";
 //import Image from "next/image";
 import Link from "next/link";
 
-const MisGruposLista = () => {
+const InmobiliariasLista = ({ currentPage, itemsPerPage, setTotalItems }) => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);  
   const [searchTerm, setSearchTerm] = useState('');    
@@ -15,7 +15,7 @@ const MisGruposLista = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`/api/grupos`, {
+        const response = await fetch(`/api/inmobiliarias`, {
           cache: 'no-store',
         });
         if (!response.ok) throw new Error('Network response was not ok');
@@ -32,36 +32,21 @@ const MisGruposLista = () => {
     if (data.length === 0) {
       fetchData();
     }
-  }, [data.length]); 
+  }, [data.length, setTotalItems]); 
 
   const handleSearchChange = (term) => {
     setSearchTerm(term);
     const filtered = data.filter(item => 
-      item.NombreGrupo.toLowerCase().includes(term.toLowerCase()) || 
-      item.DescripcionGrupo.toLowerCase().includes(term.toLowerCase()) 
+      item.Inmobiliaria.toLowerCase().includes(term.toLowerCase()) || 
+      item.Titular.toLowerCase().includes(term.toLowerCase()) 
     );
     setFilteredData(filtered);
-    //setTotalItems(filtered.length); 
+    setTotalItems(filtered.length);     
   };
 
-  /*const reviewContent = [
-    {
-      id: 1,
-      img: "/assets/images/resource/review.png",
-      reviewOn: "Grupo Lorem Ipsum",
-      text: `Beautiful home, very picturesque and close to everything in jtree! A
-      little warm for a hot weekend, but would love to come back during
-      the cooler seasons!`,
-    },
-    {
-      id: 2,
-      img: "/assets/images/resource/review4.png",
-      reviewOn: "Grupo de pruebas",
-      text: `Beautiful home, very picturesque and close to everything in jtree! A
-      little warm for a hot weekend, but would love to come back during
-      the cooler seasons!`,
-    },
-  ];*/
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedData = filteredData.slice(startIndex, endIndex);
 
   return (
     <>
@@ -69,8 +54,8 @@ const MisGruposLista = () => {
       <div className="row align-items-center">
         <div className="col-lg-8 col-xl-9 mb20">
           <div className="breadcrumb_content style2 mb30-991">
-            <h2 className="breadcrumb_title">Mis Grupos</h2>
-            <p>Puede utilizar los filtros de búsqueda para gestionar sus grupos</p>
+            <h2 className="breadcrumb_title">Inmobiliarias</h2>
+            <p>Puede utilizar los filtros de búsqueda para gestionar las inmobiliarias</p>
           </div>
         </div>
 
@@ -86,7 +71,7 @@ const MisGruposLista = () => {
       <div id="myreview" className="my_dashboard_review">
         <div className="review_content">
 
-          {filteredData?.map((item) => (
+          {paginatedData?.map((item) => (
             <div className="media mt30 align-items-center" key={item.Id}>
               <div className="media-body d-flex align-items-center">
                 <img
@@ -94,19 +79,18 @@ const MisGruposLista = () => {
                   height={120}
                   className="mr-3"
                   src="/assets/images/resource/review4.png"
-                  alt="Grupo image"
+                  alt="Inmobiliaria imagen"
                 />
                 <div>
                 <h5 className="review_title mt-0">
-                  <Link href="/mis-grupos/grupo-detalles/">
-                    <span className="text-thm">{item.NombreGrupo}</span>
+                  <Link href="/inmobiliarias/inmobiliaria-detalle/">
+                    <span className="sspd_review">{item.Inmobiliaria}</span>
                   </Link>
-                  <span className="sspd_review float-end">{item.ratings}</span>
                 </h5>
+                <p className="para">de {item.Titular} ({item.Email})</p>                
                 <a className="review_date" href="#">
-                  Creado {item.Creado} (act. {item.Actualizado})
+                  Fecha alta: {item.Creado} | Matrícula {item.Matricula}
                 </a>
-                <p className="para">{item.DescripcionGrupo}</p>
                 </div>
               </div>
                 <ul className="view_edit_delete_list mb-0 mt-8 flex flex-col sm:flex-row justify-end">
@@ -116,7 +100,7 @@ const MisGruposLista = () => {
                     data-placement="top"
                     title="Ver"
                   >
-                    <Link href="/grupo-detalles">
+                    <Link href="/inmobiliaria-detalles">
                       <span className="flaticon-view"></span>
                     </Link>
                   </li>
@@ -156,4 +140,4 @@ const MisGruposLista = () => {
   );
 };
 
-export default MisGruposLista;
+export default InmobiliariasLista;
