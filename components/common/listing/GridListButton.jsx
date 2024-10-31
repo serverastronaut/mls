@@ -17,7 +17,6 @@ const GridListButton = () => {
           <span className="fa fa-th-large"></span>
         </a>
       </li>
-      {/* End li */}
 
       <li
         className={`list-inline-item ${isGridOrList ? "active" : ""}`}
@@ -27,7 +26,7 @@ const GridListButton = () => {
           <span className="fa fa-th-list"></span>
         </a>
       </li>
-      {/* End li */}
+
     </ul>
   );
 };

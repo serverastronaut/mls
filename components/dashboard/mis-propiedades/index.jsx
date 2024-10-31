@@ -2,10 +2,12 @@ import Pagination from "../../common/blog/Pagination";
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import FilterTopBar from "../../common/listing/FilterTopBar";
+//import FilterTopBar from "../../common/listing/FilterTopBar";
+import FilterTopBar from "./FilterTopBar";
 import GridListButton from "../../common/listing/GridListButton";
 import ShowFilter from "../../common/listing/ShowFilter";
-import SidebarListing2 from "../../common/listing/SidebarListing2";
+//import SidebarListing2 from "../../common/listing/SidebarListing2";
+import SidebarListing2 from "./SidebarListing2";
 import BreadCrumb2 from "./BreadCrumb2";
 import FeaturedItem from "./FeaturedItem";
 

@@ -1,16 +1,21 @@
-
-'use client'
+'use client';
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
-import properties from "../../../data/properties";
-import Image from "next/image";
+//import properties from "../../../data/properties";
+//import Image from "next/image";
 
 const FeaturedItem = () => {
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
   const {
     keyword,
+    //location,
     location,
     status,
     propertyType,
@@ -28,13 +33,41 @@ const FeaturedItem = () => {
 
   const dispatch = useDispatch();
 
+
+  // Fetch data from the endpoint
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`/api/propiedades`, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Network response was not ok');
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, []);  
+
+
+  useEffect(() => {
+    console.log('Datos en data después de setData: ' + JSON.stringify(data));
+  }, [data]);
+
+
   // keyword filter
   const keywordHandler = (item) =>
-    item.title.toLowerCase().includes(keyword?.toLowerCase());
+    item.Titulo.toLowerCase().includes(keyword?.toLowerCase());
 
   // location handler
   const locationHandler = (item) => {
-    return item.location.toLowerCase().includes(location.toLowerCase());
+    //return item.location.toLowerCase().includes(location.toLowerCase());
+    //return item.Calle.toLowerCase().includes(calle.toLowerCase());
+    return item.Calle && location
+    ? item.Calle.toLowerCase().includes(location.toLowerCase())
+    : true;    
   };
 
   // status handler
@@ -47,12 +80,13 @@ const FeaturedItem = () => {
 
   // price handler
   const priceHandler = (item) =>
-    item.price < price?.max && item.price > price?.min;
+    item.Precio < price?.max && item.Precio > price?.min;
 
   // bathroom handler
   const bathroomHandler = (item) => {
     if (bathrooms !== "") {
-      return item.itemDetails[1].number == bathrooms;
+      //return item.itemDetails[1].number == bathrooms;
+      return item.Banos.number == bathrooms;
     }
     return true;
   };
@@ -60,7 +94,8 @@ const FeaturedItem = () => {
   // bedroom handler
   const bedroomHandler = (item) => {
     if (bedrooms !== "") {
-      return item.itemDetails[0].number == bedrooms;
+      //return item.itemDetails[0].number == bedrooms;
+      return item.Dormitorios.number == bedrooms;
     }
     return true;
   };
@@ -80,8 +115,8 @@ const FeaturedItem = () => {
     if (area.min !== 0 && area.max !== 0) {
       if (area.min !== "" && area.max !== "") {
         return (
-          parseInt(item.itemDetails[2].number) > area.min &&
-          parseInt(item.itemDetails[2].number) < area.max
+          //parseInt(item.itemDetails[2].number) > area.min && parseInt(item.itemDetails[2].number) < area.max
+          parseInt(item.SuperficieTotal.number) > area.min && parseInt(item.SuperficieTotal.number) < area.max          
         );
       }
     }
@@ -121,13 +156,15 @@ const FeaturedItem = () => {
   };
 
   // status handler
-  let content = properties
-    ?.slice(10, 16)
+  //let content = properties
+  const content = data
+    //?.slice(10, 16)
+    ?.slice(0, 6)
     ?.filter(keywordHandler)
     ?.filter(locationHandler)
-    ?.filter(statusHandler)
+    ?.filter(priceHandler)    
+    /*?.filter(statusHandler)
     ?.filter(propertiesHandler)
-    ?.filter(priceHandler)
     ?.filter(bathroomHandler)
     ?.filter(bedroomHandler)
     ?.filter(garagesHandler)
@@ -135,7 +172,7 @@ const FeaturedItem = () => {
     ?.filter(areaHandler)
     ?.filter(advanceHandler)
     ?.sort(statusTypeHandler)
-    ?.filter(featuredHandler)
+    ?.filter(featuredHandler)*/
     .map((item) => (
       <div
         className={`${
@@ -149,27 +186,37 @@ const FeaturedItem = () => {
           }`}
         >
           <div className="thumb">
-            <Image
+            <img
               width={342}
               height={220}
               className="img-whp w-100 h-100 cover"
-              src={item.img}
-              alt="fp1.jpg"
+              src={item.FotoPortada}
+              alt={item.FotoPortada}
             />
             <div className="thmb_cntnt">
-              <ul className="tag mb0">
-                {item.saleTag.map((val, i) => (
+              <ul className="tag mb0 pt1">
+                {item.TipoOperacionId === 1 && (
+                  <li className="list-inline-item" key="1">
+                    <a href="#">Venta</a>
+                  </li>
+                )}
+                {item.TipoOperacionId === 2 && (
+                  <li className="list-inline-item" key="2">
+                    <a href="#">Alquiler</a>
+                  </li>
+                )}                
+                {/*item.saleTag.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">{val}</a>
                   </li>
-                ))}
+                ))*/}
               </ul>
               <ul className="icon mb0">
-                <li className="list-inline-item">
+                {/*<li className="list-inline-item">
                   <a href="#">
-                    <span className="flaticon-transfer-1"></span>
+                    <span className="flaticon-view"></span>
                   </a>
-                </li>
+                </li>*/}
                 <li className="list-inline-item">
                   <a href="#">
                     <span className="flaticon-heart"></span>
@@ -181,32 +228,54 @@ const FeaturedItem = () => {
                 href={`/listing-details-v1/${item.id}`}
                 className="fp_price"
               >
-                ${item.price}
-                <small>/mo</small>
+                ${item.Precio}
+                <small></small>
               </Link>
             </div>
           </div>
           <div className="details">
             <div className="tc_content">
-              <p className="text-thm">{item.type}</p>
+              <p className="text-thm mb0">{item.type}</p>
               <h4>
                 <Link href={`/listing-details-v1/${item.id}`}>
-                  {item.title}
+                  {item.Titulo}
                 </Link>
               </h4>
               <p>
                 <span className="flaticon-placeholder"></span>
-                {item.location}
+                {item.Calle+' '+item.Altura}
               </p>
 
               <ul className="prop_details mb0">
-                {item.itemDetails.map((val, i) => (
+                {item.Dormitorios && (
+                  <li className="list-inline-item">
+                    <a href="#">
+                      Dormitorios: {item.Dormitorios}
+                    </a>
+                  </li>
+                )}
+                {item.Banos && (
+                  <li className="list-inline-item">
+                    <a href="#">
+                      Baños: {item.Banos}
+                    </a>
+                  </li>
+                )}
+                {item.Dormitorios && (
+                  <li className="list-inline-item">
+                    <a href="#">
+                      Sup.: {item.SuperficieTotal}
+                    </a>
+                  </li>
+                )}
+
+                {/*item.itemDetails.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">
                       {val.name}: {val.number}
                     </a>
                   </li>
-                ))}
+                ))*/}
               </ul>
             </div>
             {/* End .tc_content */}
@@ -215,19 +284,20 @@ const FeaturedItem = () => {
               <ul className="fp_meta float-start mb0">
                 <li className="list-inline-item">
                   <Link href="/agent-v1">
-                    <Image
+                    <img
                       width={40}
                       height={40}
-                      src={item.posterAvatar}
+                      src="/assets/images/property/pposter1.png"
                       alt="pposter1.png"
                     />
                   </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link href="/agent-v1">{item.posterName}</Link>
+                  <Link href="/agent-v1">Inmobiliaria X</Link>
                 </li>
               </ul>
-              <div className="fp_pdate float-end">{item.postedYear}</div>
+              <div className="fp_pdate float-end">{new Date(item.Creado).toLocaleDateString('es-ES')}
+              </div>
             </div>
             {/* End .fp_footer */}
           </div>
@@ -239,6 +309,9 @@ const FeaturedItem = () => {
   useEffect(() => {
     dispatch(addLength(content.length));
   }, [dispatch, content]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return <>{content}</>;
 };

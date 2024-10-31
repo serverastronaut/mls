@@ -5,8 +5,8 @@ module.exports = [
     postMeta: "business",
     title: `Skills That You Can Learn In The Real Estate Market`,
     posterAvatar: "/assets/images/property/pposter1.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -16,8 +16,8 @@ module.exports = [
     title: `Bedroom Colors You will Never this
     Regret`,
     posterAvatar: "/assets/images/property/pposter2.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -26,8 +26,8 @@ module.exports = [
     postMeta: "business",
     title: `5 Essential Steps for Buying everyone Investment`,
     posterAvatar: "/assets/images/property/pposter3.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -36,8 +36,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter4.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -46,8 +46,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter1.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -56,8 +56,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter2.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -66,8 +66,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter3.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -76,8 +76,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter4.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
   {
@@ -86,8 +86,8 @@ module.exports = [
     postMeta: "Construction",
     title: `Redfin Ranks the Most Competitive Neighborhoods of 2022`,
     posterAvatar: "/assets/images/property/pposter1.png",
-    posterName: "Ali Tufan",
-    postedDate: "7 August 2022",
+    posterName: "Martin Perez",
+    postedDate: "7 Agosto 2022",
     postDescriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.`,
   },
 ];

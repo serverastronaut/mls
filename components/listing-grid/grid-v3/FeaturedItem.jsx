@@ -30,7 +30,7 @@ const FeaturedItem = () => {
 
   // keyword filter
   const keywordHandler = (item) =>
-    item.title.toLowerCase().includes(keyword?.toLowerCase());
+    item.Titulo.toLowerCase().includes(keyword?.toLowerCase());
 
   // location handler
   const locationHandler = (item) => {
@@ -191,7 +191,7 @@ const FeaturedItem = () => {
               <p className="text-thm">{item.type}</p>
               <h4>
                 <Link href={`/listing-details-v1/${item.id}`}>
-                  {item.title}
+                  {item.Titulo}
                 </Link>
               </h4>
               <p>

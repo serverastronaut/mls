@@ -5246,7 +5246,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .feat_property .thumb img {
-  opacity: 0.6;
+  opacity: 0.7;
   object-fit: fill;
   min-height: 220px;
 }
@@ -5290,7 +5290,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .properti_city.home6 .thumb .thmb_cntnt ul.tag {
   position: absolute;
   left: 5px;
-  top: 0px;
+  top: 4px;
 }
 
 .feat_property .thumb .thmb_cntnt ul.tag li,
@@ -13882,7 +13882,7 @@ legend span {
 
 .sasw_list .min_area,
 .sasw_list .max_area {
-  width: 135px;
+  width: 110px;
 }
 
 .sasw_list .max_area {
@@ -18330,7 +18330,7 @@ canvas {
 #open.flaticon-close:before,
 #open2.flaticon-filter-results-button:before,
 #open2.flaticon-close:before {
-  background-color: #f53c41;
+  background-color: #484848;
   left: 0;
   position: absolute;
   width: 48px;
