@@ -8,7 +8,6 @@ const SidebarListing2 = () => {
           <FilteringItem />
         </div>
       </div>
-      {/* End .sidebar_listing_list */}
     </div>
   );
 };

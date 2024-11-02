@@ -88,7 +88,7 @@ const TabDetailsContent = () => {
             aria-controls="review"
             aria-selected="false"
           >
-            Mensajes (notaDev: sólo si es mi prop.)
+            Mensajes {/*(notaDev: sólo si es mi prop.)*/}
           </a>
         </li>
         {/* End Reviews tab */}

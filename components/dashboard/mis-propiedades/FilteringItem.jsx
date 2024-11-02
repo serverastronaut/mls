@@ -29,7 +29,6 @@ import { v4 as uuidv4 } from "uuid";
 const FilteringItem = () => {
   const {
     keyword,
-    //location,
     location,
     status,
     propertyType,
@@ -128,7 +127,6 @@ const FilteringItem = () => {
     setPropertiesType("");
     dispath(addPrice({ min: 10000, max: 900000 }));
     setBathroom("");
-    setBedroom("");
     setBedroom("");
     setGarages("");
     setBuiltYear("");
@@ -258,7 +256,6 @@ const FilteringItem = () => {
           </div>
         </div>
       </li>
-      {/* End li */}
 
       <li>
         <div className="search_option_two">
@@ -300,7 +297,6 @@ const FilteringItem = () => {
           </div>
         </div>
       </li>
-      {/* End li */}
 
       <li>
         <div className="search_option_two">
@@ -318,7 +314,6 @@ const FilteringItem = () => {
           </div>
         </div>
       </li>
-      {/* End li */}
 
       <li>
         <div className="search_option_two">
@@ -355,7 +350,6 @@ const FilteringItem = () => {
           />
         </div>
       </li>
-      {/* End li */}
 
       <li className="max_area list-inline-item">
         <div className="form-group mb-4">
@@ -369,7 +363,6 @@ const FilteringItem = () => {
           />
         </div>
       </li>
-      {/* End li */}
 
       <li>
         <div id="accordion" className="panel-group">
@@ -386,7 +379,6 @@ const FilteringItem = () => {
                 </a>
               </h4>
             </div>
-            {/* End .panel-heading */}
 
             <div id="panelBodyRating" className="panel-collapse collapse">
               <div className="panel-body row">
@@ -422,7 +414,6 @@ const FilteringItem = () => {
           </div>
         </div>
       </li>
-      {/* End li */}
 
       <li>
         <div className="search_option_button">
@@ -435,7 +426,7 @@ const FilteringItem = () => {
           </button>
         </div>
       </li>
-      {/* End li */}
+
     </ul>
   );
 };

@@ -1,7 +1,7 @@
 const DescriptionsText = () => {
   return (
     <>
-      <h3 className="title mb-3">Primer bloque de informacion</h3>
+      <h3 className="title mb-3">Primer bloque de información</h3>
       <p className="mb25">
         Evans Tower very high demand corner junior one bedroom plus a large
         balcony boasting full open NYC views. You need to see the views to

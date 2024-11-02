@@ -52,7 +52,8 @@ const index = () => {
                         width={286}
                         height={220}
                         className="img-whp"
-                        src="/assets/images/team/11.jpg"
+                        //src="/assets/images/team/11.jpg"
+                        src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="11.jpg"
                       />
                       <div className="thmb_cntnt">
@@ -67,22 +68,22 @@ const index = () => {
 
                     <div className="details">
                       <div className="tc_content">
-                        <h4>Departamento en Echesortu</h4>
+                        <h4>Departamento en Carlos Paz</h4>
                         {/*<p className="text-thm">Agent</p>*/}
                         <ul className="prop_details mb0">
                           <li>
-                            <a href="#">Office: 134 456 3210</a>
+                            <a href="#">Tel. fijo: 134 456 3210</a>
                           </li>
                           <li>
-                            <a href="#">Mobile: 891 456 9874</a>
+                            <a href="#">Celular: 891 456 9874</a>
                           </li>
                           <li>
-                            <a href="#">Email: pakulla@findhouse.com</a>
+                            <a href="#">Email: info@inmobiliariax.com</a>
                           </li>
                         </ul>
                       </div>
 
-                      <div className="fp_footer">
+                      <div className="fp_footer mt3">
                         <ul className="fp_meta float-start mb0">
                           <li className="list-inline-item">
                             <a href="#">
@@ -101,18 +102,13 @@ const index = () => {
                           </li>
                           <li className="list-inline-item">
                             <a href="#">
-                              <i className="fa fa-pinterest"></i>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="#">
-                              <i className="fa fa-google"></i>
+                              <i className="fa fa-whatsapp"></i>
                             </a>
                           </li>
                         </ul>
-                        <div className="fp_pdate float-end text-thm">
+                        <button className="float-end btn btn1">
                           Vista pública <i className="fa fa-angle-right"></i>
-                        </div>
+                        </button>
                       </div>
                     </div>
                   </div>

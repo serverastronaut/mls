@@ -66,7 +66,7 @@ const index = () => {
               <div className="row">
                 <div className="col-xl-7">
                   <div className="application_statics">
-                    <h4 className="mb-4">Ver estadísticas</h4>
+                    <h4 className="mb-4">Estadísticas</h4>
                     <StatisticsChart />
                   </div>
                 </div>

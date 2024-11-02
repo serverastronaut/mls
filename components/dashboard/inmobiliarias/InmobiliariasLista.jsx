@@ -78,8 +78,9 @@ const InmobiliariasLista = ({ currentPage, itemsPerPage, setTotalItems }) => {
                   width={120}
                   height={120}
                   className="mr-3"
-                  src="/assets/images/resource/review4.png"
-                  alt="Inmobiliaria imagen"
+                  src="/assets/images/resource/logo-placeholder.png"
+                  //src={item.Logo}
+                  alt="Inmobiliaria logo"
                 />
                 <div>
                 <h5 className="review_title mt-0">
@@ -89,7 +90,7 @@ const InmobiliariasLista = ({ currentPage, itemsPerPage, setTotalItems }) => {
                 </h5>
                 <p className="para">de {item.Titular} ({item.Email})</p>                
                 <a className="review_date" href="#">
-                  Fecha alta: {item.Creado} | Matrícula {item.Matricula}
+                  Fecha alta: {new Date(item.Creado).toLocaleDateString('es-ES')} | Matrícula {item.Matricula}
                 </a>
                 </div>
               </div>

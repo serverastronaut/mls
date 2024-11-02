@@ -89,22 +89,22 @@ const MisGruposLista = () => {
           {filteredData?.map((item) => (
             <div className="media mt30 align-items-center" key={item.Id}>
               <div className="media-body d-flex align-items-center">
-                <img
+                {/*<img
                   width={120}
                   height={120}
                   className="mr-3"
                   src="/assets/images/resource/review4.png"
                   alt="Grupo image"
-                />
+                />*/}
                 <div>
-                <h5 className="review_title mt-0">
-                  <Link href="/mis-grupos/grupo-detalles/">
-                    <span className="text-thm">{item.NombreGrupo}</span>
-                  </Link>
-                  <span className="sspd_review float-end">{item.ratings}</span>
-                </h5>
+                <Link href="/mis-grupos/grupo-detalles/">                  
+                  <h5 className="review_title mt-0 font-extrabold">
+                      {item.NombreGrupo}
+                    <span className="sspd_review float-end">{item.ratings}</span>
+                  </h5>
+                </Link>                
                 <a className="review_date" href="#">
-                  Creado {item.Creado} (act. {item.Actualizado})
+                  Creado <strong>{new Date(item.Creado).toLocaleDateString('es-ES')}</strong> (actualizado <strong>{new Date(item.Actualizado).toLocaleDateString('es-ES')}</strong>)
                 </a>
                 <p className="para">{item.DescripcionGrupo}</p>
                 </div>

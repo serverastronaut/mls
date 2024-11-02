@@ -101,7 +101,7 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
                 <li className="list-inline-item">
                   <a href="#">
                     <span className="flaticon-calendar pr10"></span>{" "}
-                    {item.postedDate}
+                    Publicada el {new Date(item.Creado).toLocaleDateString('es-ES')}
                   </a>
                 </li>
               </ul>

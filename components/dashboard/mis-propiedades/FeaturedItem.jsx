@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
 //import properties from "../../../data/properties";
-//import Image from "next/image";
 
 const FeaturedItem = () => {
 
@@ -15,7 +14,6 @@ const FeaturedItem = () => {
   
   const {
     keyword,
-    //location,
     location,
     status,
     propertyType,
@@ -27,6 +25,7 @@ const FeaturedItem = () => {
     area,
     amenities,
   } = useSelector((state) => state.properties);
+
   const { statusType, featured, isGridOrList } = useSelector(
     (state) => state.filter
   );
@@ -52,9 +51,9 @@ const FeaturedItem = () => {
   }, []);  
 
 
-  useEffect(() => {
+  /*useEffect(() => {
     console.log('Datos en data después de setData: ' + JSON.stringify(data));
-  }, [data]);
+  }, [data]);*/
 
 
   // keyword filter
@@ -85,8 +84,7 @@ const FeaturedItem = () => {
   // bathroom handler
   const bathroomHandler = (item) => {
     if (bathrooms !== "") {
-      //return item.itemDetails[1].number == bathrooms;
-      return item.Banos.number == bathrooms;
+      return item.Banos == bathrooms;
     }
     return true;
   };
@@ -94,8 +92,7 @@ const FeaturedItem = () => {
   // bedroom handler
   const bedroomHandler = (item) => {
     if (bedrooms !== "") {
-      //return item.itemDetails[0].number == bedrooms;
-      return item.Dormitorios.number == bedrooms;
+      return item.Dormitorios == bedrooms;
     }
     return true;
   };
@@ -116,7 +113,7 @@ const FeaturedItem = () => {
       if (area.min !== "" && area.max !== "") {
         return (
           //parseInt(item.itemDetails[2].number) > area.min && parseInt(item.itemDetails[2].number) < area.max
-          parseInt(item.SuperficieTotal.number) > area.min && parseInt(item.SuperficieTotal.number) < area.max          
+          parseInt(item.SuperficieTotal) > area.min && parseInt(item.SuperficieTotal) < area.max          
         );
       }
     }
@@ -159,18 +156,18 @@ const FeaturedItem = () => {
   //let content = properties
   const content = data
     //?.slice(10, 16)
-    ?.slice(0, 6)
+    //?.slice(0, 6)
     ?.filter(keywordHandler)
     ?.filter(locationHandler)
     ?.filter(priceHandler)    
     /*?.filter(statusHandler)
-    ?.filter(propertiesHandler)
+    ?.filter(propertiesHandler)*/
     ?.filter(bathroomHandler)
     ?.filter(bedroomHandler)
-    ?.filter(garagesHandler)
-    ?.filter(builtYearsHandler)
+    //?.filter(garagesHandler)
+    //?.filter(builtYearsHandler)
     ?.filter(areaHandler)
-    ?.filter(advanceHandler)
+    /*?.filter(advanceHandler)
     ?.sort(statusTypeHandler)
     ?.filter(featuredHandler)*/
     .map((item) => (
