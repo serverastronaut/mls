@@ -3,11 +3,13 @@ import CopyrightFooter from "../../common/footer/CopyrightFooter";
 import Footer from "../../common/footer/Footer";
 import Header from "../../common/header/DefaultHeader";
 import MobileMenu from "../../common/header/MobileMenu";
-import FilterTopBar from "../../common/listing/FilterTopBar";
+//import FilterTopBar from "../../common/listing/FilterTopBar";
+import FilterTopBar from "./FilterTopBar";
 import GridListButton from "../../common/listing/GridListButton";
 import ShowFilter from "../../common/listing/ShowFilter";
-import SidebarListing2 from "../../common/listing/SidebarListing2";
-import PopupSignInUp from "../../common/PopupSignInUp";
+//import SidebarListing2 from "../../common/listing/SidebarListing2";
+import SidebarListing2 from "./SidebarListing2";
+//import PopupSignInUp from "../../common/PopupSignInUp";
 import BreadCrumb2 from "./BreadCrumb2";
 import FeaturedItem from "./FeaturedItem";
 
@@ -19,9 +21,6 @@ const index = () => {
 
       {/* <!--  Mobile Menu --> */}
       <MobileMenu />
-
-      {/* <!-- Modal --> */}
-      <PopupSignInUp />
 
       {/* <!-- Listing Grid View --> */}
       <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 ">

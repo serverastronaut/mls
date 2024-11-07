@@ -222,7 +222,7 @@ const FeaturedItem = () => {
               </ul>
 
               <Link
-                href={`/listing-details-v1/${item.id}`}
+                href={`/mis-propiedades/propiedad-detalles`}
                 className="fp_price"
               >
                 ${item.Precio}
@@ -234,7 +234,7 @@ const FeaturedItem = () => {
             <div className="tc_content">
               <p className="text-thm mb0">{item.type}</p>
               <h4>
-                <Link href={`/listing-details-v1/${item.id}`}>
+                <Link href="/mis-propiedades/propiedad-detalles">
                   {item.Titulo}
                 </Link>
               </h4>
@@ -258,7 +258,7 @@ const FeaturedItem = () => {
                     </a>
                   </li>
                 )}
-                {item.Dormitorios && (
+                {item.SuperficieTotal && (
                   <li className="list-inline-item">
                     <a href="#">
                       Sup.: {item.SuperficieTotal}

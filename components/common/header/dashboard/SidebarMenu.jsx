@@ -14,9 +14,9 @@ const SidebarMenu = () => {
 
   const myProperties = [
     { id: 1, name: "Agregar propiedad", route: "/create-listing", icon: "flaticon-user" },    
-    { id: 2, name: "Mis propiedades", route: "/my-properties" },
-    { id: 3, name: "Propiedades de la red", route: "/my-properties" },
-    { id: 4, name: "Compartidas conmigo", route: "/my-properties" },
+    { id: 2, name: "Mis propiedades", route: "/mis-propiedades" },
+    { id: 3, name: "Propiedades de la red", route: "/mis-propiedades" },
+    { id: 4, name: "Compartidas conmigo", route: "/mis-propiedades" },
   ];
   const reviews = [
     { id: 1, name: "Mis grupos", route: "/mis-grupos" },
@@ -43,7 +43,7 @@ const SidebarMenu = () => {
       id: 1,
       name: "Mi inmobiliaria",
       route: "/mi-inmobiliaria",
-      icon: "flaticon-house",
+      icon: "flaticon-house", 
     },
     {
       id: 2,
@@ -126,29 +126,16 @@ const SidebarMenu = () => {
                 <span> Agregar propiedad</span>
               </Link>
 
-              {/*<a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>Mis propiedades</span>
-                <i className="fa fa-angle-down pull-right"></i>
-              </a>
-              <ul className="treeview-menu collapse" id="my-property">
-                {myProperties.map((item) => (
-                  <li key={item.id}>
-                    <Link href={item.route}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>*/}
             </li>
 
             <li
               className={`treeview ${
-                isSinglePageActive("/my-properties", pathname)
+                isSinglePageActive("/mis-propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-properties">
+              <Link href="/mis-propiedades">
                 <i className="flaticon-home"></i>
                 <span> Mis propiedades</span>
               </Link>
@@ -156,12 +143,12 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${
-                isSinglePageActive("/my-properties", pathname)
+                isSinglePageActive("/mis-propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-properties">
+              <Link href="/mis-propiedades">
                 <i className="flaticon-house"></i>
                 <span> De la red</span>
               </Link>
@@ -169,12 +156,12 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${
-                isSinglePageActive("/my-properties", pathname)
+                isSinglePageActive("/mis-propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-properties">
+              <Link href="/mis-propiedades">
                 <i className="flaticon-share"></i>
                 <span> Compartidas conmigo</span>
               </Link>

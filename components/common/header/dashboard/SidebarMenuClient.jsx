@@ -14,9 +14,9 @@ const SidebarMenu = () => {
 
   const myProperties = [
     { id: 1, name: "Agregar propiedad", route: "/create-listing", icon: "flaticon-user" },    
-    { id: 2, name: "Mis propiedades", route: "/my-properties" },
-    { id: 3, name: "Propiedades de la red", route: "/my-properties" },
-    { id: 4, name: "Compartidas conmigo", route: "/my-properties" },
+    { id: 2, name: "Mis propiedades", route: "/mis-propiedades" },
+    { id: 3, name: "Propiedades de la red", route: "/mis-propiedades" },
+    { id: 4, name: "Compartidas conmigo", route: "/mis-propiedades" },
   ];
   const reviews = [
     { id: 1, name: "Mis grupos", route: "/my-review" },
