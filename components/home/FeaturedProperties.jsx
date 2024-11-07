@@ -89,7 +89,7 @@ const FeaturedProperties = () => {
             </ul>
             {/* End .icon */}
 
-            <Link href={`/listing-details-v1/${item.id}`} className="fp_price">
+            <Link href={`/detalle-propiedad`} className="fp_price">
               ${item.Precio}
               <small></small>
             </Link>
@@ -101,7 +101,7 @@ const FeaturedProperties = () => {
           <div className="tc_content">
             <p className="text-thm">{item.tipoPropiedad}</p>
             <h4>
-              <Link href={`/listing-details-v1/${item.id}`}>{item.Titulo}</Link>
+              <Link href={`/detalle-propiedad`}>{item.Titulo}</Link>
             </h4>
             <p>
               <span className="flaticon-placeholder"></span>
@@ -138,7 +138,7 @@ const FeaturedProperties = () => {
             <ul className="fp_meta float-start mb0">
               <li className="list-inline-item">
                 <Link href="/agent-v2">
-                  <Image
+                  <img
                     width={40}
                     height={40}
                     src="/assets/images/property/pposter1.png"
