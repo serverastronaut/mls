@@ -4,50 +4,46 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "../auth/[...nextauth]/route";
 
 export async function POST(request) {
+
     const data = await request.json();
-
-    console.log(data);
-
     const session = await getServerSession(authOptions);
-    console.log(session);
 
-      const nuevaPropiedad = await prisma.propiedades.create({
-        data: {
-            Titulo: data.titulo,
-            Descripcion: data.descripcion,
-            // InmobiliariaId: {
-            //     connect: {
-            //         id: parseInt(session.user.id),
-            //     },
-            // },
-        },
-      });
+    if (!session) {
+      return NextResponse.json(
+        { message: "Unauthorized" },
+        { status: 401 }
+      );
+    }
 
-      return NextResponse.json(nuevaPropiedad, { status: 201 });
+    const nuevaPropiedad = await prisma.propiedades.create({
+      data: {
+          Titulo: data.titulo,
+          Descripcion: data.descripcion,
+          InmobiliariaId: parseInt(session.user.inmobiliariaid)
+      },
+    });
+
+    return NextResponse.json(nuevaPropiedad, { status: 201 });
+
+}
 
 
-    // const session = await getServerSession(authOptions);
+// Nueva función GET para listar las propiedades
+export async function GET(request) {
+  const session = await getServerSession(authOptions);
 
-    // console.log(session);
+  if (!session) {
+      return NextResponse.json(
+          { message: "Unauthorized" },
+          { status: 401 }
+      );
+  }
 
-//   if (!session) {
-//     return NextResponse.json(
-//       { message: "Unauthorized" },
-//       { status: 401 }
-//     );
-//   }
+  const propiedades = await prisma.propiedades.findMany({
+      where: {
+          InmobiliariaId: parseInt(session.user.inmobiliariaid),
+      },
+  });
 
-//   const newProject = await prisma.project.create({
-//     data: {
-//       title: data.title,
-//       description: data.description,
-//       user: {
-//         connect: {
-//           id: parseInt(session.user.id),
-//         },
-//       },
-//     },
-//   });
-
-//   return NextResponse.json(newProject, { status: 201 });
+  return NextResponse.json(propiedades, { status: 200 });
 }

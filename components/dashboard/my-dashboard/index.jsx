@@ -1,6 +1,6 @@
 "use client"
 
-import { useSession, signOut } from "next-auth/react";
+import { useSession} from "next-auth/react";
 
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
