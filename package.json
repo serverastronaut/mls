@@ -33,6 +33,7 @@
     "react-slick": "^0.29.0",
     "sass": "^1.68.0",
     "slick-carousel": "^1.8.1",
+    "sonner": "^1.7.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
