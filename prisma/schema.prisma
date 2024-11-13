@@ -306,10 +306,8 @@ model provincias {
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model roles {
-  Id  Int     @default(autoincrement())
+  Id  Int     @id @default(autoincrement())
   Rol String? @db.VarChar(50)
-
-  @@ignore
 }
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
@@ -362,7 +360,7 @@ model usuarios {
   RolId             Int?
   Nombre            String    @default("") @db.VarChar(100)
   Apellido          String?   @db.VarChar(100)
-  Email             String    @default("") @db.VarChar(100) @unique // Hace que el campo sea único
+  Email             String    @unique @default("") @db.VarChar(100)
   Clave             String?   @db.VarChar(60)
   Avatar            String    @default("user.jpg") @db.VarChar(250)
   Creado            DateTime  @default(now()) @db.Timestamp(6)
