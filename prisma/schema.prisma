@@ -362,7 +362,7 @@ model usuarios {
   RolId             Int?
   Nombre            String    @default("") @db.VarChar(100)
   Apellido          String?   @db.VarChar(100)
-  Email             String    @default("") @db.VarChar(100)
+  Email             String    @default("") @db.VarChar(100) @unique // Hace que el campo sea único
   Clave             String?   @db.VarChar(60)
   Avatar            String    @default("user.jpg") @db.VarChar(250)
   Creado            DateTime  @default(now()) @db.Timestamp(6)

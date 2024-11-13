@@ -1,6 +1,7 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
 import prisma from "../../../../lib/prisma";
+import bcrypt from 'bcryptjs';
 
 const handler = NextAuth({
     providers: [
@@ -26,13 +27,11 @@ const handler = NextAuth({
                 console.log(userFound)
 
                 if (!userFound) throw new Error("Invalid credentials");
-        
-                // const validPassword = await bcrypt.compare(
-                //   password,
-                //   userFound.password
-                // );
-        
-                // if (!validPassword) throw new Error("Invalid credentials");
+
+                // Comparar la contraseña
+                const validPassword = await bcrypt.compare(Clave, userFound.Clave);
+
+                if (!validPassword) throw new Error("Invalid credentials");
         
                 return {
                   Id: userFound.Id + "",
