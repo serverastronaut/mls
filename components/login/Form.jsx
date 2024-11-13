@@ -32,7 +32,7 @@ const Form = () => {
       console.log(res);
     }
 
-    router.push("/protected");
+    router.push("/dashboard");
   })
 
   return (
