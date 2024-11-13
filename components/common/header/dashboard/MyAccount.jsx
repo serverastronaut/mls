@@ -9,7 +9,6 @@ import { useSession, signOut } from "next-auth/react";
 const MyAccount = () => {
 
   const { data: session, status } = useSession();
-  console.log(session)
 
   const pathname = usePathname()
   const profileMenuItems = [
