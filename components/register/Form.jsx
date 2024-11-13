@@ -23,20 +23,20 @@ const Form = () => {
     const res = await axios.post('/api/auth/register', data)
     //console.log(res)
 
-    // if (res.status === 201) {
-    //   const result = await signIn('credentials', {
-    //     email: res.data.email,
-    //     password: data.password,
-    //     redirect: false
-    //   })
+    if (res.status === 201) {
+      const result = await signIn('credentials', {
+        Email: res.data.Email,
+        Clave: data.Clave,
+        redirect: false
+      })
 
-    //   if (!result?.ok) {
-    //     console.log(result?.error)
-    //     return;
-    //   }
+      if (!result?.ok) {
+        console.log(result?.error)
+        return;
+      }
 
-    //   router.push('/protected')
-    // }
+      router.push('/dashboard')
+    }
 
   });
 

@@ -34,9 +34,9 @@ const handler = NextAuth({
                 if (!validPassword) throw new Error("Invalid credentials");
         
                 return {
-                  Id: userFound.Id + "",
-                  Nombre: userFound.Nombre,
-                  Email: userFound.Email,
+                  id: userFound.Id + "",
+                  name: userFound.Nombre,
+                  email: userFound.Email,
                 };
             },
         }),

@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "../store/store";
 import ScrollToTop from "@/components/common/ScrollTop";
 import "../public/assets/scss/index.scss";
+import ContextProvider from "@/context/GlobalContext";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -18,12 +19,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="./favicon.ico" />
       </head>
       <body >
-      
-      <Provider store={store}>
-      {children}
-      </Provider>
+      <ContextProvider>
+        <Provider store={store}>
+        {children}
+        </Provider>
 
-      <ScrollToTop />
+
+        <ScrollToTop />
+      </ContextProvider>
       </body>
     </html>
   )
