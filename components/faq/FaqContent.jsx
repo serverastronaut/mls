@@ -12,7 +12,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              Contrary to popular belief, Lorem Ipsum is not simply
+              Por qué MLS Propiedades es mejor que otros portales inmobiliarios
             </button>
           </div>
           <div
@@ -23,13 +23,10 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              MLS Propiedades no es solo un portal de publicación; es una plataforma de trabajo
+colaborativo donde inmobiliarias de todo el país pueden conectarse, intercambiar consultas
+y obtener un mayor alcance, asegurando la eficacia en cada publicación y potencializando
+el negocio.
               </p>
             </div>
           </div>
@@ -46,7 +43,7 @@ const FaqContent = () => {
               aria-expanded="true"
               aria-controls="collapseTwo"
             >
-              There are many variations of passages of Lorem
+              Cómo facilita MLS Propiedades la búsqueda de potenciales compradores
             </button>
           </div>
           <div
@@ -57,13 +54,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Al centralizar las propiedades de distintas inmobiliarias en un solo lugar, aumentamos la
+visibilidad. Los compradores encuentran un inventario amplio y diverso, lo cual facilita que
+encuentren exactamente lo que buscan y agiliza la captación de nuevos interesados.
               </p>
             </div>
           </div>
@@ -80,7 +73,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Model sentence structures, to generate
+              Qué beneficios tiene para una inmobiliaria unirse a una red nacional
             </button>
           </div>
           <div
@@ -91,13 +84,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              MLS Propiedades permite que las inmobiliarias puedan conectarse en red con colegas de
+distintas provincias, abriendo oportunidades de negocio y colaboración que serían difíciles
+de lograr de otra manera.
               </p>
             </div>
           </div>
@@ -114,7 +103,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              The first line of Lorem Ipsum
+              Cómo ayuda MLS Propiedades en la actualización de noticias del sector
             </button>
           </div>
           <div
@@ -125,13 +114,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Contamos con un espacio dedicado a las noticias y novedades del sector inmobiliario,
+manteniendo a los profesionales siempre informados sobre los cambios del mercado,
+normativas, tendencias y mejores prácticas.
               </p>
             </div>
           </div>
@@ -148,7 +133,8 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              Finibus Bonorum et Malorum by Cicero are also
+              MLS Propiedades ofrece soporte para la gestión de consultas y contacto con otros
+              profesionales
             </button>
           </div>
           <div
@@ -159,13 +145,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Sí, la plataforma permite la creación de grupos de trabajo privados o abiertos, fomentando
+la colaboración y consultas entre colegas, lo que fortalece el conocimiento y ayuda a
+resolver dudas en equipo.
               </p>
             </div>
           </div>
@@ -182,7 +164,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              Letraset sheets containing Lorem Ipsum passages
+              Cómo asegura MLS Propiedades la calidad y seguridad en sus publicaciones
             </button>
           </div>
           <div
@@ -193,13 +175,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Todas las propiedades publicadas en MLS Propiedades están respaldadas por inmobiliarias
+habilitadas y profesionales responsables, lo que otorga seguridad y confianza a los
+compradores y eleva la reputación de los participantes.
               </p>
             </div>
           </div>
@@ -216,7 +194,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseSeven"
             >
-              Model sentence structures, to generate
+              De qué manera MLS Propiedades mejora la efectividad de las publicaciones
             </button>
           </div>
           <div
@@ -227,13 +205,10 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Con nuestro sistema, cada propiedad recibe la visibilidad adecuada y llega a una audiencia
+segmentada. Los compradores confían en nuestro portal, sabiendo que cada oferta está
+verificada y respaldada, lo que aumenta la tasa de respuesta y reduces los tiempos de
+venta.
               </p>
             </div>
           </div>
@@ -250,7 +225,8 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseEight"
             >
-              The first line of Lorem Ipsum
+              Qué tipo de herramientas ofrece MLS Propiedades para la administración de
+              propiedades
             </button>
           </div>
           <div
@@ -261,13 +237,9 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Proporcionamos herramientas intuitivas para la gestión de inventario y publicación de
+propiedades, haciendo que cada inmobiliaria pueda organizar, actualizar y monitorear sus
+propiedades fácilmente desde una sola plataforma.
               </p>
             </div>
           </div>
@@ -284,7 +256,8 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseNine"
             >
-              Finibus Bonorum et Malorum by Cicero are also
+              MLS Propiedades permite trabajar con inmobiliarias de otras ciudades en operaciones
+              compartidas
             </button>
           </div>
           <div
@@ -295,13 +268,10 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Sí, en MLS Propiedades puedes trabajar en red con inmobiliarias de otras regiones,
+generando acuerdos de colaboración y expandiendo el alcance de cada operación. Esto
+permite que clientes de una ciudad puedan ver propiedades en otras, ampliando el potencial
+de ventas.
               </p>
             </div>
           </div>
@@ -318,7 +288,8 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseTen"
             >
-              Letraset sheets containing Lorem Ipsum passages
+              Cómo ayuda MLS Propiedades a la inmobiliaria a mantenerse competitiva en el
+              mercado actual
             </button>
           </div>
           <div
@@ -329,13 +300,12 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+              Al integrar funciones de red, herramientas de gestión y un alcance nacional, MLS
+Propiedades permite a las inmobiliarias destacarse, optimizar sus operaciones y ofrecer un
+servicio más completo y seguro a sus clientes.</p>
+              <p>
+                MLS Propiedades es la elección ideal para las inmobiliarias que buscan una plataforma
+completa, colaborativa y enfocada en el éxito en red.
               </p>
             </div>
           </div>

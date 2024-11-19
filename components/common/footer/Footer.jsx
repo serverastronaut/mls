@@ -7,10 +7,10 @@ const Footer = () => {
     <>
       <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
         <div className="footer_about_widget">
-          <h4>Sobre nosotros</h4>
+          <h4>Sobre la plataforma</h4>
           <p>
-            We’re reimagining how you buy, sell and rent. It’s now easier to get
-            into a place you love. So let’s do this, together.
+          MLS Propiedades es la elección ideal para las inmobiliarias que buscan una plataforma
+          completa, colaborativa y enfocada en el éxito en red.
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Footer = () => {
               <a href="mailto:info@mlspropiedades.com">info@mlspropiedades.com</a>
             </li>
             <li>
-              <a href="#">Collins Street West, San Pedro</a>
+              <a href="#">Calle 1234, San Pedro</a>
             </li>
             <li>
               <a href="#">Buenos Aires, Argentina.</a>

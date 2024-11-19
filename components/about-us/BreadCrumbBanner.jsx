@@ -7,8 +7,8 @@ const BreadCrumbBanner = () => {
         <div className="row">
           <div className="col-xl-6">
             <div className="breadcrumb_content">
-              <BreadCrumb title="about us" />
-              <h4 className="breadcrumb_title">About Us</h4>
+              <BreadCrumb title="institucional" />
+              <h4 className="breadcrumb_title">Institucional</h4>
             </div>
           </div>
           {/* End .col */}

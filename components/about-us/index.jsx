@@ -32,7 +32,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2 className="mt0">Our Mission Is To FindHouse</h2>
+                <h2 className="mt0">Bienvenido a MLS Propiedades</h2>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const index = () => {
           <div className="row mt80">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Why Choose Us</h2>
+                <h2>Por qué elegirnos</h2>
                 <p>We provide full service at every step.</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Our Team</h2>
+                <h2>Equipo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb20">
-                <h2>Testimonials</h2>
+                <h2>Testimonios</h2>
                 <p>Here could be a nice sub title</p>
               </div>
             </div>
@@ -108,7 +108,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Our Partners</h2>
+                <h2>Partners</h2>
                 <p>We only work with the best companies around the globe</p>
               </div>
             </div>
