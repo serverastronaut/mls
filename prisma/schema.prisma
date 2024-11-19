@@ -225,14 +225,17 @@ model propiedades {
   MostrarDataGrupo                   Int       @default(1)
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadesdatagrupo {
   PropiedadId      Int
   Creado           DateTime  @default(now()) @db.Timestamp(6)
   Actualizado      DateTime? @db.Timestamp(6)
   NecesitaArreglos Int       @default(0)
-  Id               Int       @id @default(autoincrement())
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadesdatainmobiliaria {
   PropiedadId         Int
   Creado              DateTime  @default(now()) @db.Timestamp(6)
@@ -240,9 +243,11 @@ model propiedadesdatainmobiliaria {
   NombrePropietario   String    @default("") @db.VarChar(50)
   ApellidoPropietario String?   @db.VarChar(50)
   TelefonoPropietario String?   @db.VarChar(50)
-  Id                  Int       @id @default(autoincrement())
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadesdatared {
   PropiedadId                 Int
   Creado                      DateTime  @default(now()) @db.Timestamp(6)
@@ -262,89 +267,124 @@ model propiedadesdatared {
   TieneComisionCompartida     Int?
   ComisionCompartida          Decimal?  @db.Decimal(10, 2)
   SituacionYAvances           String?
-  Id                          Int       @id @default(autoincrement())
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadfotos {
-  Id          Int       @id @default(autoincrement())
+  Id          Int
   PropiedadId Int?
   Url         String?   @db.VarChar(255)
   Creado      DateTime? @default(now()) @db.Timestamp(6)
   Activo      Int?      @default(1)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadplanos {
-  Id          Int       @id @default(autoincrement())
+  Id          Int
   PropiedadId Int?
   Url         String?   @db.VarChar(255)
   Creado      DateTime? @default(now()) @db.Timestamp(6)
   Activo      Int?      @default(1)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadrecorridos360 {
-  Id          Int       @id @default(autoincrement())
+  Id          Int
   PropiedadId Int?
   Url         String?   @db.VarChar(255)
   Creado      DateTime? @default(now()) @db.Timestamp(6)
   Activo      Int?      @default(1)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model propiedadvideos {
-  Id          Int       @id @default(autoincrement())
+  Id          Int
   PropiedadId Int?
   Url         String?   @db.VarChar(255)
   Creado      DateTime? @default(now()) @db.Timestamp(6)
   Activo      Int?      @default(1)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model provincias {
-  Id        Int     @id @default(autoincrement())
+  Id        Int
   Provincia String? @db.VarChar(50)
   PaisId    Int?
   Activo    Int?
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model roles {
-  Id  Int     @id @default(autoincrement())
+  Id  Int
   Rol String? @db.VarChar(50)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model seguridad {
-  Id        Int    @id @default(autoincrement())
+  Id        Int
   Seguridad String @default("") @db.VarChar(255)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model servicios {
-  Id       Int     @id @default(autoincrement())
+  Id       Int
   Servicio String? @db.VarChar(255)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model subtipospropiedad {
-  Id               Int     @id @default(autoincrement())
+  Id               Int
   TipoPropiedadId  Int?
   SubtipoPropiedad String? @db.VarChar(255)
   Activo           Int?
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model tiposoperacion {
-  Id            Int     @id @default(autoincrement())
+  Id            Int
   TipoOperacion String? @db.VarChar(20)
   Activo        Int?    @default(1)
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model tipospropiedad {
-  Id            Int     @id @default(autoincrement())
+  Id            Int
   TipoPropiedad String? @db.VarChar(30)
   Activo        Int?
+
+  @@ignore
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model usuarios {
-  Id                Int       @id @default(autoincrement())
+  Id                Int
   InmobiliariaId    Int?
   RolId             Int?
   Nombre            String    @default("") @db.VarChar(100)
   Apellido          String?   @db.VarChar(100)
-  Email             String    @unique(map: "email_unique") @default("") @db.VarChar(100)
+  Email             String    @default("") @db.VarChar(100)
   Clave             String?   @db.VarChar(60)
   Avatar            String    @default("user.jpg") @db.VarChar(250)
   Creado            DateTime  @default(now()) @db.Timestamp(6)
@@ -352,4 +392,6 @@ model usuarios {
   FechaDeNacimiento DateTime? @db.Date
   Telefono          String?   @db.VarChar(50)
   Activo            Int       @default(1)
+
+  @@ignore
 }
