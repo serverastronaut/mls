@@ -1,4 +1,11 @@
 import CheckBoxFilter from "../../common/CheckBoxFilter";
+import AmbientesCheckboxes from "./AmbientesCheckboxes";
+import SeguridadCheckboxes from "./SeguridadCheckboxes";
+import ComodidadesCheckboxes from "./ComodidadesCheckboxes";
+import CondicionesEspecialesCheckboxes from "./CondicionesEspecialesCheckboxes";
+import CondicionesEspecialesCamposCheckboxes from "./CondicionesEspecialesCamposCheckboxes";
+import AptitudesCheckboxes from "./AptitudesCheckboxes";
+import ServiciosCheckboxes from "./ServiciosCheckboxes";
 
 const DetailedInfo = () => {
   return (
@@ -9,7 +16,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="propertyId" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
@@ -17,7 +23,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="propertyASize" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
@@ -25,7 +30,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="landArea" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
@@ -33,7 +37,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="bedRooms" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-4">
         <div className="my_profile_setting_input form-group">
@@ -63,7 +66,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -71,7 +73,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -79,7 +80,6 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
-      {/* End .col */}
 
       <div className="col-lg-6 col-xl-4">
         <div className="my_profile_setting_input form-group">
@@ -124,56 +124,47 @@ const DetailedInfo = () => {
           <input type="text" className="form-control" id="yearBuild" />
         </div>
       </div>
-      {/* End .col */}
 
 
-      <div className="col-xl-12 mt-1">
-        <h4 className="mb10">Ambientes</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Ambientes</h4>
       </div>
+      <AmbientesCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Seguridad</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Seguridad</h4>
       </div>
+      <SeguridadCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Comodidades y equipamiento</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Comodidades y equipamiento</h4>
       </div>
+      <ComodidadesCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Condiciones especiales</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Condiciones especiales</h4>
       </div>
+      <CondicionesEspecialesCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Condiciones esp. lotes y campos</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Condiciones esp. loteo campos</h4>
       </div>
+      <CondicionesEspecialesCamposCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Aptitudes</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Aptitudes</h4>
       </div>
+      <AptitudesCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Servicios</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Servicios</h4>
       </div>
+      <ServiciosCheckboxes />
 
-      <CheckBoxFilter />
-
-      <div className="col-xl-12 mt-3">
-        <h4 className="mb10">Servicios en desarrollo</h4>
+      <div className="col-xl-12 mt-4">
+        <h4 className="mb20">Servicios en desarrollo</h4>
       </div>
-
-      <CheckBoxFilter />
+      <ServiciosCheckboxes />
 
       <div className="col-xl-12">
         <div className="my_profile_setting_input overflow-hidden mt20">

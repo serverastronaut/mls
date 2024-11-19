@@ -1,31 +1,17 @@
-import Team from "../agent-view/agent-v2/Team";
-import Comments from "../blog-details/Comments";
-import Ratings from "../blog-details/Ratings";
-import ReviewBox from "../blog-details/ReviewBox";
 import DescriptionsText from "./DescriptionsText";
-import Listings from "./Listings";
+//import InfoDeRed from "./InfoDeRed";
+//import InfoPrivada from "./InfoPrivada";
+//import TableArchivos from "./TableArchivos";
+//import Archivos from "./Archivos";
+//import Mensajes from "./Mensajes";
+import PropertyVideo from "../common/listing-details/PropertyVideo";
+import Planos from "./Planos";
 
 const TabDetailsContent = () => {
   return (
     <>
-      <ul className="nav nav-tabs" id="myTab" role="tablist">
-        <li className="nav-item">
-          <a
-            className="nav-link active"
-            data-bs-toggle="tab"
-            href="#description"
-            role="tab"
-            aria-controls="description"
-            aria-selected="true"
-          >
-            Información de la propiedad
-          </a>
-        </li>
-        {/* End Description tab */}
-      </ul>
-      {/* End .nav nav-tabs */}
+      <div className="container<w">
 
-      <div className="tab-content" id="myTabContent2">
         <div
           className="tab-pane fade show active"
           id="description"
@@ -36,74 +22,109 @@ const TabDetailsContent = () => {
               <div className="mbp_first media">
                 <div className="media-body agent-desc">
                   <DescriptionsText />
+                  <PropertyVideo />
+                  <Planos />
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        {/*<div
+          className="tab-pane fade"
+          id="datosDeRed"
+          role="tabpanel"
+        >
+          <div className="product_single_content">
+            <div className="mbp_pagination_comments">
+              <div className="mbp_first media">
+                <div className="media-body agent-desc">
+                  <InfoDeRed />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* End Description details content*/}
+        </div>*/}
 
-        <div
-          className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
-          id="listing"
-          role="tabpanel"
-        >
-          <Listings />
-        </div>
-        {/* End Listing details content*/}
 
-        <div
-          className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
+        {/*<div
+          className="tab-pane fade"
           id="agetns"
           role="tabpanel"
         >
-          <div className="row  mt30">
-            <Team />
-          </div>
-        </div>
-        {/* End aget team content*/}
-
-        <div className="tab-pane fade" id="review" role="tabpanel">
           <div className="product_single_content">
             <div className="mbp_pagination_comments">
-              <div className="total_review">
-                <h4>896 Reviews</h4>
-                <ul className="review_star_list mb0 pl10">
-                  <Ratings />
-                </ul>
-                <a className="tr_outoff pl10" href="#">
-                  ( 4.5 out of 5 )
-                </a>
-                <a className="write_review float-end fn-xsd" href="#">
-                  Write a Review
-                </a>
-              </div>
-              {/* End .total_review */}
-              <Comments />
-              <div className="custom_hr"></div>
-
-              <div className="mbp_comment_form style2">
-                <h4>Write a Review</h4>
-                <ul className="review_star">
-                  <li className="list-inline-item">
-                    <span className="sspd_review">
-                      <ul>
-                        <Ratings />
-                      </ul>
-                    </span>
-                  </li>
-                  <li className="list-inline-item pr15">
-                    <p>Your Rating & Review</p>
-                  </li>
-                </ul>
-                <ReviewBox />
+              <div className="mbp_first media">
+                <div className="media-body agent-desc">
+                  <div className="additional_details mb-3">
+                    <h4 className="title mb-3">Datos del grupo</h4>     
+                    <p className="mb15">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel orci nec erat convallis fermentum a eget odio. Donec at purus quis odio interdum vestibulum. Praesent bibendum arcu at semper viverra. Nulla facilisi. Vestibulum euismod lectus a nibh convallis, non aliquet arcu tempus.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* End Reviews details content*/}
+        </div>*/}
+
+
+        {/*<div className="tab-pane fade" 
+          id="datosPrivados" 
+          role="tabpanel"
+        >
+          <div className="product_single_content">
+            <div className="mbp_pagination_comments">
+              <div className="mbp_first media">
+                <div className="media-body agent-desc">
+                  <InfoPrivada />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>*/}
+
+
+        {/*<div className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199" 
+          id="multimedia" 
+          role="tabpanel"
+        >
+          <div className="row  mt30">
+            <TableArchivos />
+          </div>
+        </div>*/}
+
+        {/*<div className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199" 
+          id="archivos" 
+          role="tabpanel"
+        >
+          <div className="property_attachment_area" style={{border: '0px'}}>
+            <h4 className="mb30">Archivos adjuntos</h4>
+            <div className="iba_container style2">
+              <Archivos />
+            </div>
+          </div>
+        </div>*/}
+
+        {/*<div className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199" 
+          id="mensajes" 
+          role="tabpanel"
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <div id="myreview" className="my_dashboard_review">
+                <div className="review_content">
+                  <h4>Mensajes clientes</h4>
+                  <Mensajes />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>*/}
+
       </div>
-      {/* End tab-content */}
+
     </>
   );
 };

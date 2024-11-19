@@ -12,28 +12,22 @@ import { usePathname } from "next/navigation";
 const SidebarMenu = () => {
   const pathname = usePathname()
 
-  const myProperties = [
-    { id: 1, name: "Agregar propiedad", route: "/create-listing", icon: "flaticon-user" },    
-    { id: 2, name: "Mis propiedades", route: "/mis-propiedades" },
-    { id: 3, name: "Propiedades de la red", route: "/mis-propiedades" },
-    { id: 4, name: "Compartidas conmigo", route: "/mis-propiedades" },
-  ];
   const reviews = [
-    { id: 1, name: "Mis grupos", route: "/mis-grupos" },
-    { id: 2, name: "Crear nuevo grupo", route: "/crear-grupo" },
+    { id: 1, name: "Mis grupos", route: "/dashboard/mis-grupos" },
+    { id: 2, name: "Crear nuevo grupo", route: "/dashboard/crear-grupo" },
   ];
 
   const myClients = [
     {
       id: 1,
       name: "Mis clientes",
-      route: "/mis-clientes",
+      route: "/dashboard/mis-clientes",
       icon: "flaticon-user",
     },
     {
       id: 2,
       name: "Mensajes clientes",
-      route: "/my-review",
+      route: "/dashboard/my-review",
       icon: "flaticon-chat",
     },
   ];
@@ -42,19 +36,19 @@ const SidebarMenu = () => {
     {
       id: 1,
       name: "Mi inmobiliaria",
-      route: "/mi-inmobiliaria",
+      route: "/dashboard/mi-inmobiliaria",
       icon: "flaticon-house", 
     },
     {
       id: 2,
       name: "Mi cuenta",
-      route: "/my-profile",
+      route: "/dashboard/my-profile",
       icon: "flaticon-user",
     },
     {
       id: 4,
       name: "Agregar usuario (owner)",
-      route: "/crear-usuario",
+      route: "/dashboard/crear-usuario",
       icon: "flaticon-plus",
     },
     { id: 4, name: "Cerrar sesión", route: "/login", icon: "flaticon-logout" },
@@ -66,43 +60,38 @@ const SidebarMenu = () => {
         <li className="sidebar_header header" style={{height: '140px'}}>
           <Link href="/">
             <Image
-              //width={200}
-              //height={45}
               width={120}
               height={120}
-              //src="/assets/images/mlslogo-white.svg"
               src="/assets/images/logocuadrado.svg"
               alt="mlslogo-white.svg"
               style={{marginTop: '30px', marginBottom: '30px'}}
             />
-            {/*<span>FindHouse</span>*/}
           </Link>
         </li>
-        {/* End header */}
 
         <li className="title">
           <span>Inicio</span>
           <ul>
             <li
               className={`treeview ${
-                isSinglePageActive("/my-dashboard", pathname)
+                isSinglePageActive("/dashboard/my-dashboard", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-layers"></i>
                 <span> Bienvenido</span>
               </Link>
             </li>
             <li
               className={`treeview ${
-                isSinglePageActive("/novedades", pathname)
+                isSinglePageActive("/dashboard/novedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/novedades">
+              <Link href="/dashboard/novedades">
                 <i className="flaticon-chat"></i>
                 <span>Novedades</span>
               </Link>
@@ -116,12 +105,12 @@ const SidebarMenu = () => {
           <ul>
             <li
               className={`treeview ${
-                isSinglePageActive("/create-listing", pathname)
+                isSinglePageActive("/dashboard/create-listing", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/create-listing">
+              <Link href="/dashboard/create-listing">
                 <i className="flaticon-plus"></i>
                 <span> Agregar propiedad</span>
               </Link>
@@ -130,12 +119,12 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${
-                isSinglePageActive("/mis-propiedades", pathname)
+                isSinglePageActive("/dashboard/propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/mis-propiedades">
+              <Link href="/dashboard/propiedades">
                 <i className="flaticon-home"></i>
                 <span> Mis propiedades</span>
               </Link>
@@ -143,12 +132,12 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${
-                isSinglePageActive("/mis-propiedades", pathname)
+                isSinglePageActive("/dashboard/propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/mis-propiedades">
+              <Link href="/dashboard/propiedades">
                 <i className="flaticon-house"></i>
                 <span> De la red</span>
               </Link>
@@ -156,12 +145,12 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${
-                isSinglePageActive("/mis-propiedades", pathname)
+                isSinglePageActive("/dashboard/propiedades", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/mis-propiedades">
+              <Link href="/dashboard/propiedades">
                 <i className="flaticon-share"></i>
                 <span> Compartidas conmigo</span>
               </Link>
@@ -190,11 +179,8 @@ const SidebarMenu = () => {
                 ))}
               </ul>
             </li>
-            {/* End Review */}
-
           </ul>
         </li>
-        {/* End manage listing */}
 
         <li className="title">
           <span>Gestión clientes</span>

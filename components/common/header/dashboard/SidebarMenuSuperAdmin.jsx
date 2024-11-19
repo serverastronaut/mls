@@ -12,28 +12,22 @@ import { usePathname } from "next/navigation";
 const SidebarMenu = () => {
   const pathname = usePathname()
 
-  const myProperties = [
-    { id: 1, name: "Agregar propiedad", route: "/create-listing", icon: "flaticon-user" },    
-    { id: 2, name: "Mis propiedades", route: "/mis-propiedades" },
-    { id: 3, name: "Propiedades de la red", route: "/mis-propiedades" },
-    { id: 4, name: "Compartidas conmigo", route: "/mis-propiedades" },
-  ];
   const reviews = [
-    { id: 1, name: "Mis grupos", route: "/my-review" },
-    { id: 2, name: "Crear nuevo grupo", route: "/my-review" },
+    { id: 1, name: "Mis grupos", route: "/dashboard/my-review" },
+    { id: 2, name: "Crear nuevo grupo", route: "/dashboard/my-review" },
   ];
 
   const myClients = [
     {
       id: 1,
       name: "Mis clientes",
-      route: "/mis-clientes",
+      route: "/dashboard/mis-clientes",
       icon: "flaticon-user",
     },
     {
       id: 2,
       name: "Mensajes clientes",
-      route: "/my-review",
+      route: "/dashboard/my-review",
       icon: "flaticon-chat",
     },
   ];
@@ -42,19 +36,19 @@ const SidebarMenu = () => {
     {
       id: 1,
       name: "Mi inmobiliaria",
-      route: "/mi-inmobiliaria",
+      route: "/dashboard/mi-inmobiliaria",
       icon: "flaticon-house",
     },
     {
       id: 2,
       name: "Mi cuenta",
-      route: "/my-profile",
+      route: "/dashboard/my-profile",
       icon: "flaticon-user",
     },
     {
       id: 4,
       name: "Agregar usuario (owner)",
-      route: "/my-profile",
+      route: "/dashboard/my-profile",
       icon: "flaticon-plus",
     },
     { id: 4, name: "Cerrar sesión", route: "/login", icon: "flaticon-logout" },
@@ -80,12 +74,12 @@ const SidebarMenu = () => {
           <ul>
             <li
               className={`treeview ${
-                isSinglePageActive("/my-dashboard", pathname)
+                isSinglePageActive("/dashboard/my-dashboard", pathname)
                   ? "active"
                   : ""
               }`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-layers"></i>
                 <span> Bienvenido</span>
               </Link>
@@ -93,7 +87,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-login"></i>
                 <span> Solicitudes de acceso</span>
               </Link>
@@ -102,7 +96,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/inmobiliarias">
+              <Link href="/dashboard/inmobiliarias">
                 <i className="flaticon-house"></i>
                 <span> Inmobiliarias</span>
               </Link>
@@ -111,7 +105,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/usuarios">
+              <Link href="/dashboard/usuarios">
                 <i className="flaticon-user"></i>
                 <span> Usuarios</span>
               </Link>
@@ -120,7 +114,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-high-five"></i>
                 <span> Grupos</span>
               </Link>
@@ -129,7 +123,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-chat"></i>
                 <span> Novedades</span>
               </Link>
@@ -138,7 +132,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-user"></i>
                 <span> Mi cuenta</span>
               </Link>
@@ -147,7 +141,7 @@ const SidebarMenu = () => {
             <li
               className={`treeview`}
             >
-              <Link href="/my-dashboard">
+              <Link href="/dashboard/my-dashboard">
                 <i className="flaticon-logout"></i>
                 <span> Cerrar sesión</span>
               </Link>

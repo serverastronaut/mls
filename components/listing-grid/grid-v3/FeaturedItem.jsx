@@ -38,7 +38,7 @@ const FeaturedItem = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`/api/propiedades`, { cache: 'no-store' });
+        const response = await fetch(`/api/web/propiedades`, { cache: 'no-store' });
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -209,7 +209,7 @@ const FeaturedItem = () => {
               </ul>
 
               <Link
-                href={`/detalle-propiedad`}
+                href={`/detalle-propiedad/1`}
                 className="fp_price"
               >
                 ${item.Precio}
@@ -221,7 +221,7 @@ const FeaturedItem = () => {
             <div className="tc_content">
               <p className="text-thm">{item.type}</p>
               <h4>
-                <Link href={`/detalle-propiedad`}>
+                <Link href={`/detalle-propiedad/1`}>
                   {item.Titulo}
                 </Link>
               </h4>

@@ -222,7 +222,7 @@ const FeaturedItem = () => {
               </ul>
 
               <Link
-                href={`/mis-propiedades/propiedad-detalles`}
+                href={`./mis-propiedades/propiedad-detalles`}
                 className="fp_price"
               >
                 ${item.Precio}
@@ -234,7 +234,7 @@ const FeaturedItem = () => {
             <div className="tc_content">
               <p className="text-thm mb0">{item.type}</p>
               <h4>
-                <Link href="/mis-propiedades/propiedad-detalles">
+                <Link href="./mis-propiedades/propiedad-detalles">
                   {item.Titulo}
                 </Link>
               </h4>

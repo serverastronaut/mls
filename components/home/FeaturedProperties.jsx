@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 //import properties from "../../data/properties";
-import Image from "next/image";
+//import Image from "next/image";
 
 const FeaturedProperties = () => {
 
@@ -16,7 +16,7 @@ const FeaturedProperties = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`/api/propiedades`, { cache: 'no-store' });
+        const response = await fetch(`/api/web/propiedades`, { cache: 'no-store' });
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -89,7 +89,7 @@ const FeaturedProperties = () => {
             </ul>
             {/* End .icon */}
 
-            <Link href={`/detalle-propiedad`} className="fp_price">
+            <Link href={`/detalle-propiedad/1`} className="fp_price">
               ${item.Precio}
               <small></small>
             </Link>
@@ -101,7 +101,7 @@ const FeaturedProperties = () => {
           <div className="tc_content">
             <p className="text-thm">{item.tipoPropiedad}</p>
             <h4>
-              <Link href={`/detalle-propiedad`}>{item.Titulo}</Link>
+              <Link href={`/detalle-propiedad/1`}>{item.Titulo}</Link>
             </h4>
             <p>
               <span className="flaticon-placeholder"></span>

@@ -1,47 +1,48 @@
-import Image from "next/image";
-import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
-import Footer from "../../components/common/footer/Footer";
-import Header from "../../components/common/header/DefaultHeader";
+//import Image from "next/image";
 //import Header from "../../components/common/header/dashboard/Header";
-//import SidebarMenu from "../../components/common/header/dashboard/SidebarMenu";
+import Header from "../common/header/DefaultHeader";
+import CopyrightFooter from "../common/footer/CopyrightFooter";
+import Footer from "../common/footer/Footer";
 import MobileMenu from "../../components/common/header/MobileMenu";
-//import PopupSignInUp from "../../components/common/PopupSignInUp";
-import BreadCrumb2 from "./BreadCrumb2";
-//import SidebarListings from "./SidebarListings";
 import TabDetailsContent from "./TabDetailsContent";
+import ListingGallery from "./ListingGallery";
 
 const index = () => {
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
-
-      {/* <!-- Modal --> */}
-      {/*<PopupSignInUp />*/}
-
-      {/* <!-- Agent Single Grid View --> */}
-      <section className="listing-title-area mt85 pb0 md-mt0 mb85">
-        <div className="container">
+      <section className="our-agent-single bgc-f7 pb30-991">
+        <div className="container ovh">
           <div className="row">
+
+            <div className="col-lg-12 mt50 mb0">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Propiedades</li>
+              </ol>                                              
+              <div className="breadcrumb_content style2">
+                <h2 className="breadcrumb_title">Detalle de la propiedad</h2>
+              </div>
+            </div>
+
             <div className="col-md-12 col-lg-12">
               <div className="row">
-                <div className="col-lg-12">
-                  <BreadCrumb2 />
-                </div>
-                {/* End .col-12 */}
 
                 <div className="col-lg-12">
-                  <div className="feat_property list style2 agent">
+                  
+                  <div className="listing_single_description">
+                    <ListingGallery />
+                  </div>
+
+                  {/*<div className="feat_property list style2 agent">
                     <div className="thumb">
                       <Image
                         width={286}
                         height={220}
                         className="img-whp"
-                        //src="/assets/images/team/11.jpg"
                         src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="11.jpg"
                       />
@@ -57,22 +58,13 @@ const index = () => {
 
                     <div className="details">
                       <div className="tc_content">
-                        <h4>Departamento en San Rafael</h4>
-                        {/*<p className="text-thm">Agent</p>*/}
-                        <ul className="prop_details mb0">
-                          <li>
-                            <a href="#">Tel. fijo: 134 456 3210</a>
-                          </li>
-                          <li>
-                            <a href="#">Celular: 891 456 9874</a>
-                          </li>
-                          <li>
-                            <a href="#">Email: info@inmobiliariax.com</a>
-                          </li>
-                        </ul>
+                        <h3>Departamento en Carlos Paz</h3>
+                        <h4 className="mt0 mb1">Inmobiliaria XX</h4>
+                        <p>Departamento en Carlos Paz, Argentina, ubicado a pocos metros del lago, ideal para disfrutar de la naturaleza y la tranquilidad. Ofrece ambientes luminosos, diseño moderno y fácil acceso a las principales atracciones de la ciudad. Perfecto para descansar y vivir una experiencia única cerca del agua.</p>
                       </div>
 
-                      <div className="fp_footer mt3">
+                      <div className="fp_footer pt0 mt0">
+                        <h5 className="mb0">Compartir</h5>
                         <ul className="fp_meta float-start mb0">
                           <li className="list-inline-item">
                             <a href="#">
@@ -95,9 +87,12 @@ const index = () => {
                             </a>
                           </li>
                         </ul>
+                        <button className="float-end btn btn1">
+                          Vista pública <i className="fa fa-angle-right"></i>
+                        </button>
                       </div>
                     </div>
-                  </div>
+                  </div>*/}
                   {/* End .feat_property */}
 
                   <div className="shop_single_tab_content style2 mt30">
@@ -107,6 +102,15 @@ const index = () => {
                 {/* End .col-12 */}
               </div>
 
+
+              <div className="row mt50">
+                <div className="col-lg-12">
+                  <div className="copyright-widget text-center">
+                    <p>© 2024 MLS Propiedades.</p>
+                  </div>
+                </div>
+              </div>
+              {/* End .row */}
 
             </div>
             {/* End .col-md-12 col-lg-8 content left side */}
@@ -121,7 +125,6 @@ const index = () => {
         {/* End .container */}
       </section>
 
-      {/* <!-- Our Footer --> */}
       <section className="footer_one">
         <div className="container">
           <div className="row">
@@ -130,12 +133,12 @@ const index = () => {
         </div>
       </section>
 
-      {/* <!-- Our Footer Bottom Area --> */}
       <section className="footer_middle_area pt40 pb40">
         <div className="container">
           <CopyrightFooter />
         </div>
       </section>
+
     </>
   );
 };

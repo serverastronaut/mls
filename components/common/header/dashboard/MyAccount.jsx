@@ -4,15 +4,18 @@ import Link from "next/link";
 import { isSinglePageActive } from "../../../../utils/daynamicNavigation";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 
 const MyAccount = () => {
+
+  const { data: session, status } = useSession();
+
   const pathname = usePathname()
   const profileMenuItems = [
-    { id: 1, name: "Mis propiedades", ruterPath: "/my-properties" },
-    { id: 2, name: " Mis grupos", ruterPath: "/mis-grupos" },
-    { id: 3, name: " Mis clientes", ruterPath: "/mis-clentes" },
-    { id: 4, name: " Mensajes", ruterPath: "/my-review" },
-    { id: 5, name: " Cerrar sesión", ruterPath: "/login" },
+    { id: 1, name: "Mis propiedades", ruterPath: "/dashboard/my-properties" },
+    { id: 2, name: " Mis grupos", ruterPath: "/dashboard/mis-grupos" },
+    { id: 3, name: " Mis clientes", ruterPath: "/dashboard/mis-clientes" },
+    { id: 4, name: " Mensajes", ruterPath: "/dashboard/my-review" },
   ];
 
   return (
@@ -26,8 +29,8 @@ const MyAccount = () => {
           alt="e1.png"
         />
         <p>
-          Martin Perez <br />
-          <span className="address">alitufan@gmail.com</span>
+        {session?.user?.name} <br />
+          <span className="address">{session?.user?.email}</span>
         </p>
       </div>
       {/* End user_set_header */}
@@ -47,6 +50,9 @@ const MyAccount = () => {
             {item.name}
           </Link>
         ))}
+
+        <button onClick={() => signOut()} >Cerrar sesion</button>
+
       </div>
     </>
   );

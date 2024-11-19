@@ -89,13 +89,6 @@ const MisGruposLista = () => {
           {filteredData?.map((item) => (
             <div className="media mt30 align-items-center" key={item.Id}>
               <div className="media-body d-flex align-items-center">
-                {/*<img
-                  width={120}
-                  height={120}
-                  className="mr-3"
-                  src="/assets/images/resource/review4.png"
-                  alt="Grupo image"
-                />*/}
                 <div>
                 <Link href="/mis-grupos/grupo-detalles/">                  
                   <h5 className="review_title mt-0 font-extrabold">
@@ -116,8 +109,19 @@ const MisGruposLista = () => {
                     data-placement="top"
                     title="Ver"
                   >
-                    <Link href="/grupo-detalles">
+                    <Link href="">
                       <span className="flaticon-view"></span>
+                    </Link>
+                  </li>
+
+                  <li
+                    className="list-inline-item"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Integrantes"
+                  >
+                    <Link href="">
+                      <span className="flaticon-user"></span>
                     </Link>
                   </li>
 

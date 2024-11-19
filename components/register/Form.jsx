@@ -1,8 +1,47 @@
+"use client";
 import Link from "next/link";
+import { useForm, Controller } from "react-hook-form";
+import axios from 'axios'
+import {signIn} from 'next-auth/react'
+import {useRouter} from 'next/navigation'
 
 const Form = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    values: {
+      Nombre:"",
+      Email: "",
+      Clave: "",
+    },
+  });
+  const router = useRouter()
+
+  const onSubmit = handleSubmit(async (data) => {
+    const res = await axios.post('/api/auth/register', data)
+    //console.log(res)
+
+    if (res.status === 201) {
+      const result = await signIn('credentials', {
+        Email: res.data.Email,
+        Clave: data.Clave,
+        redirect: false
+      })
+
+      if (!result?.ok) {
+        console.log(result?.error)
+        return;
+      }
+
+      router.push('/dashboard')
+    }
+
+  });
+
   return (
-    <form action="#">
+    <form onSubmit={onSubmit}>
       <div className="heading text-center">
         <h3>Registro</h3>
         <p className="text-center">
@@ -14,11 +53,68 @@ const Form = () => {
       </div>
       {/* End .heading */}
 
+      <div className="input-group mb-2 mr-sm-2">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Nombre"
+          {...register("Nombre", { required: true })} // Registramos el input con `register`
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-user"></i>
+          </div>
+        </div>
+        {errors.name && <div className="input-group mb-2 mr-sm-2">Nombre es requerido</div>}
+
+      </div>
+      {/* End .input-group */}
+
+
+      <div className="input-group mb-2 mr-sm-2">
+        <input
+          type="email"
+          className="form-control"
+          placeholder="Usuario o Email"
+          {...register("Email", { required: true })} // Registramos el input con `register`
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-user"></i>
+          </div>
+        </div>
+        {errors.Email && <div className="input-group mb-2 mr-sm-2">Email es requerido</div>}
+
+      </div>
+      {/* End .input-group */}
+
+      <div className="input-group form-group">
+        <input
+          type="password"
+          className="form-control"
+          placeholder="Contraseña"
+          {...register("Clave", {
+            required: "La contraseña es requerida",
+            minLength: {
+              value: 6,
+              message: "Tiene que tener mínimo de 6 caracteres", // Mensaje de error personalizado
+            },
+          })}
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="flaticon-password"></i>
+          </div>
+        </div>
+        {errors.password && <div className="input-group mb-2 mr-sm-2">{errors.password.message}</div>}
+      </div>
+      {/* End .input-group */}
+
       <div className="form-group input-group ">
         <input
           type="text"
           className="form-control"
-          required
+          //required
           placeholder="Nombre"
         />
         <div className="input-group-prepend">
@@ -32,7 +128,7 @@ const Form = () => {
         <input
           type="text"
           className="form-control"
-          required
+          //required
           placeholder="Apellido"
         />
         <div className="input-group-prepend">
@@ -47,7 +143,7 @@ const Form = () => {
         <input
           type="email"
           className="form-control"
-          required
+          //required
           placeholder="Email usuario"
         />
         <div className="input-group-prepend">
@@ -62,7 +158,7 @@ const Form = () => {
         <input
           type="password"
           className="form-control"
-          required
+          //required
           placeholder="Contraseña"
         />
         <div className="input-group-prepend">
@@ -77,7 +173,7 @@ const Form = () => {
         <input
           type="password"
           className="form-control"
-          required
+          //required
           placeholder="Reingrese contraseña"
         />
         <div className="input-group-prepend">
@@ -92,7 +188,7 @@ const Form = () => {
         <input
           type="text"
           className="form-control"
-          required
+          //required
           placeholder="Nombre inmobiliaria"
         />
         <div className="input-group-prepend">
@@ -106,7 +202,7 @@ const Form = () => {
         <input
           type="text"
           className="form-control"
-          required
+          //required
           placeholder="Titular"
         />
         <div className="input-group-prepend">
@@ -120,7 +216,7 @@ const Form = () => {
         <input
           type="email"
           className="form-control"
-          required
+          //required
           placeholder="Email inmobiliaria"
         />
         <div className="input-group-prepend">
@@ -134,7 +230,7 @@ const Form = () => {
         <input
           type="text"
           className="form-control"
-          required
+          //required
           placeholder="Teléfono inmobiliaria"
         />
         <div className="input-group-prepend">
@@ -149,7 +245,7 @@ const Form = () => {
           className="form-check-input"
           type="checkbox"
           value=""
-          required
+          //required
           id="terms"
         />
         <label className="form-check-label form-check-label" htmlFor="terms">

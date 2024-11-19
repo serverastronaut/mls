@@ -15,25 +15,25 @@ const PropertyVideo = () => {
         videoId="oqNZOOWF8qM"
         onClose={() => setOpen(false)}
       />
-      <ul className="nav nav-tabs" id="myTab" role="tablist">
+      <ul className="nav nav-tabs" id="myTab2" role="tablist">
         <li className="nav-item">
           <a
             className="nav-link active"
             data-bs-toggle="tab"
-            href="#description"
+            href="#tabVideo"
             role="tab"
           >
-            Property video
+            Video
           </a>
         </li>
         <li className="nav-item">
           <a
             className="nav-link"
             data-bs-toggle="tab"
-            href="#listing"
+            href="#tour360"
             role="tab"
           >
-            Virtual Tour
+            Recorrido 360
           </a>
         </li>
       </ul>
@@ -42,7 +42,7 @@ const PropertyVideo = () => {
       <div className="tab-content" id="myTabContent2">
         <div
           className="tab-pane fade show active"
-          id="description"
+          id="tabVideo"
           role="tabpanel"
         >
           <div className="property_video">
@@ -68,7 +68,7 @@ const PropertyVideo = () => {
         </div>
         <div
           className="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199"
-          id="listing"
+          id="tour360"
           role="tabpanel"
         >
           <div className="property_video">
