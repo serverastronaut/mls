@@ -1,26 +1,11 @@
 "use client"
 
-import { useSession} from "next-auth/react";
-
 import Header from "@/components/common/header/dashboard/Header";
 import SidebarMenu from "@/components/common/header/dashboard/SidebarMenu";
-import SidebarMenuClient from "@/components/common/header/dashboard/SidebarMenuClient";
-import SidebarMenuSuperAdmin from "@/components/common/header/dashboard/SidebarMenuSuperAdmin";
 import MobileMenu from "@/components/common/header/MobileMenu";
 import ListadoPropiedades from "@/components/dashboard/propiedades/ListadoPropiedades"
 
 function PropiedadesPage() {
-    const { data: session, status } = useSession();
-
-    // Lógica para determinar qué SidebarMenu mostrar
-    let SidebarComponent;
-    if (session?.user.rolid === 1) {
-      SidebarComponent = <SidebarMenu />;
-    } else if (session?.user.rolid === 2) {
-      SidebarComponent = <SidebarMenuClient />;
-    } else if (session?.user.rolid === 3) {
-      SidebarComponent = <SidebarMenuSuperAdmin />;
-    }
 
    return (
      <>
@@ -37,7 +22,7 @@ function PropiedadesPage() {
            id="DashboardOffcanvasMenu"
            data-bs-scroll="true"
          >
-           {SidebarComponent}
+           <SidebarMenu />
          </div>
        </div>
        {/* End sidebar_menu */}
