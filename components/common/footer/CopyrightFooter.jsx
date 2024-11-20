@@ -1,18 +1,18 @@
 import Link from "next/link";
 
 const CopyrightFooter = () => {
-  const menuItems = [
+  /*const menuItems = [
     { id: 1, name: "Inicio", routeLink: "/" },
     { id: 2, name: "Propiedades", routeLink: "/listing-grid-v3" },
     { id: 4, name: "Institucional", routeLink: "/about-us" },
     { id: 4, name: "FAQ", routeLink: "/faq" },
     { id: 5, name: "Novedades", routeLink: "/blog-list-3" },
     { id: 6, name: "Contacto", routeLink: "/contact" },
-  ];
+  ];*/
 
   return (
     <div className="row">
-      <div className="col-lg-6 col-xl-6">
+      {/*<div className="col-lg-6 col-xl-6">
         <div className="footer_menu_widget">
           <ul>
             {menuItems.map((item) => (
@@ -22,11 +22,10 @@ const CopyrightFooter = () => {
             ))}
           </ul>
         </div>
-      </div>
-      {/* End .col */}
+      </div>*/}
 
-      <div className="col-lg-6 col-xl-6">
-        <div className="copyright-widget text-end">
+      <div className="col-lg-12 col-xl-12">
+        <div className="copyright-widget text-center">
           <p>
             &copy; {new Date().getFullYear()} by{" "}
             <a

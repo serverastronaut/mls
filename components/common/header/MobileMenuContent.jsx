@@ -157,7 +157,7 @@ const MobileMenuContent = () => {
     
               className={pathname === "/contact" ? "ui-active" : 'inactive-mobile-menu'}
             >
-              Contáctenos
+              Contacto
             </div>
           </MenuItem>
 

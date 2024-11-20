@@ -21,16 +21,16 @@ const Footer = () => {
           <h4>Accesos</h4>
           <ul className="list-unstyled">
             <li>
-              <Link href="/">Institucional</Link>
+              <Link href="/institucional">Institucional</Link>
             </li>
             <li>
-              <Link href="/terms">Términos y condiciones</Link>
+              <Link href="/listing-grid-v3">Propiedades</Link>
             </li>
             <li>
               <Link href="/faq">Faq</Link>
             </li>
             <li>
-              <Link href="/contact">Soporte</Link>
+              <Link href="/noticias">Novedades</Link>
             </li>
           </ul>
         </div>

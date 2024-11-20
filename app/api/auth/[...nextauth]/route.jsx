@@ -60,9 +60,6 @@ export const authOptions = {
         session.user.inmobiliariaid = token.inmobiliariaid;
       }
 
-      console.log(session)
-      console.log(token)
-
       return session;
     },
   },

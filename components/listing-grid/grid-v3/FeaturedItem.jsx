@@ -259,17 +259,15 @@ const FeaturedItem = () => {
             <div className="fp_footer">
               <ul className="fp_meta float-start mb0">
                 <li className="list-inline-item">
-                  <Link href="/agent-v1">
-                    <Image
-                      width={40}
-                      height={40}
-                      src="/assets/images/property/pposter1.png"
-                      alt="pposter1.png"
-                    />
-                  </Link>
+                  <Image
+                    width={40}
+                    height={40}
+                    src="/assets/images/property/pposter1.png"
+                    alt="pposter1.png"
+                  />
                 </li>
                 <li className="list-inline-item">
-                  <Link href="/agent-v1">Inmobiliaria X</Link>
+                  Inmobiliaria X
                 </li>
               </ul>
               <div className="fp_pdate float-end">{new Date(item.Creado).toLocaleDateString('es-ES')}

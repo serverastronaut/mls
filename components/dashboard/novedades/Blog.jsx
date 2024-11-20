@@ -16,7 +16,7 @@ const Blog = ({ currentPage, itemsPerPage, setTotalItems }) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`/api/novedades`, {
+        const response = await fetch(`/api/dashboard/novedades`, {
           cache: 'no-store',
         });
         if (!response.ok) throw new Error('Network response was not ok');

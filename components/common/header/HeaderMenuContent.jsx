@@ -19,7 +19,7 @@ const HeaderMenuContent = ({ float = "" }) => {
   ];
 
   const institucional = [
-      { id: 1, name: "Institucional", routerPath: "/about-us" },
+      { id: 1, name: "Institucional", routerPath: "/institucional" },
   ];
 
   const faq = [
@@ -27,14 +27,7 @@ const HeaderMenuContent = ({ float = "" }) => {
   ];
     
   const blog = [
-  //  { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-  //  { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-    { id: 3, name: "Noticias", routerPath: "/noticias" },
-  //  {
-  //    id: 4,
-  //    name: "Blog Details",
-  //    routerPath: "/blog-details",
-  //  },
+    { id: 3, name: "Novedades", routerPath: "/noticias" },
   ];
 
 
@@ -54,12 +47,8 @@ const HeaderMenuContent = ({ float = "" }) => {
           }
         >
           <span className="title">Bienvenido</span>
-          {/*<span className="arrow"></span>*/}
         </a>
-        {/* <!-- Level Two--> */}
-
       </li>
-      {/* End .dropitem */}
 
       <li className="dropitem">
         <a
@@ -68,7 +57,6 @@ const HeaderMenuContent = ({ float = "" }) => {
             propiedades.some(
               (page) =>
                 page.routerPath?.split('/')[1] === pathname?.split('/')[1] 
-                // page.routerPath?.split('/')[1] + "/[id]" === pathname?.split('/')[1]
             )
               ? "ui-active"
               : undefined
@@ -77,17 +65,14 @@ const HeaderMenuContent = ({ float = "" }) => {
           <span className="title">Propiedades</span>
         </a>
       </li>
-      {/* End .dropitem */}
-
 
       <li className="dropitem">
         <a
-          href="/about-us"
+          href="/institucional"
           className={
             institucional.some(
               (page) =>
                 page.routerPath?.split('/')[1] === pathname?.split('/')[1] 
-                // page.routerPath?.split('/')[1] + "/[id]" === pathname?.split('/')[1]
             )
               ? "ui-active"
               : undefined
@@ -96,7 +81,6 @@ const HeaderMenuContent = ({ float = "" }) => {
           <span className="title">Institucional</span>
         </a>
       </li>
-      {/* End .dropitem */}
 
       <li className="dropitem">
         <a
@@ -105,7 +89,6 @@ const HeaderMenuContent = ({ float = "" }) => {
             faq.some(
               (page) =>
                 page.routerPath?.split('/')[1] === pathname?.split('/')[1] 
-                // page.routerPath?.split('/')[1] + "/[id]" === pathname?.split('/')[1]
             )
               ? "ui-active"
               : undefined
@@ -114,7 +97,6 @@ const HeaderMenuContent = ({ float = "" }) => {
           <span className="title">Faq</span>
         </a>
       </li>
-      {/* End .dropitem */}
 
       <li className="dropitem">
         <a
@@ -123,44 +105,34 @@ const HeaderMenuContent = ({ float = "" }) => {
             blog.some(
               (page) =>
                 page.routerPath?.split('/')[1] === pathname?.split('/')[1] 
-                // page.routerPath?.split('/')[1] + "/[id]" === pathname?.split('/')[1]
             )
               ? "ui-active"
               : undefined
           }
         >
           <span className="title">Novedades</span>
-          {/*<span className="arrow"></span>*/}
         </a>
       </li>
-      {/* End .dropitem */}
 
       <li className="last">
         <Link
           href="/contact"
           className={pathname === "/contact" ? "ui-active" : undefined}
         >
-          Contáctenos
+          Contacto
         </Link>
       </li>
-      {/* End .dropitem */}
 
       <li className={`list-inline-item add_listing ${float}`}>
         <a
           href="/login"
           className="btn flaticon-user"
-          //data-bs-toggle="modal"
-          //data-bs-target=".bd-example-modal-lg"
         >
           <span className="dn-lg ml10 mr10">Ingresar</span>
         </a>
 
-        {/*<Link href="/create-listing">
-          <span className="flaticon-plus"></span>
-          <span className="dn-lg"> Create Listing</span>
-        </Link>*/}
       </li>
-      {/* End .dropitem */}
+
     </ul>
   );
 };

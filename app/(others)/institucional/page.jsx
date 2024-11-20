@@ -1,16 +1,16 @@
 import dynamic from "next/dynamic";
-import BlogV3 from "@/components/noticias";
+import Institucional from "@/components/institucional";
 
 export const metadata = {
-  title: 'MLS Propiedades || Novedades',
+  title: 'Institucional || MLS Propiedades',
   description:
-    'MLS Propiedades || Novedades',
+    'Institucional || MLS Propiedades',
 }
 
 const index = () => {
   return (
     <>
-      <BlogV3 />
+      <Institucional />
     </>
   );
 };

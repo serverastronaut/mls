@@ -7424,7 +7424,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border: 5px solid #dedede;
 }
 
-.start_partner h2 {
+.start_partner h2, .start_partner h3 {
   color: #ffffff;
   line-height: 1.2;
 }
@@ -8894,14 +8894,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 /*== About Page About Content ==*/
 .about_content p.large {
   color: #484848;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 45px;
 }
 
 .about_content p {
-  font-size: 14px;
+  font-size: 16px;
   color: #484848;
   line-height: 1.714;
   margin-bottom: 40px;
@@ -17503,10 +17503,10 @@ section {
 }
 
 .main-title p {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Nunito";
   color: rgb(119, 119, 119);
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 0;
 }
 

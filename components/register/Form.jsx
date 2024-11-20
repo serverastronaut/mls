@@ -20,7 +20,8 @@ const Form = () => {
   const router = useRouter()
 
   const onSubmit = handleSubmit(async (data) => {
-    const res = await axios.post('/api/auth/register', data)
+    const res = await axios.post('/api/auth/register?tipo=inmobiliaria', data)
+    //const res = await axios.post('/api/auth/register?tipo=cliente', data)
     //console.log(res)
 
     if (res.status === 201) {
@@ -190,6 +191,7 @@ const Form = () => {
           className="form-control"
           //required
           placeholder="Nombre inmobiliaria"
+          {...register("NombreInmobiliaria")}
         />
         <div className="input-group-prepend">
           <div className="input-group-text">

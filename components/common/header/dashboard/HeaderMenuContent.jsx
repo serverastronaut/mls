@@ -11,7 +11,6 @@ import { useSession, signOut } from "next-auth/react";
 const HeaderMenuContent = ({ float = "" }) => {
 
   const { data: session, status } = useSession();
-  console.log(session)
 
   const pathname = usePathname()
 

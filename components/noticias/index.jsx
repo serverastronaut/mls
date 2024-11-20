@@ -10,16 +10,12 @@ import Blog from "./Blog";
 const index = () => {
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
-      {/* <!-- Modal --> */}
       <PopupSignInUp />
 
-      {/* <!-- Main Blog Post Content --> */}
       <section className="blog_post_container bgc-f7">
         <div className="container">
           <div className="row">
@@ -27,15 +23,12 @@ const index = () => {
               <BreadCrumbBlog />
             </div>
           </div>
-          {/* End .row */}
 
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
                 <Blog />
-                {/* End blog item */}
               </div>
-              {/* End .row */}
 
               <div className="row">
                 <div className="col-lg-12">

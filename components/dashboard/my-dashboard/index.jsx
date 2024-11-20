@@ -4,8 +4,6 @@ import { useSession, signOut } from "next-auth/react";
 
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
-import SidebarMenuClient from "../../common/header/dashboard/SidebarMenuClient";
-import SidebarMenuSuperAdmin from "../../common/header/dashboard/SidebarMenuSuperAdmin";
 import MobileMenu from "../../common/header/MobileMenu";
 import Activities from "./Activities";
 import AllStatistics from "./AllStatistics";
@@ -15,16 +13,6 @@ import StatisticsChart from "./StatisticsChart";
 const index = () => {
 
   const { data: session, status } = useSession();
-
-   // Lógica para determinar qué SidebarMenu mostrar
-   let SidebarComponent;
-   if (session?.user.rolid === 1) {
-     SidebarComponent = <SidebarMenu />;
-   } else if (session?.user.rolid === 2) {
-     SidebarComponent = <SidebarMenuClient />;
-   } else if (session?.user.rolid === 3) {
-     SidebarComponent = <SidebarMenuSuperAdmin />;
-   }
 
   return (
     <>
@@ -41,7 +29,7 @@ const index = () => {
           id="DashboardOffcanvasMenu"
           data-bs-scroll="true"
         >
-          {SidebarComponent}
+          <SidebarMenu />
         </div>
       </div>
       {/* End sidebar_menu */}

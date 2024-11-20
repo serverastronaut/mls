@@ -1,32 +1,34 @@
-import Image from "next/image";
-import CallToAction from "../common/CallToAction";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import AddressSidebar from "./AddressSidebar";
-import BreadCrumbBanner from "./BreadCrumbBanner";
 import Form from "./Form";
+import BreadCrumb from "../common/BreadCrumb";
 
 const index = () => {
   return (
     <>
-      {/* <!-- Main Header Nav --> */}
       <Header />
 
-      {/* <!--  Mobile Menu --> */}
       <MobileMenu />
 
-      {/* <!-- Modal --> */}
       <PopupSignInUp />
 
-      {/* <!-- Inner Page Breadcrumb --> */}
-      <BreadCrumbBanner />
+      <section className="our-contact pb0 bgc-f7 mt-4">
+        <div className="container mt-5">
 
-      {/* <!-- Our Contact --> */}
-      <section className="our-contact pb0 bgc-f7">
-        <div className="container">
+        <div className="row mt-4">
+
+          <div className="col-xl-6">
+              <div className="breadcrumb_content style2">
+                <BreadCrumb title="Contacto" />
+                <h2 className="breadcrumb_title">Contacto</h2>
+              </div>
+            </div>
+          </div>
+
           <div className="row pb50">
             <div className="col-lg-7 col-xl-8">
               <div className="form_grid">
