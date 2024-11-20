@@ -33,7 +33,7 @@ const Index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
                 <h2>Propiedades destacadas</h2>
-                <p>Handpicked properties by our team.</p>
+                <p>Las mejores oportunidades seleccionadas para vos.</p>
               </div>
             </div>
             <div className="col-lg-12">
@@ -51,30 +51,13 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Lorem ipsum consectetur adilpo elit.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>Encontrá tu lugar perfecto</h2>
+                <p>Explorá nuestras opciones diseñadas para cada necesidad.</p>
               </div>
             </div>
           </div>
           <div className="row">
             <FindProperties />
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- Why Chose Us --> */}
-      <section id="why-chose" className="whychose_us bgc-f7 pb30">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Por qué elegirnos</h2>
-                <p>We provide full service at every step.</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <WhyChoose />
           </div>
         </div>
       </section>
@@ -85,30 +68,12 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Últimas noticias</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>Últimas novedades</h2>
               </div>
             </div>
           </div>
           <div className="row">
             <Blogs />
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- Our Partners --> */}
-      <section id="our-partners" className="our-partners">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Nuestra red</h2>
-                <p>We only work with the best companies around the globe</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Partners />
           </div>
         </div>
       </section>

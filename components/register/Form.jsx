@@ -20,8 +20,8 @@ const Form = () => {
   const router = useRouter()
 
   const onSubmit = handleSubmit(async (data) => {
-    const res = await axios.post('/api/auth/register?tipo=inmobiliaria', data)
-    //const res = await axios.post('/api/auth/register?tipo=cliente', data)
+    //const res = await axios.post('/api/auth/register?tipo=inmobiliaria', data)
+    const res = await axios.post('/api/auth/register?tipo=cliente', data)
     //console.log(res)
 
     if (res.status === 201) {
